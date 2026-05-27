@@ -1,0 +1,25 @@
+{
+  "project": "thinkio-rebuild",
+  "authorityRoot": "tasks/",
+  "stateRoot": "state/",
+  "schemaRoot": "schemas/",
+  "runtime": {
+    "allowArchiveReadsByDefault": false,
+    "allowedActions": [
+      "validate-json-task-files",
+      "validate-transitions",
+      "update-views",
+      "build-context-packet",
+      "run-tests",
+      "write-checkpoint"
+    ],
+    "blockedActions": [
+      "destructive-shell-commands",
+      "external-api-calls",
+      "plugin-marketplace-release",
+      "autonomous-file-promotion-from-archive",
+      "activation-of-old-runtime-files"
+    ]
+  }
+}
+

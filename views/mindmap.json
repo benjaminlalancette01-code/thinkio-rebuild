@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "id": "TASK-001",
+      "label": "Bootstrap kernel",
+      "kind": "task"
+    },
+    {
+      "id": "governed-task",
+      "label": "Governed task object",
+      "kind": "concept"
+    }
+  ],
+  "edges": [
+    {
+      "from": "TASK-001",
+      "to": "governed-task",
+      "label": "implements"
+    }
+  ]
+}
+

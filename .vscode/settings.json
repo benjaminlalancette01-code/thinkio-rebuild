@@ -1,0 +1,21 @@
+{
+  "search.exclude": {
+    "**/thinkio-archive/**": true,
+    "**/thinkio_new_session_workspace/**": true,
+    "**/archive/**": true,
+    "**/old-versions/**": true,
+    "**/candidate-extraction-piles/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true
+  },
+  "files.watcherExclude": {
+    "**/thinkio-archive/**": true,
+    "**/thinkio_new_session_workspace/**": true,
+    "**/archive/**": true,
+    "**/old-versions/**": true,
+    "**/candidate-extraction-piles/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true
+  }
+}
+

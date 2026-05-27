@@ -1,0 +1,25 @@
+{
+  "entries": [
+    {
+      "id": "ART-TASK-001-KERNEL",
+      "taskId": "TASK-001",
+      "path": "kernel/state-machine.ts",
+      "kind": "kernel",
+      "evidence": [
+        "transition-test-pass",
+        "ledger-entry-created"
+      ],
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-001-SCHEMA",
+      "taskId": "TASK-001",
+      "path": "schemas/task.schema.cue",
+      "kind": "schema",
+      "evidence": [
+        "schema-valid"
+      ],
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    }
+  ]
+}

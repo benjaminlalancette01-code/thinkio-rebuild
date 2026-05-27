@@ -1,0 +1,7 @@
+{
+  "project": "minimal-workspace",
+  "authorityRoot": "tasks/",
+  "stateRoot": "state/",
+  "allowArchiveReadsByDefault": false
+}
+

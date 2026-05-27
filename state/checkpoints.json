@@ -1,0 +1,16 @@
+{
+  "checkpoints": [
+    {
+      "id": "CHK-TASK-001",
+      "taskId": "TASK-001",
+      "status": "candidate",
+      "evidence": [
+        "schema-valid",
+        "transition-test-pass",
+        "ledger-entry-created"
+      ],
+      "notes": "TASK-001 MVP checkpoint: task JSON, CUE schema, transition validation, ledger entry, context packet, and checkpoint behavior are present.",
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    }
+  ]
+}

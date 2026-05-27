@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    {
+      "id": "TASK-001",
+      "type": "task",
+      "label": "Bootstrap the ThinkIO governed task kernel"
+    }
+  ],
+  "edges": []
+}
+

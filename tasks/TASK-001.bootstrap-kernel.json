@@ -1,0 +1,28 @@
+{
+  "id": "TASK-001",
+  "title": "Bootstrap the ThinkIO governed task kernel",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [],
+  "allowedContext": [
+    "docs/vision.md",
+    "docs/architecture.md",
+    "schemas/task.schema.cue",
+    "kernel/state-machine.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "schema-valid",
+    "transition-test-pass",
+    "ledger-entry-created"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}
+
