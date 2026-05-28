@@ -165,8 +165,9 @@ test("package scripts use Node 22 TypeScript stripping and deterministic validat
   };
 
   assert.equal(pkg.scripts.test, "node --experimental-strip-types --test tests/*.test.ts");
+  assert.equal(pkg.scripts["check:node"], "node scripts/check-node-version.mjs");
   assert.equal(pkg.scripts["validate:cue"], "node --experimental-strip-types runtime/validate-schemas.ts");
   assert.equal(pkg.scripts["validate:cue:soft"], "node --experimental-strip-types runtime/validate-schemas.ts --soft");
-  assert.equal(pkg.scripts.check, "npm run validate:cue && npm test");
+  assert.equal(pkg.scripts.check, "npm run check:node && npm run validate:cue && npm test");
   assert.equal(pkg.engines.node, ">=22.0.0");
 });

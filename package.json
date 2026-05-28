@@ -5,12 +5,16 @@
   "type": "module",
   "description": "Minimal governed task kernel/runtime rebuild for ThinkIO.",
   "scripts": {
+    "check:node": "node scripts/check-node-version.mjs",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "validate:cue": "node --experimental-strip-types runtime/validate-schemas.ts",
     "validate:cue:soft": "node --experimental-strip-types runtime/validate-schemas.ts --soft",
-    "check": "npm run validate:cue && npm test"
+    "check": "npm run check:node && npm run validate:cue && npm test"
   },
   "engines": {
     "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.19"
   }
 }
