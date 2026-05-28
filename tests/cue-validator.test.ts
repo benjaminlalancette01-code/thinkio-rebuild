@@ -1,9 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import {
   buildCueVetArgs,
   discoverTaskCueValidationTargets,
   resolveCueCommand,
+  summarizeCueValidationResults,
   validateCueTargets,
   type CueCommandRunner,
   type CueValidationTarget
@@ -96,4 +98,75 @@ test("reports skipped CUE validation when the executable is missing", async () =
 
   assert.equal(result.status, "skipped");
   assert.equal(result.reason, "cue executable not found");
+});
+
+test("strict validation mode fails when cue is missing", () => {
+  const summary = summarizeCueValidationResults(
+    [
+      {
+        id: "TASK-001",
+        command: "cue vet tasks/TASK-001.bootstrap-kernel.json schemas/task.schema.cue -d #GovernedTask",
+        status: "skipped",
+        stdout: "",
+        stderr: "not found",
+        reason: "cue executable not found"
+      }
+    ],
+    "strict"
+  );
+
+  assert.equal(summary.ok, false);
+  assert.equal(summary.exitCode, 1);
+  assert.deepEqual(summary.warnings, []);
+  assert.deepEqual(summary.failures, ["TASK-001: cue executable not found"]);
+});
+
+test("soft validation mode allows missing cue but not failed validation", () => {
+  const skippedSummary = summarizeCueValidationResults(
+    [
+      {
+        id: "TASK-001",
+        command: "cue vet tasks/TASK-001.bootstrap-kernel.json schemas/task.schema.cue -d #GovernedTask",
+        status: "skipped",
+        stdout: "",
+        stderr: "not found",
+        reason: "cue executable not found"
+      }
+    ],
+    "soft"
+  );
+
+  assert.equal(skippedSummary.ok, true);
+  assert.equal(skippedSummary.exitCode, 0);
+  assert.deepEqual(skippedSummary.warnings, ["TASK-001: cue executable not found"]);
+
+  const failedSummary = summarizeCueValidationResults(
+    [
+      {
+        id: "TASK-001",
+        command: "cue vet tasks/TASK-001.bootstrap-kernel.json schemas/task.schema.cue -d #GovernedTask",
+        status: "failed",
+        stdout: "",
+        stderr: "missing field",
+        reason: "cue exited with code 1"
+      }
+    ],
+    "soft"
+  );
+
+  assert.equal(failedSummary.ok, false);
+  assert.equal(failedSummary.exitCode, 1);
+});
+
+test("package scripts use Node 22 TypeScript stripping and deterministic validation", async () => {
+  const pkg = JSON.parse(await readFile("package.json", "utf8")) as {
+    scripts: Record<string, string>;
+    engines: { node: string };
+  };
+
+  assert.equal(pkg.scripts.test, "node --experimental-strip-types --test tests/*.test.ts");
+  assert.equal(pkg.scripts["validate:cue"], "node --experimental-strip-types runtime/validate-schemas.ts");
+  assert.equal(pkg.scripts["validate:cue:soft"], "node --experimental-strip-types runtime/validate-schemas.ts --soft");
+  assert.equal(pkg.scripts.check, "npm run validate:cue && npm test");
+  assert.equal(pkg.engines.node, ">=22.0.0");
 });

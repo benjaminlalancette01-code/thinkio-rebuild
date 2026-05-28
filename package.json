@@ -1,15 +1,16 @@
 {
   "name": "thinkio-rebuild",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "description": "Minimal governed task kernel/runtime rebuild for ThinkIO.",
   "scripts": {
-    "test": "node --test tests/*.test.ts",
-    "validate:cue": "node runtime/validate-schemas.ts",
-    "check": "npm run validate:cue && node --test tests/*.test.ts"
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "validate:cue": "node --experimental-strip-types runtime/validate-schemas.ts",
+    "validate:cue:soft": "node --experimental-strip-types runtime/validate-schemas.ts --soft",
+    "check": "npm run validate:cue && npm test"
   },
   "engines": {
-    "node": ">=23.6.0"
+    "node": ">=22.0.0"
   }
 }

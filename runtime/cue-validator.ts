@@ -27,6 +27,15 @@ export interface CueValidationResult {
 }
 
 export type CueCommandRunner = (args: string[]) => Promise<CueCommandResult>;
+export type CueValidationMode = "strict" | "soft";
+
+export interface CueValidationSummary {
+  mode: CueValidationMode;
+  ok: boolean;
+  exitCode: 0 | 1;
+  warnings: string[];
+  failures: string[];
+}
 
 export const defaultCueValidationTargets: CueValidationTarget[] = [
   {
@@ -101,6 +110,39 @@ export async function validateDiscoveredTaskSchemas(
 ): Promise<CueValidationResult[]> {
   const targets = await discoverTaskCueValidationTargets(tasksDir);
   return validateCueTargets(targets, runner);
+}
+
+export function summarizeCueValidationResults(
+  results: CueValidationResult[],
+  mode: CueValidationMode
+): CueValidationSummary {
+  const warnings: string[] = [];
+  const failures: string[] = [];
+
+  for (const result of results) {
+    if (result.status === "failed") {
+      failures.push(`${result.id}: ${result.reason ?? "cue validation failed"}`);
+      continue;
+    }
+
+    if (result.status === "skipped") {
+      const message = `${result.id}: ${result.reason ?? "cue validation skipped"}`;
+
+      if (mode === "soft") {
+        warnings.push(message);
+      } else {
+        failures.push(message);
+      }
+    }
+  }
+
+  return {
+    mode,
+    ok: failures.length === 0,
+    exitCode: failures.length === 0 ? 0 : 1,
+    warnings,
+    failures
+  };
 }
 
 export async function runCueCommand(args: string[]): Promise<CueCommandResult> {
