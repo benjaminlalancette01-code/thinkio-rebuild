@@ -15,7 +15,7 @@
     {
       "id": "CHK-TASK-002",
       "taskId": "TASK-002",
-      "status": "candidate",
+      "status": "done",
       "evidence": [
         "cue-validation-target-defined",
         "cue-validation-runtime-rule",
