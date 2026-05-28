@@ -6,6 +6,41 @@
       "kind": "task"
     },
     {
+      "id": "TASK-002",
+      "label": "Wire CUE validation",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-003",
+      "label": "Deferred item model",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-004",
+      "label": "Execution window model",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-005",
+      "label": "Artifact chain validation",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-006",
+      "label": "Context mode router",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-007",
+      "label": "Checkpoint handoff",
+      "kind": "task"
+    },
+    {
+      "id": "TASK-008",
+      "label": "Generated views",
+      "kind": "task"
+    },
+    {
       "id": "governed-task",
       "label": "Governed task object",
       "kind": "concept"
@@ -16,7 +51,41 @@
       "from": "TASK-001",
       "to": "governed-task",
       "label": "implements"
+    },
+    {
+      "from": "TASK-002",
+      "to": "TASK-001",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-003",
+      "to": "TASK-002",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-004",
+      "to": "TASK-003",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-005",
+      "to": "TASK-004",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-006",
+      "to": "TASK-005",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-007",
+      "to": "TASK-006",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-008",
+      "to": "TASK-007",
+      "label": "depends-on"
     }
   ]
 }
-

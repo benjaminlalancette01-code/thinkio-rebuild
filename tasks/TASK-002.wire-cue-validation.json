@@ -1,0 +1,32 @@
+{
+  "id": "TASK-002",
+  "title": "Wire CUE validation into runtime",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-001"
+  ],
+  "allowedContext": [
+    "schemas/task.schema.cue",
+    "tasks/TASK-001.bootstrap-kernel.json",
+    "runtime/cue-validator.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/command-registry.ts",
+    "tests/cue-validator.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "cue-validation-target-defined",
+    "cue-validation-runtime-rule",
+    "cue-validation-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}
+

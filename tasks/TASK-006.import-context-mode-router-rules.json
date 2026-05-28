@@ -1,0 +1,30 @@
+{
+  "id": "TASK-006",
+  "title": "Import context-mode router rules",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-005"
+  ],
+  "allowedContext": [
+    "kernel/context-router.ts",
+    "schemas/context-packet.schema.cue",
+    "contracts/build-context-packet.baml",
+    "tests/context-router.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "context-mode-rule-added",
+    "context-router-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}
+

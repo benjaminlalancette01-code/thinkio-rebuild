@@ -1,0 +1,30 @@
+{
+  "id": "TASK-005",
+  "title": "Import artifact-chain validation model",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-004"
+  ],
+  "allowedContext": [
+    "kernel/ledger.ts",
+    "state/ledger.json",
+    "schemas/artifact.schema.cue",
+    "tests/ledger.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "artifact-chain-schema-added",
+    "artifact-chain-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}
+

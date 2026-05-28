@@ -1,8 +1,7 @@
 {
-  "activeTaskCount": 1,
+  "activeTaskCount": 8,
   "blockedTaskCount": 0,
-  "candidateCount": 1,
+  "candidateCount": 8,
   "frozenCount": 0,
   "executableCount": 0
 }
-

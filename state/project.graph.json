@@ -4,8 +4,78 @@
       "id": "TASK-001",
       "type": "task",
       "label": "Bootstrap the ThinkIO governed task kernel"
+    },
+    {
+      "id": "TASK-002",
+      "type": "task",
+      "label": "Wire CUE validation into runtime"
+    },
+    {
+      "id": "TASK-003",
+      "type": "task",
+      "label": "Import deferred-item model"
+    },
+    {
+      "id": "TASK-004",
+      "type": "task",
+      "label": "Import execution-window model"
+    },
+    {
+      "id": "TASK-005",
+      "type": "task",
+      "label": "Import artifact-chain validation model"
+    },
+    {
+      "id": "TASK-006",
+      "type": "task",
+      "label": "Import context-mode router rules"
+    },
+    {
+      "id": "TASK-007",
+      "type": "task",
+      "label": "Import checkpoint/handoff model"
+    },
+    {
+      "id": "TASK-008",
+      "type": "task",
+      "label": "Generate kanban and mindmap from task graph"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "from": "TASK-002",
+      "to": "TASK-001",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-003",
+      "to": "TASK-002",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-004",
+      "to": "TASK-003",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-005",
+      "to": "TASK-004",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-006",
+      "to": "TASK-005",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-007",
+      "to": "TASK-006",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-008",
+      "to": "TASK-007",
+      "label": "depends-on"
+    }
+  ]
 }
-

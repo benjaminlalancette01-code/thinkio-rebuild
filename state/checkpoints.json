@@ -11,6 +11,18 @@
       ],
       "notes": "TASK-001 MVP checkpoint: task JSON, CUE schema, transition validation, ledger entry, context packet, and checkpoint behavior are present.",
       "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-002",
+      "taskId": "TASK-002",
+      "status": "candidate",
+      "evidence": [
+        "cue-validation-target-defined",
+        "cue-validation-runtime-rule",
+        "cue-validation-test-pass"
+      ],
+      "notes": "TASK-002 wires CUE validation into the local dev runtime through an injectable command runner. Real CUE CLI execution remains dependent on local cue availability.",
+      "createdAt": "2026-05-27T00:00:00.000Z"
     }
   ]
 }

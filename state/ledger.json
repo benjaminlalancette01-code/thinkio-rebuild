@@ -20,6 +20,27 @@
         "schema-valid"
       ],
       "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-002-RUNTIME",
+      "taskId": "TASK-002",
+      "path": "runtime/cue-validator.ts",
+      "kind": "runtime",
+      "evidence": [
+        "cue-validation-target-defined",
+        "cue-validation-runtime-rule"
+      ],
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-002-TEST",
+      "taskId": "TASK-002",
+      "path": "tests/cue-validator.test.ts",
+      "kind": "test",
+      "evidence": [
+        "cue-validation-test-pass"
+      ],
+      "createdAt": "2026-05-27T00:00:00.000Z"
     }
   ]
 }

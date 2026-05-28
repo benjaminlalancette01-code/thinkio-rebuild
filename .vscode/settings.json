@@ -16,6 +16,8 @@
     "**/candidate-extraction-piles/**": true,
     "**/node_modules/**": true,
     "**/dist/**": true
+  },
+  "terminal.integrated.env.windows": {
+    "PATH": "${workspaceFolder}\\.tools\\cue;${env:PATH}"
   }
 }
-

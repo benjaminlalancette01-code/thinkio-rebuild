@@ -1,0 +1,31 @@
+{
+  "id": "TASK-003",
+  "title": "Import deferred-item model",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-002"
+  ],
+  "allowedContext": [
+    "state/deferred.json",
+    "kernel/gate.ts",
+    "kernel/state-machine.ts",
+    "views/kanban.json",
+    "tests/gate.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "deferred-model-rewritten",
+    "deferred-model-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}
+

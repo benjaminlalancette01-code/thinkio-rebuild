@@ -1,5 +1,6 @@
 export const allowedLocalDevActions = [
   "validate-json-task-files",
+  "validate-cue-schemas",
   "validate-transitions",
   "update-views",
   "build-context-packet",
@@ -20,4 +21,3 @@ export type AllowedLocalDevAction = (typeof allowedLocalDevActions)[number];
 export function isAllowedLocalDevAction(action: string): action is AllowedLocalDevAction {
   return allowedLocalDevActions.includes(action as AllowedLocalDevAction);
 }
-

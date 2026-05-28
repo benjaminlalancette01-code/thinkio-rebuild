@@ -1,0 +1,30 @@
+{
+  "id": "TASK-008",
+  "title": "Generate kanban and mindmap from task graph",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-007"
+  ],
+  "allowedContext": [
+    "views/mindmap.json",
+    "views/dashboard.json",
+    "views/kanban.json",
+    "state/project.graph.json",
+    "tasks/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "view-generation-rule-added",
+    "view-generation-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

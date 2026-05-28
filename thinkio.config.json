@@ -7,6 +7,7 @@
     "allowArchiveReadsByDefault": false,
     "allowedActions": [
       "validate-json-task-files",
+      "validate-cue-schemas",
       "validate-transitions",
       "update-views",
       "build-context-packet",
@@ -22,4 +23,3 @@
     ]
   }
 }
-
