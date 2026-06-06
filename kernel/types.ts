@@ -56,6 +56,8 @@ export interface ArtifactRecord {
   kind: "document" | "schema" | "kernel" | "state" | "view" | "runtime" | "test" | "contract";
   evidence: string[];
   createdAt: string;
+  hash?: string;
+  dependsOn?: string[];
 }
 
 export interface ApprovalRecord {
@@ -75,6 +77,41 @@ export interface CheckpointRecord {
   createdAt: string;
 }
 
+export interface DeferredItem {
+  id: string;
+  taskId: string;
+  reason: string;
+  deferredBy: string;
+  deferredAt: string;
+  resumeAfter?: string;
+  requiredEvidence: string[];
+  status: "deferred" | "ready" | "resumed";
+}
+
+export interface ExecutionWindow {
+  id: string;
+  taskId: string;
+  opensAt: string;
+  closesAt: string;
+  timezone: string;
+  requiredAuthority: "executable";
+}
+
+export interface ArtifactChainManifest {
+  id: string;
+  taskId: string;
+  rootArtifactId: string;
+  artifactIds: string[];
+  staleArtifactIds: string[];
+  createdAt: string;
+}
+
+export interface ContextSourceRule {
+  path: string;
+  authority: AuthorityLevel;
+  modes: TaskMode[];
+}
+
 export interface ContextPacket {
   taskId: string;
   mode: TaskMode;
@@ -82,5 +119,16 @@ export interface ContextPacket {
   blockedContext: string[];
   includedFiles: string[];
   excludedFiles: string[];
+  sourceAuthorities?: Record<string, AuthorityLevel>;
+  modeFilteredFiles?: string[];
 }
 
+export interface HandoffRecord {
+  id: string;
+  taskId: string;
+  checkpointId: string;
+  acceptedDecisions: string[];
+  nextValidStep: string;
+  resumeContext: string[];
+  createdAt: string;
+}

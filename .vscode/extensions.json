@@ -1,7 +1,8 @@
 {
   "recommendations": [
     "ms-vscode.vscode-typescript-next",
-    "cue-lang.cue"
+    "cue-lang.cue",
+    "LachyFS.kanban-markdown",
+    "imgildev.vscode-json-flow"
   ]
 }
-

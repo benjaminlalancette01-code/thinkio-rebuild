@@ -1,0 +1,572 @@
+{
+  "title": "ThinkIO Kernel and Runtime Flow",
+  "purpose": "Visual support for JSON Flow. This file maps the current ThinkIO rebuild so missing kernel/runtime pieces are easy to inspect.",
+  "sourceOfTruth": {
+    "tasks": "tasks/*.json",
+    "schemas": "schemas/*.cue",
+    "kernel": "kernel/*.ts",
+    "runtime": "runtime/*.ts",
+    "state": "state/*.json"
+  },
+  "openInVSCode": {
+    "extension": "JSON Flow - Graph Explorer",
+    "command": "JSON Flow: Show Preview",
+    "file": "views/thinkio-runtime-flow.json",
+    "useSearchTokens": [
+      "key:missing",
+      "value:planned",
+      "value:implemented",
+      "value:TASK-006",
+      "path:/system/kernel"
+    ]
+  },
+  "system": {
+    "taskModel": {
+      "kind": "governed-task",
+      "schema": "schemas/task.schema.cue",
+      "typeDefinition": "kernel/types.ts#GovernedTask",
+      "fields": [
+        "id",
+        "title",
+        "mode",
+        "status",
+        "authority",
+        "dependencies",
+        "allowedContext",
+        "blockedContext",
+        "requiredEvidence",
+        "promotionRule",
+        "checkpointRequired"
+      ],
+      "statusVocabulary": [
+        "idea",
+        "candidate",
+        "accepted",
+        "frozen",
+        "executable",
+        "done",
+        "rejected",
+        "archived"
+      ],
+      "modeVocabulary": [
+        "brainstorm",
+        "plan",
+        "build",
+        "review",
+        "freeze",
+        "execute"
+      ],
+      "authorityVocabulary": [
+        "idea",
+        "candidate",
+        "accepted",
+        "frozen",
+        "executable",
+        "final",
+        "rejected",
+        "archived"
+      ]
+    },
+    "kernel": {
+      "stateMachine": {
+        "file": "kernel/state-machine.ts",
+        "status": "implemented",
+        "responsibility": "Defines allowed task status transitions.",
+        "exports": [
+          "isTransitionAllowed",
+          "assertTransitionAllowed",
+          "allowedNextStatuses"
+        ],
+        "flow": [
+          "idea -> candidate",
+          "candidate -> accepted",
+          "candidate -> rejected",
+          "accepted -> frozen",
+          "frozen -> executable",
+          "executable -> done",
+          "done -> archived",
+          "rejected -> archived"
+        ],
+        "coveredByTasks": [
+          "TASK-001"
+        ]
+      },
+      "gate": {
+        "file": "kernel/gate.ts",
+        "status": "implemented",
+        "responsibility": "Checks promotion evidence and executable authority.",
+        "exports": [
+          "canPromoteTask",
+          "canExecuteTask",
+          "explainBlockedExecution"
+        ],
+        "rules": [
+          "Promotion requires promotionRule all-required-evidence-present.",
+          "All requiredEvidence entries must be present.",
+          "Execution requires status executable and authority executable.",
+          "Archive context is blocked by default."
+        ],
+        "coveredByTasks": [
+          "TASK-001",
+          "TASK-003",
+          "TASK-004"
+        ]
+      },
+      "contextRouter": {
+        "file": "kernel/context-router.ts",
+        "status": "implemented",
+        "responsibility": "Builds context packets from allowed and blocked task context, then applies mode-aware source rules.",
+        "exports": [
+          "buildContextPacket",
+          "buildModeAwareContextPacket",
+          "defaultSourceRulesForTask",
+          "inferAuthorityForPath"
+        ],
+        "rules": [
+          "Archive paths are excluded even if allowedContext includes them.",
+          "blockedContext and archive-derived exclusions are de-duplicated.",
+          "Mode-aware packets filter files by task mode.",
+          "Context sources receive inferred authority levels."
+        ],
+        "coveredByTasks": [
+          "TASK-006"
+        ]
+      },
+      "deferred": {
+        "file": "kernel/deferred.ts",
+        "status": "implemented",
+        "responsibility": "Models deferred work with reason, actor, resume timing, required evidence, and resume checks.",
+        "schema": "schemas/deferred.schema.cue",
+        "stateFile": "state/deferred.json",
+        "exports": [
+          "createDeferredItem",
+          "createDeferredItemForTask",
+          "canResumeDeferredItem",
+          "explainDeferredBlockers"
+        ],
+        "coveredByTasks": [
+          "TASK-003"
+        ]
+      },
+      "executionWindow": {
+        "file": "kernel/execution-window.ts",
+        "status": "implemented",
+        "responsibility": "Blocks task execution outside the valid time window or wrong task binding.",
+        "schema": "schemas/execution-window.schema.cue",
+        "stateFile": "state/execution-windows.json",
+        "exports": [
+          "createExecutionWindow",
+          "isExecutionWindowOpen",
+          "canExecuteWithinWindow",
+          "explainExecutionWindowBlockers"
+        ],
+        "coveredByTasks": [
+          "TASK-004"
+        ]
+      },
+      "ledger": {
+        "file": "kernel/ledger.ts",
+        "status": "implemented",
+        "responsibility": "Creates and stores artifact records.",
+        "schema": "schemas/artifact.schema.cue",
+        "stateFile": "state/ledger.json",
+        "exports": [
+          "createArtifactRecord",
+          "addLedgerEntry",
+          "findArtifactById"
+        ],
+        "coveredByTasks": [
+          "TASK-005"
+        ]
+      },
+      "artifactChain": {
+        "file": "kernel/artifact-chain.ts",
+        "status": "implemented",
+        "responsibility": "Builds artifact chain manifests, checks dependency references, and surfaces stale artifact hashes.",
+        "schema": "schemas/artifact.schema.cue#ArtifactChainManifest",
+        "stateFile": "state/artifact-chains.json",
+        "exports": [
+          "createArtifactChainManifest",
+          "findStaleArtifactIds",
+          "validateArtifactChain"
+        ],
+        "coveredByTasks": [
+          "TASK-005"
+        ]
+      },
+      "checkpoint": {
+        "file": "kernel/checkpoint.ts",
+        "status": "implemented",
+        "responsibility": "Creates and validates checkpoint records and checkpoint-bound handoff records.",
+        "schema": "schemas/checkpoint.schema.cue",
+        "stateFile": "state/checkpoints.json",
+        "exports": [
+          "createCheckpoint",
+          "validateCheckpoint",
+          "createHandoff",
+          "validateHandoff"
+        ],
+        "coveredByTasks": [
+          "TASK-007"
+        ]
+      }
+    },
+    "runtime": {
+      "commandRegistry": {
+        "file": "runtime/command-registry.ts",
+        "status": "implemented",
+        "responsibility": "Allow-lists local runtime actions and blocks risky runtime actions.",
+        "allowedActions": [
+          "validate-json-task-files",
+          "validate-cue-schemas",
+          "validate-transitions",
+          "update-views",
+          "build-context-packet",
+          "run-tests",
+          "write-checkpoint"
+        ],
+        "blockedActions": [
+          "destructive-shell-commands",
+          "external-api-calls",
+          "plugin-marketplace-release",
+          "autonomous-file-promotion-from-archive",
+          "activation-of-old-runtime-files"
+        ]
+      },
+      "cueValidator": {
+        "file": "runtime/cue-validator.ts",
+        "status": "implemented",
+        "responsibility": "Discovers task JSON files and validates them with CUE.",
+        "entryPoints": [
+          "discoverTaskCueValidationTargets",
+          "validateCueTargets",
+          "validateDiscoveredTaskSchemas",
+          "summarizeCueValidationResults"
+        ],
+        "externalCommand": "cue vet <task.json> schemas/task.schema.cue -d #GovernedTask",
+        "modes": [
+          "strict",
+          "soft"
+        ],
+        "coveredByTasks": [
+          "TASK-002"
+        ]
+      },
+      "localDevRuntime": {
+        "file": "runtime/local-dev-runtime.ts",
+        "status": "implemented-basic",
+        "responsibility": "Gates local runtime actions before building previews or validating schemas.",
+        "flows": [
+          "buildTaskRuntimePreview -> assert build-context-packet -> assert write-checkpoint -> buildContextPacket + createCheckpoint",
+          "validateWorkspaceSchemas -> assert validate-cue-schemas -> discover or validate CUE targets"
+        ]
+      },
+      "taskRunner": {
+        "file": "runtime/task-runner.ts",
+        "status": "implemented-basic",
+        "responsibility": "Prepares a task run by checking execution permission and building a context packet.",
+        "outputs": [
+          "taskId",
+          "canExecute",
+          "blockedReasons",
+          "contextPacket"
+        ]
+      },
+      "fileWatcher": {
+        "file": "runtime/file-watcher.ts",
+        "status": "implemented-basic",
+        "responsibility": "Defines path exclusions for watcher-like behavior.",
+        "excludedAreas": [
+          "thinkio-archive",
+          "archive",
+          "old-versions",
+          "candidate-extraction-piles",
+          "node_modules",
+          "dist"
+        ]
+      },
+      "validateSchemasCli": {
+        "file": "runtime/validate-schemas.ts",
+        "status": "implemented",
+        "responsibility": "CLI wrapper for workspace schema validation.",
+        "npmScripts": [
+          "validate:cue",
+          "validate:cue:soft",
+          "check"
+        ]
+      }
+    },
+    "state": {
+      "approvals": {
+        "file": "state/approvals.json",
+        "schema": "schemas/approval.schema.cue",
+        "status": "placeholder-or-seed"
+      },
+      "checkpoints": {
+        "file": "state/checkpoints.json",
+        "schema": "schemas/checkpoint.schema.cue",
+        "status": "seeded"
+      },
+      "deferred": {
+        "file": "state/deferred.json",
+        "schema": "schemas/deferred.schema.cue",
+        "status": "seeded",
+        "coveredByTasks": [
+          "TASK-003"
+        ]
+      },
+      "executionWindows": {
+        "file": "state/execution-windows.json",
+        "schema": "schemas/execution-window.schema.cue",
+        "status": "seeded",
+        "coveredByTasks": [
+          "TASK-004"
+        ]
+      },
+      "ledger": {
+        "file": "state/ledger.json",
+        "schema": "schemas/artifact.schema.cue",
+        "status": "seeded"
+      },
+      "artifactChains": {
+        "file": "state/artifact-chains.json",
+        "schema": "schemas/artifact.schema.cue#ArtifactChainManifest",
+        "status": "seeded",
+        "coveredByTasks": [
+          "TASK-005"
+        ]
+      },
+      "handoffs": {
+        "file": "state/handoffs.json",
+        "schema": "schemas/checkpoint.schema.cue#HandoffRecord",
+        "status": "seeded",
+        "coveredByTasks": [
+          "TASK-007"
+        ]
+      },
+      "projectGraph": {
+        "file": "state/project.graph.json",
+        "status": "implemented-data",
+        "responsibility": "Task dependency graph data."
+      }
+    },
+    "views": {
+      "kanbanData": {
+        "file": "views/kanban.json",
+        "status": "existing-data",
+        "note": "This file is task-board data, separate from the VS Code Kanban Markdown visual cards."
+      },
+      "mindmapData": {
+        "file": "views/mindmap.json",
+        "status": "existing-data",
+        "note": "Task/concept mindmap data, not a full runtime flow map."
+      },
+      "runtimeFlowData": {
+        "file": "views/thinkio-runtime-flow.json",
+        "status": "visual-support",
+        "note": "This file is shaped for JSON Flow."
+      }
+    }
+  },
+  "endToEndFlows": {
+    "taskValidation": [
+      "tasks/*.json",
+      "runtime/cue-validator.ts",
+      "schemas/task.schema.cue",
+      "cue vet",
+      "CueValidationResult[]",
+      "summarizeCueValidationResults",
+      "runtime/validate-schemas.ts"
+    ],
+    "taskPromotion": [
+      "GovernedTask",
+      "kernel/state-machine.ts",
+      "kernel/gate.ts",
+      "requiredEvidence[]",
+      "status transition allowed",
+      "checkpoint required"
+    ],
+    "taskExecutionPreview": [
+      "GovernedTask",
+      "runtime/local-dev-runtime.ts",
+      "runtime/command-registry.ts",
+      "kernel/context-router.ts",
+      "kernel/checkpoint.ts",
+      "ContextPacket + CheckpointRecord"
+    ],
+    "taskRunPreparation": [
+      "GovernedTask",
+      "runtime/task-runner.ts",
+      "kernel/gate.ts",
+      "kernel/context-router.ts",
+      "canExecute + blockedReasons + contextPacket"
+    ],
+    "artifactEvidence": [
+      "task output path",
+      "kernel/ledger.ts",
+      "ArtifactRecord",
+      "state/ledger.json",
+      "schemas/artifact.schema.cue"
+    ],
+    "visualSupport": [
+      "tasks/*.json",
+      "Kanban Markdown cards in .devtool/features",
+      "views/mindmap.json",
+      "views/thinkio-runtime-flow.json",
+      "VS Code Kanban Markdown + JSON Flow"
+    ]
+  },
+  "taskCoverage": {
+    "TASK-001": {
+      "title": "Bootstrap the ThinkIO governed task kernel",
+      "currentStatus": "done",
+      "kernelAreas": [
+        "types",
+        "stateMachine",
+        "gate"
+      ]
+    },
+    "TASK-002": {
+      "title": "Wire CUE validation into runtime",
+      "currentStatus": "done",
+      "runtimeAreas": [
+        "cueValidator",
+        "localDevRuntime",
+        "validateSchemasCli"
+      ]
+    },
+    "TASK-003": {
+      "title": "Import deferred-item model",
+      "currentStatus": "done",
+      "areas": [
+        "deferred kernel",
+        "deferred schema",
+        "deferred state",
+        "deferred tests"
+      ]
+    },
+    "TASK-004": {
+      "title": "Import execution-window model",
+      "currentStatus": "done",
+      "areas": [
+        "execution window kernel",
+        "execution window schema",
+        "execution window state",
+        "execution window tests"
+      ]
+    },
+    "TASK-005": {
+      "title": "Import artifact-chain validation model",
+      "currentStatus": "done",
+      "areas": [
+        "ledger",
+        "artifact chain kernel",
+        "artifact schema",
+        "artifact chain tests"
+      ]
+    },
+    "TASK-006": {
+      "title": "Import context-mode router rules",
+      "currentStatus": "done",
+      "areas": [
+        "context router",
+        "context packet schema",
+        "mode-aware source rules"
+      ]
+    },
+    "TASK-007": {
+      "title": "Import checkpoint/handoff model",
+      "currentStatus": "done",
+      "areas": [
+        "checkpoint",
+        "handoff",
+        "checkpoint schema"
+      ]
+    },
+    "TASK-008": {
+      "title": "Generate kanban and mindmap from task graph",
+      "currentStatus": "candidate",
+      "areas": [
+        "views",
+        "project graph",
+        "visual support"
+      ]
+    }
+  },
+  "missingOrNeedsValidation": {
+    "governance": [
+      {
+        "item": "Status and authority coupling",
+        "currentState": "Status transitions exist; authority transitions are not independently modeled.",
+        "relatedFiles": [
+          "kernel/state-machine.ts",
+          "kernel/gate.ts",
+          "kernel/types.ts"
+        ]
+      },
+      {
+        "item": "Promotion operation",
+        "currentState": "Promotion checks exist, but no single runtime command applies a transition, evidence check, authority update, checkpoint, and ledger record atomically.",
+        "relatedFiles": [
+          "kernel/gate.ts",
+          "kernel/state-machine.ts",
+          "runtime/local-dev-runtime.ts"
+        ]
+      },
+      {
+        "item": "Approval flow",
+        "currentState": "Approval type and schema exist, but no approval runtime module is wired.",
+        "relatedFiles": [
+          "kernel/types.ts",
+          "schemas/approval.schema.cue",
+          "state/approvals.json"
+        ]
+      }
+    ],
+    "runtime": [
+      {
+        "item": "View update action",
+        "currentState": "update-views is allow-listed, but no active view-generation runtime is currently wired.",
+        "relatedFiles": [
+          "runtime/command-registry.ts",
+          "views/kanban.json",
+          "views/mindmap.json"
+        ]
+      }
+    ],
+    "schemas": [
+      {
+        "item": "Project graph schema",
+        "currentState": "state/project.graph.json exists; no dedicated graph schema file is visible.",
+        "relatedTasks": [
+          "TASK-008"
+        ]
+      }
+    ],
+    "views": [
+      {
+        "item": "Kanban data freshness",
+        "currentState": "views/kanban.json is intentionally stale until TASK-008 defines the view-generation approach; the VS Code Kanban Markdown mirror reflects TASK-001 through TASK-007 as done.",
+        "relatedFiles": [
+          "views/kanban.json",
+          ".devtool/features"
+        ]
+      },
+      {
+        "item": "Visual board sync",
+        "currentState": "Kanban Markdown cards are visual mirrors; dragging cards does not update governed task JSON.",
+        "relatedFiles": [
+          ".devtool/features"
+        ]
+      }
+    ]
+  },
+  "recommendedValidationSearches": [
+    "key:status value:implemented",
+    "key:currentState value:no",
+    "value:placeholder",
+    "value:implemented-basic",
+    "value:TASK-004",
+    "path:/missingOrNeedsValidation"
+  ]
+}

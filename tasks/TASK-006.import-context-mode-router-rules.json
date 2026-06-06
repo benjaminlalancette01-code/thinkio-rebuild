@@ -2,8 +2,8 @@
   "id": "TASK-006",
   "title": "Import context-mode router rules",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-005"
   ],
@@ -27,4 +27,3 @@
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }
-

@@ -2,16 +2,17 @@
   "id": "TASK-007",
   "title": "Import checkpoint/handoff model",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-006"
   ],
   "allowedContext": [
     "kernel/checkpoint.ts",
     "state/checkpoints.json",
+    "state/handoffs.json",
     "schemas/checkpoint.schema.cue",
-    "tests/checkpoint.test.ts"
+    "tests/checkpoint-handoff.test.ts"
   ],
   "blockedContext": [
     "thinkio-archive/",
@@ -27,4 +28,3 @@
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }
-

@@ -1,0 +1,16 @@
+{
+  "manifests": [
+    {
+      "id": "CHAIN-TASK-005",
+      "taskId": "TASK-005",
+      "rootArtifactId": "ART-TASK-005-KERNEL",
+      "artifactIds": [
+        "ART-TASK-005-KERNEL",
+        "ART-TASK-005-SCHEMA",
+        "ART-TASK-005-TEST"
+      ],
+      "staleArtifactIds": [],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    }
+  ]
+}

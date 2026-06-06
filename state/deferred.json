@@ -1,4 +1,17 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "DEF-TASK-003",
+      "taskId": "TASK-003",
+      "reason": "Deferred work must carry an explicit resume rule and evidence list.",
+      "deferredBy": "codex",
+      "deferredAt": "2026-06-06T00:00:00.000Z",
+      "resumeAfter": "2026-06-06T00:00:00.000Z",
+      "requiredEvidence": [
+        "deferred-model-rewritten",
+        "deferred-model-test-pass"
+      ],
+      "status": "ready"
+    }
+  ]
 }
-

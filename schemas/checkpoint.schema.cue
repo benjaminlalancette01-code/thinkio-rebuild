@@ -11,3 +11,12 @@ package schemas
 	createdAt: string
 }
 
+#HandoffRecord: {
+	id: string
+	taskId: string
+	checkpointId: string
+	acceptedDecisions: [...string]
+	nextValidStep: string
+	resumeContext: [...string]
+	createdAt: string
+}

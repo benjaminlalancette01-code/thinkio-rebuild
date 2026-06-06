@@ -10,3 +10,6 @@ This task proves the first path from task JSON to schema, state transition valid
 - `transition-test-pass`
 - `ledger-entry-created`
 
+## Status
+
+Done. Kernel task shape, transition checks, ledger records, context packets, checkpoints, and tests are present.

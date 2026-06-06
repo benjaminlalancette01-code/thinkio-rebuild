@@ -10,3 +10,6 @@ This task does not install CUE. It creates a runtime boundary that can call the 
 - `cue-validation-runtime-rule`
 - `cue-validation-test-pass`
 
+## Status
+
+Done. CUE validation is wired through the local dev runtime with injectable command execution and strict/soft summaries.

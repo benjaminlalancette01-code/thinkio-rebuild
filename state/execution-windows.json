@@ -1,0 +1,12 @@
+{
+  "windows": [
+    {
+      "id": "WIN-TASK-004",
+      "taskId": "TASK-004",
+      "opensAt": "2026-06-06T00:00:00.000Z",
+      "closesAt": "2026-12-31T23:59:59.000Z",
+      "timezone": "America/Toronto",
+      "requiredAuthority": "executable"
+    }
+  ]
+}

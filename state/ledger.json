@@ -41,6 +41,122 @@
         "cue-validation-test-pass"
       ],
       "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-003-KERNEL",
+      "taskId": "TASK-003",
+      "path": "kernel/deferred.ts",
+      "kind": "kernel",
+      "evidence": [
+        "deferred-model-rewritten"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-003-TEST",
+      "taskId": "TASK-003",
+      "path": "tests/deferred.test.ts",
+      "kind": "test",
+      "evidence": [
+        "deferred-model-test-pass"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-004-KERNEL",
+      "taskId": "TASK-004",
+      "path": "kernel/execution-window.ts",
+      "kind": "kernel",
+      "evidence": [
+        "execution-window-rule-added"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-004-TEST",
+      "taskId": "TASK-004",
+      "path": "tests/execution-window.test.ts",
+      "kind": "test",
+      "evidence": [
+        "execution-window-test-pass"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-005-KERNEL",
+      "taskId": "TASK-005",
+      "path": "kernel/artifact-chain.ts",
+      "kind": "kernel",
+      "evidence": [
+        "artifact-chain-schema-added"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-005-SCHEMA",
+      "taskId": "TASK-005",
+      "path": "schemas/artifact.schema.cue",
+      "kind": "schema",
+      "evidence": [
+        "artifact-chain-schema-added"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z",
+      "dependsOn": [
+        "ART-TASK-005-KERNEL"
+      ]
+    },
+    {
+      "id": "ART-TASK-005-TEST",
+      "taskId": "TASK-005",
+      "path": "tests/artifact-chain.test.ts",
+      "kind": "test",
+      "evidence": [
+        "artifact-chain-test-pass"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z",
+      "dependsOn": [
+        "ART-TASK-005-SCHEMA"
+      ]
+    },
+    {
+      "id": "ART-TASK-006-KERNEL",
+      "taskId": "TASK-006",
+      "path": "kernel/context-router.ts",
+      "kind": "kernel",
+      "evidence": [
+        "context-mode-rule-added"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-006-TEST",
+      "taskId": "TASK-006",
+      "path": "tests/context-router.test.ts",
+      "kind": "test",
+      "evidence": [
+        "context-router-test-pass"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-007-KERNEL",
+      "taskId": "TASK-007",
+      "path": "kernel/checkpoint.ts",
+      "kind": "kernel",
+      "evidence": [
+        "checkpoint-handoff-rule-added"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-007-TEST",
+      "taskId": "TASK-007",
+      "path": "tests/checkpoint-handoff.test.ts",
+      "kind": "test",
+      "evidence": [
+        "checkpoint-test-pass"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
     }
   ]
 }

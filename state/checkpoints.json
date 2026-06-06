@@ -3,7 +3,7 @@
     {
       "id": "CHK-TASK-001",
       "taskId": "TASK-001",
-      "status": "candidate",
+      "status": "done",
       "evidence": [
         "schema-valid",
         "transition-test-pass",
@@ -23,6 +23,66 @@
       ],
       "notes": "TASK-002 wires CUE validation into the local dev runtime through an injectable command runner. Real CUE CLI execution remains dependent on local cue availability.",
       "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-003",
+      "taskId": "TASK-003",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "deferred-model-rewritten",
+        "deferred-model-test-pass"
+      ],
+      "notes": "Deferred items now carry reason, actor, resume timing, required evidence, and resume validation.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-004",
+      "taskId": "TASK-004",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "execution-window-rule-added",
+        "execution-window-test-pass"
+      ],
+      "notes": "Execution windows now gate executable tasks by task id, authority, and open/close time.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-005",
+      "taskId": "TASK-005",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "artifact-chain-schema-added",
+        "artifact-chain-test-pass"
+      ],
+      "notes": "Artifact chain manifests now validate provenance, dependency references, and stale artifacts.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-006",
+      "taskId": "TASK-006",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "context-mode-rule-added",
+        "context-router-test-pass"
+      ],
+      "notes": "Context routing now includes mode filters and source authority inference while preserving archive exclusions.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-007",
+      "taskId": "TASK-007",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "checkpoint-handoff-rule-added",
+        "checkpoint-test-pass"
+      ],
+      "notes": "Checkpoint handoffs now bind accepted decisions, next valid step, and resume context to a checkpoint.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
     }
   ]
 }

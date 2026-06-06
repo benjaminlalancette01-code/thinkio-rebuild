@@ -2,16 +2,20 @@
   "id": "TASK-004",
   "title": "Import execution-window model",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-003"
   ],
   "allowedContext": [
     "kernel/gate.ts",
+    "kernel/execution-window.ts",
     "kernel/state-machine.ts",
     "tasks/",
-    "tests/gate.test.ts"
+    "schemas/execution-window.schema.cue",
+    "state/execution-windows.json",
+    "tests/gate.test.ts",
+    "tests/execution-window.test.ts"
   ],
   "blockedContext": [
     "thinkio-archive/",
@@ -27,4 +31,3 @@
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }
-

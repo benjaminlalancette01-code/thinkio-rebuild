@@ -1,0 +1,21 @@
+{
+  "handoffs": [
+    {
+      "id": "HANDOFF-TASK-007",
+      "taskId": "TASK-007",
+      "checkpointId": "CHK-TASK-007",
+      "acceptedDecisions": [
+        "Checkpoint records are the resume anchor.",
+        "Handoff records must name the next valid step and resume context."
+      ],
+      "nextValidStep": "Proceed to TASK-008 only after validating views strategy.",
+      "resumeContext": [
+        "kernel/checkpoint.ts",
+        "state/checkpoints.json",
+        "state/handoffs.json",
+        "tests/checkpoint-handoff.test.ts"
+      ],
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    }
+  ]
+}
