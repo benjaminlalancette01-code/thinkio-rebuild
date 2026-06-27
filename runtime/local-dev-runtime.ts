@@ -3,6 +3,7 @@ import { createCheckpoint } from "../kernel/checkpoint.ts";
 import { buildContextPacket } from "../kernel/context-router.ts";
 import { validateCueTargets, validateDiscoveredTaskSchemas, type CueCommandRunner, type CueValidationTarget } from "./cue-validator.ts";
 import { isAllowedLocalDevAction } from "./command-registry.ts";
+import { updateViewFiles } from "./update-views.ts";
 
 export function assertLocalDevActionAllowed(action: string): void {
   if (!isAllowedLocalDevAction(action)) {
@@ -31,4 +32,9 @@ export async function validateWorkspaceSchemas(
   }
 
   return validateCueTargets(targets, runner);
+}
+
+export async function updateWorkspaceViews(): Promise<void> {
+  assertLocalDevActionAllowed("update-views");
+  await updateViewFiles();
 }

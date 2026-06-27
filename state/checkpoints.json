@@ -83,6 +83,18 @@
       ],
       "notes": "Checkpoint handoffs now bind accepted decisions, next valid step, and resume context to a checkpoint.",
       "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-008",
+      "taskId": "TASK-008",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "view-generation-rule-added",
+        "view-generation-test-pass"
+      ],
+      "notes": "Kanban, mindmap, and dashboard views are now generated projections from governed task records and the project graph.",
+      "createdAt": "2026-06-27T00:00:00.000Z"
     }
   ]
 }

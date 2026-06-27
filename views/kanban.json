@@ -1,7 +1,11 @@
 {
   "columns": {
     "idea": [],
-    "candidate": [
+    "candidate": [],
+    "accepted": [],
+    "frozen": [],
+    "executable": [],
+    "done": [
       "TASK-001",
       "TASK-002",
       "TASK-003",
@@ -11,10 +15,6 @@
       "TASK-007",
       "TASK-008"
     ],
-    "accepted": [],
-    "frozen": [],
-    "executable": [],
-    "done": [],
     "rejected": [],
     "archived": []
   }

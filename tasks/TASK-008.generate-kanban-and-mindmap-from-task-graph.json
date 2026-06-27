@@ -2,8 +2,8 @@
   "id": "TASK-008",
   "title": "Generate kanban and mindmap from task graph",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-007"
   ],
@@ -12,7 +12,10 @@
     "views/dashboard.json",
     "views/kanban.json",
     "state/project.graph.json",
-    "tasks/"
+    "tasks/",
+    "kernel/view-projections.ts",
+    "runtime/update-views.ts",
+    "tests/view-projections.test.ts"
   ],
   "blockedContext": [
     "thinkio-archive/",

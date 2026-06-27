@@ -157,6 +157,42 @@
         "checkpoint-test-pass"
       ],
       "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-008-KERNEL",
+      "taskId": "TASK-008",
+      "path": "kernel/view-projections.ts",
+      "kind": "kernel",
+      "evidence": [
+        "view-generation-rule-added"
+      ],
+      "createdAt": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "id": "ART-TASK-008-RUNTIME",
+      "taskId": "TASK-008",
+      "path": "runtime/update-views.ts",
+      "kind": "runtime",
+      "evidence": [
+        "view-generation-rule-added"
+      ],
+      "createdAt": "2026-06-27T00:00:00.000Z",
+      "dependsOn": [
+        "ART-TASK-008-KERNEL"
+      ]
+    },
+    {
+      "id": "ART-TASK-008-TEST",
+      "taskId": "TASK-008",
+      "path": "tests/view-projections.test.ts",
+      "kind": "test",
+      "evidence": [
+        "view-generation-test-pass"
+      ],
+      "createdAt": "2026-06-27T00:00:00.000Z",
+      "dependsOn": [
+        "ART-TASK-008-RUNTIME"
+      ]
     }
   ]
 }

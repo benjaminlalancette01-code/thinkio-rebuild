@@ -2,56 +2,62 @@
   "nodes": [
     {
       "id": "TASK-001",
-      "label": "Bootstrap kernel",
-      "kind": "task"
+      "label": "Bootstrap the ThinkIO governed task kernel",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-002",
-      "label": "Wire CUE validation",
-      "kind": "task"
+      "label": "Wire CUE validation into runtime",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-003",
-      "label": "Deferred item model",
-      "kind": "task"
+      "label": "Import deferred-item model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-004",
-      "label": "Execution window model",
-      "kind": "task"
+      "label": "Import execution-window model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-005",
-      "label": "Artifact chain validation",
-      "kind": "task"
+      "label": "Import artifact-chain validation model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-006",
-      "label": "Context mode router",
-      "kind": "task"
+      "label": "Import context-mode router rules",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-007",
-      "label": "Checkpoint handoff",
-      "kind": "task"
+      "label": "Import checkpoint/handoff model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-008",
-      "label": "Generated views",
-      "kind": "task"
-    },
-    {
-      "id": "governed-task",
-      "label": "Governed task object",
-      "kind": "concept"
+      "label": "Generate kanban and mindmap from task graph",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     }
   ],
   "edges": [
-    {
-      "from": "TASK-001",
-      "to": "governed-task",
-      "label": "implements"
-    },
     {
       "from": "TASK-002",
       "to": "TASK-001",
