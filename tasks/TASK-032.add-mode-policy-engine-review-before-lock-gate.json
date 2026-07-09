@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-032",
+    "title":  "Add mode policy engine and review-before-lock gate",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/context-router.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "schemas/task.schema.cue",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "mode-policy-model-defined",
+                             "review-before-lock-gate-added",
+                             "mode-action-policy-tests-pass",
+                             "mode-policy-surface-documented"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

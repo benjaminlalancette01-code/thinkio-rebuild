@@ -1,0 +1,32 @@
+{
+  "id": "TASK-028",
+  "title": "Decide Kanban Markdown sync boundary",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-027"
+  ],
+  "allowedContext": [
+    "audit/current-state-report-2026-06-30.md",
+    ".devtool/features/",
+    "runtime/update-views.ts",
+    "kernel/view-projections.ts",
+    "views/kanban.json",
+    "tasks/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "missing-work-task-created",
+    "kanban-sync-boundary-decided",
+    "kanban-sync-boundary-test-or-note-added"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

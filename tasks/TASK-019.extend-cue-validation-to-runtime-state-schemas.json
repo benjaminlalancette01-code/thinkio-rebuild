@@ -1,0 +1,32 @@
+{
+  "id": "TASK-019",
+  "title": "Extend CUE validation to runtime state schemas",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-018"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "runtime/cue-validator.ts",
+    "runtime/validate-schemas.ts",
+    "runtime/local-dev-runtime.ts",
+    "schemas/",
+    "state/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "non-task-cue-targets-added",
+    "workspace-schema-validation-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

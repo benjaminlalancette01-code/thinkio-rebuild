@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-040",
+    "title":  "Add general file action proposal model and writer boundary",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-038",
+                         "TASK-039"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/mutation-applier.ts",
+                           "runtime/command-registry.ts",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "file-action-proposal-model-defined",
+                             "writer-boundary-integrated",
+                             "file-action-risk-routing-added",
+                             "file-action-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -1,0 +1,36 @@
+{
+    "id":  "TASK-043",
+    "title":  "Replace external Kanban dependency with native ThinkIO board projection",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030",
+                         "TASK-035",
+                         "TASK-039"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "docs/kanban-markdown-sync-boundary.md",
+                           "kernel/view-projections.ts",
+                           "runtime/update-views.ts",
+                           "views/kanban.json",
+                           "views/dashboard.json",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "native-board-projection-model-defined",
+                             "kanban-mirror-boundary-preserved",
+                             "board-action-contract-added",
+                             "board-projection-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

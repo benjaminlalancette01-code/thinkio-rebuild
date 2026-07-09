@@ -1,0 +1,30 @@
+{
+  "id": "TASK-016",
+  "title": "Add TypeScript typecheck dependency",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-013"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "package.json",
+    "package-lock.json",
+    "tsconfig.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "typescript-dependency-added",
+    "typecheck-script-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

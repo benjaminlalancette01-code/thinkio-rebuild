@@ -1,0 +1,37 @@
+{
+    "id":  "TASK-050",
+    "title":  "Add user-to-ThinkIO-to-model interaction surface contract",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-043",
+                         "TASK-047",
+                         "TASK-048",
+                         "TASK-049"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "docs/architecture.md",
+                           "docs/vision.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "views/kanban.json",
+                           "views/mindmap.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "interaction-surface-contract-defined",
+                             "chat-session-state-boundary-defined",
+                             "model-action-visibility-rules-added",
+                             "interaction-surface-validation-note-added"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -1,0 +1,36 @@
+{
+  "id": "TASK-069",
+  "title": "Add VS Code extension packaging and smoke validation",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-064",
+    "TASK-065",
+    "TASK-066",
+    "TASK-067",
+    "TASK-068"
+  ],
+  "allowedContext": [
+    "package.json",
+    "scripts/",
+    ".vscode/",
+    "test-workspace/",
+    "tests/",
+    "docs/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "vsix-packaging-script-added",
+    "extension-activation-smoke-test-added",
+    "core-view-smoke-test-added",
+    "packaged-asset-validation-added"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

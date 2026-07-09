@@ -11,7 +11,16 @@
       ],
       "group": "test",
       "problemMatcher": []
+    },
+    {
+      "label": "ThinkIO: update views",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": [
+        "run",
+        "update:views"
+      ],
+      "problemMatcher": []
     }
   ]
 }
-

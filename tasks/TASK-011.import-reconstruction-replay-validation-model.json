@@ -1,0 +1,33 @@
+{
+  "id": "TASK-011",
+  "title": "Import reconstruction/replay validation model",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-010"
+  ],
+  "allowedContext": [
+    "imports/candidates/TASK-011.reconstruction-replay-validation-model.md",
+    "kernel/checkpoint.ts",
+    "kernel/artifact-chain.ts",
+    "state/checkpoints.json",
+    "state/ledger.json",
+    "state/artifact-chains.json",
+    "state/project.graph.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "replay-validation-schema-added",
+    "replay-validation-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

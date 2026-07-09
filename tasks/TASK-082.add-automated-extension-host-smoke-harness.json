@@ -1,0 +1,33 @@
+{
+  "id": "TASK-082",
+  "title": "Add automated extension host smoke harness",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-077",
+    "TASK-078",
+    "TASK-080"
+  ],
+  "allowedContext": [
+    "tests/",
+    "test-workspace/",
+    ".vscode/",
+    "package.json",
+    "docs/thinkio-vscode-plugin-guide.md"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "extension-host-test-harness-added",
+    "activation-smoke-automated",
+    "core-command-smoke-automated",
+    "extension-host-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

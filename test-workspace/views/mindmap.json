@@ -1,0 +1,12 @@
+{
+  "nodes": [
+    {
+      "id": "TASK-SMOKE-001",
+      "label": "Smoke test task",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    }
+  ],
+  "edges": []
+}

@@ -8,3 +8,7 @@ package schemas
 	timezone: string
 	requiredAuthority: "executable"
 }
+
+#ExecutionWindowFile: {
+	windows: [...#ExecutionWindow]
+}

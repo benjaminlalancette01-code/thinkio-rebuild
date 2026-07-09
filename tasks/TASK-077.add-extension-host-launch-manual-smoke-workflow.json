@@ -1,0 +1,33 @@
+{
+  "id": "TASK-077",
+  "title": "Add extension host launch and manual smoke workflow",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-064",
+    "TASK-069"
+  ],
+  "allowedContext": [
+    ".vscode/",
+    "docs/thinkio-vscode-plugin-guide.md",
+    "docs/vscode-plugin-runbook.md",
+    "test-workspace/",
+    "package.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "extension-host-launch-config-added",
+    "manual-smoke-workflow-documented",
+    "test-workspace-fixture-added",
+    "extension-host-smoke-checklist-added"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

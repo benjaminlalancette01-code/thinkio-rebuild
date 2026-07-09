@@ -1,0 +1,36 @@
+{
+  "id": "TASK-064",
+  "title": "Scaffold VS Code extension manifest and activation boundary",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-051",
+    "TASK-052",
+    "TASK-058"
+  ],
+  "allowedContext": [
+    "package.json",
+    "tsconfig.json",
+    "src/extension.ts",
+    "extension/",
+    "media/",
+    "docs/thinkio-full-spec-sheet.md",
+    "audit/vscode-plugin-maturity-audit-2026-07-04.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "vscode-extension-manifest-added",
+    "activation-entrypoint-added",
+    "plugin-contributions-declared",
+    "extension-scaffold-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

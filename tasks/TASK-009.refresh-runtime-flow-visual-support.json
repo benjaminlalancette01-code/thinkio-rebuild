@@ -1,0 +1,32 @@
+{
+  "id": "TASK-009",
+  "title": "Refresh runtime-flow visual support",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-008"
+  ],
+  "allowedContext": [
+    "views/thinkio-runtime-flow.json",
+    "views/kanban.json",
+    "views/mindmap.json",
+    "views/dashboard.json",
+    "kernel/view-projections.ts",
+    "runtime/update-views.ts",
+    "tests/view-projections.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "runtime-flow-drift-identified",
+    "runtime-flow-view-refreshed",
+    "runtime-flow-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -28,3 +28,21 @@ test("creates and finds artifact ledger entries", async () => {
   }
 });
 
+test("artifact ledger records preserve optional metadata", () => {
+  const dependsOn = ["ART-TASK-021-SCHEMA"];
+  const record = createArtifactRecord({
+    id: "ART-TASK-021-RUNTIME",
+    taskId: "TASK-021",
+    path: "kernel/ledger.ts",
+    kind: "kernel",
+    evidence: ["ledger-metadata-preserved"],
+    hash: "hash-ledger",
+    dependsOn,
+    createdAt: "2026-06-30T00:00:00.000Z"
+  });
+
+  dependsOn.push("ART-MUTATED");
+
+  assert.equal(record.hash, "hash-ledger");
+  assert.deepEqual(record.dependsOn, ["ART-TASK-021-SCHEMA"]);
+});

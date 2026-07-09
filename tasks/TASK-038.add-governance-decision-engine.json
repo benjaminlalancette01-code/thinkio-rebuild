@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-038",
+    "title":  "Add governance decision engine",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-032",
+                         "TASK-037"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/state-machine.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/command-registry.ts",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "governance-decision-record-defined",
+                             "action-sensitivity-classifier-added",
+                             "mode-authority-validation-integrated",
+                             "governance-decision-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

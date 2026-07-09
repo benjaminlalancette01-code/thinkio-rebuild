@@ -1,0 +1,31 @@
+{
+    "id":  "TASK-015",
+    "title":  "Evaluate geometry view projection metadata",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-014"
+                     ],
+    "allowedContext":  [
+                           "imports/candidates/TASK-015.geometry-view-projection-metadata.md",
+                           "kernel/view-projections.ts",
+                           "views/mindmap.json",
+                           "views/dashboard.json",
+                           "tests/view-projections.test.ts",
+                           "docs/glossary.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "candidate-note-created",
+                             "geometry-projection-decision-recorded",
+                             "geometry-projection-test-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

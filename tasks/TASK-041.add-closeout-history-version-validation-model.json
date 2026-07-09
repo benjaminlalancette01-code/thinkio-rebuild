@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-041",
+    "title":  "Add closeout history/version validation model",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-034",
+                         "TASK-039",
+                         "TASK-040"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/checkpoint.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/mutation-applier.ts",
+                           "state/checkpoints.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "closeout-record-model-defined",
+                             "history-version-validation-added",
+                             "rollback-anchor-linking-added",
+                             "closeout-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

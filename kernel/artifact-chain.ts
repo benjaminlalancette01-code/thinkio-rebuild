@@ -31,8 +31,18 @@ export function findStaleArtifactIds(records: ArtifactRecord[], currentHashes: R
 
 export function validateArtifactChain(records: ArtifactRecord[], manifest: ArtifactChainManifest): boolean {
   const byId = new Map(records.map((record) => [record.id, record]));
+  const manifestIds = new Set(manifest.artifactIds);
+  const manifestRecords = manifest.artifactIds.map((id) => byId.get(id));
 
   if (!manifest.rootArtifactId || !byId.has(manifest.rootArtifactId)) {
+    return false;
+  }
+
+  if (!manifestIds.has(manifest.rootArtifactId)) {
+    return false;
+  }
+
+  if (byId.get(manifest.rootArtifactId)?.taskId !== manifest.taskId) {
     return false;
   }
 
@@ -40,9 +50,17 @@ export function validateArtifactChain(records: ArtifactRecord[], manifest: Artif
     return false;
   }
 
-  for (const record of records) {
+  if (manifestRecords.some((record) => record?.taskId !== manifest.taskId)) {
+    return false;
+  }
+
+  for (const record of manifestRecords) {
+    if (!record) {
+      return false;
+    }
+
     for (const dependencyId of record.dependsOn ?? []) {
-      if (!byId.has(dependencyId)) {
+      if (!manifestIds.has(dependencyId) || !byId.has(dependencyId)) {
         return false;
       }
     }

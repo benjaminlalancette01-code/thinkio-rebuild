@@ -1,0 +1,64 @@
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 12px;
+}
+
+h1 {
+  font-size: 14px;
+  font-weight: 650;
+  margin: 0 0 10px;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: 650;
+  margin: 0 0 6px;
+}
+
+.thinkio-governance {
+  background: #0b1220;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  margin: 0 0 10px;
+  padding: 10px;
+}
+
+.thinkio-governance[data-state="blocked"],
+.thinkio-governance[data-state="approval-required"] {
+  border-color: #f59e0b;
+}
+
+.thinkio-governance[data-state="proposal-created"] {
+  border-color: #38bdf8;
+}
+
+.thinkio-governance-summary {
+  color: #cbd5e1;
+  font-size: 12px;
+  margin: 0;
+}
+
+.thinkio-governance-blockers {
+  color: #fbbf24;
+  font-size: 12px;
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+pre {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #d1d5db;
+  font-size: 11px;
+  line-height: 1.4;
+  overflow: auto;
+  padding: 10px;
+  white-space: pre-wrap;
+}

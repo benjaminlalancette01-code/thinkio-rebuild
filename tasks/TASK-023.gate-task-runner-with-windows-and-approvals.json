@@ -1,0 +1,31 @@
+{
+  "id": "TASK-023",
+  "title": "Gate task runner with windows and approvals",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-022"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "runtime/task-runner.ts",
+    "runtime/local-dev-runtime.ts",
+    "kernel/execution-window.ts",
+    "kernel/gate.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "task-runner-boundary-gates-added",
+    "task-runner-boundary-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -5,6 +5,7 @@ import {
   buildDashboardView,
   buildKanbanView,
   buildMindmapView,
+  buildProjectGraphFromTasks,
   type DeferredSummaryItem,
   type ProjectGraph
 } from "../kernel/view-projections.ts";
@@ -19,10 +20,12 @@ export async function updateViewFiles(): Promise<void> {
     readJsonFile<ProjectGraph>("state/project.graph.json"),
     readJsonFile<DeferredFile>("state/deferred.json")
   ]);
+  const projectGraph = buildProjectGraphFromTasks(tasks, graph);
 
   await Promise.all([
+    writeJsonFile("state/project.graph.json", projectGraph),
     writeJsonFile("views/kanban.json", buildKanbanView(tasks)),
-    writeJsonFile("views/mindmap.json", buildMindmapView(tasks, graph)),
+    writeJsonFile("views/mindmap.json", buildMindmapView(tasks, projectGraph)),
     writeJsonFile("views/dashboard.json", buildDashboardView(tasks, deferred.items))
   ]);
 }
@@ -48,4 +51,3 @@ async function writeJsonFile(path: string, value: unknown): Promise<void> {
 if (import.meta.url === `file:///${process.argv[1]?.replaceAll("\\", "/")}`) {
   await updateViewFiles();
 }
-

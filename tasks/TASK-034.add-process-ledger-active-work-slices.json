@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-034",
+    "title":  "Add process ledger and active work slices",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030",
+                         "TASK-033"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "state/",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "process-ledger-model-defined",
+                             "active-work-slice-model-defined",
+                             "ledger-validation-added",
+                             "process-ledger-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

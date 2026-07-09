@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-086",
+    "title":  "Evaluate provider registry and capability model",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-037",
+                         "TASK-048",
+                         "TASK-072"
+                     ],
+    "allowedContext":  [
+                           "kernel/provider-boundary.ts",
+                           "kernel/provider-output-ingest.ts",
+                           "kernel/model-contracts.ts",
+                           "tasks/TASK-072.evaluate-remote-model-provider-integration.md",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "provider-registry-scope-reviewed",
+                             "provider-capability-fields-evaluated",
+                             "remote-provider-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

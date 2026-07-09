@@ -20,3 +20,11 @@ package schemas
 	resumeContext: [...string]
 	createdAt: string
 }
+
+#CheckpointFile: {
+	checkpoints: [...#CheckpointRecord]
+}
+
+#HandoffFile: {
+	handoffs: [...#HandoffRecord]
+}

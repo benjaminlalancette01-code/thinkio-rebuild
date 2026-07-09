@@ -19,3 +19,11 @@ package schemas
 	staleArtifactIds: [...string]
 	createdAt: string
 }
+
+#ArtifactLedgerFile: {
+	entries: [...#ArtifactRecord]
+}
+
+#ArtifactChainFile: {
+	manifests: [...#ArtifactChainManifest]
+}

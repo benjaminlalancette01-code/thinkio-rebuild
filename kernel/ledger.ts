@@ -16,6 +16,8 @@ export function createArtifactRecord(input: ArtifactInput): ArtifactRecord {
     path: input.path,
     kind: input.kind,
     evidence: [...input.evidence],
+    ...(input.hash ? { hash: input.hash } : {}),
+    ...(input.dependsOn ? { dependsOn: [...input.dependsOn] } : {}),
     createdAt: input.createdAt ?? new Date().toISOString()
   };
 }
@@ -59,4 +61,3 @@ async function writeLedger(ledgerPath: string, ledger: LedgerFile): Promise<void
 function isMissingFileError(error: unknown): boolean {
   return typeof error === "object" && error !== null && "code" in error && error.code === "ENOENT";
 }
-

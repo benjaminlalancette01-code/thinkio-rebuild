@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-042",
+    "title":  "Add package/history manifest and checksum validation",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-041"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/validate-schemas.ts",
+                           "state/",
+                           "schemas/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "package-history-manifest-model-defined",
+                             "checksum-validation-added",
+                             "manifest-staleness-blockers-added",
+                             "manifest-validation-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

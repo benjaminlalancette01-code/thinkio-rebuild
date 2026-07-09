@@ -1,0 +1,35 @@
+{
+  "id": "TASK-079",
+  "title": "Add live projection refresh and file watchers",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-043",
+    "TASK-049",
+    "TASK-066",
+    "TASK-068"
+  ],
+  "allowedContext": [
+    "extension/",
+    "extension/views/",
+    "views/",
+    "runtime/update-views.ts",
+    "kernel/runtime-projections.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "projection-file-watchers-added",
+    "webview-refresh-event-added",
+    "stale-projection-handling-added",
+    "live-refresh-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

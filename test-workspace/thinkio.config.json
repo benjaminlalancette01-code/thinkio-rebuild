@@ -1,0 +1,6 @@
+{
+  "project": "thinkio-extension-host-test",
+  "authorityRoot": "tasks/",
+  "stateRoot": "state/",
+  "allowArchiveReadsByDefault": false
+}

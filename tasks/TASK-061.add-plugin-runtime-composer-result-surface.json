@@ -1,0 +1,37 @@
+{
+  "id": "TASK-061",
+  "title": "Add plugin runtime composer result surface",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-048",
+    "TASK-050",
+    "TASK-056",
+    "TASK-057",
+    "TASK-059"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "docs/vscode-plugin-view-roadmap.md",
+    "kernel/interaction-surface.ts",
+    "kernel/provider-output-ingest.ts",
+    "kernel/validation-loop.ts",
+    "runtime/command-registry.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "runtime-composer-surface-contract-defined",
+    "runtime-result-state-model-added",
+    "generic-chat-transcript-blocked",
+    "composer-result-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

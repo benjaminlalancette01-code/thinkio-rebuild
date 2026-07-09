@@ -1,0 +1,36 @@
+{
+  "id": "TASK-054",
+  "title": "Implement artifact mind-map plugin view",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-052",
+    "TASK-049",
+    "TASK-005",
+    "TASK-035"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-view-roadmap.md",
+    "kernel/runtime-projections.ts",
+    "kernel/artifact-chain.ts",
+    "kernel/context-card.ts",
+    "kernel/ledger.ts",
+    "views/mindmap.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "artifact-mindmap-view-defined",
+    "artifact-source-context-node-types-added",
+    "mindmap-actions-route-through-runtime",
+    "artifact-mindmap-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

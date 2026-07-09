@@ -12,3 +12,7 @@ package schemas
 	requiredEvidence: [...string]
 	status: #DeferredStatus
 }
+
+#DeferredFile: {
+	items: [...#DeferredItem]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "TASK-063",
+  "title": "Evaluate historical chat log import policy",
+  "mode": "review",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-041",
+    "TASK-059"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "audit/v1.1.1-plugin-interaction-emulation-gap-report-2026-07-03.md",
+    "kernel/package-history.ts",
+    "kernel/interaction-surface.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "historical-chat-log-import-policy-reviewed",
+    "legacy-transcript-authority-boundary-defined",
+    "historical-log-import-decision-recorded"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": false
+}

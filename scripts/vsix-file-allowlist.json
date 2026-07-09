@@ -1,0 +1,28 @@
+{
+  "files": [
+    "package.json",
+    "extension/extension.js",
+    "extension/contracts.js",
+    "extension/commands.js",
+    "extension/runtime-bridge.js",
+    "extension/projection-watchers.js",
+    "extension/views/core-view-providers.js",
+    "extension/views/composer-proposal-providers.js",
+    "extension/views/webview-html.js",
+    "extension/views/webview-messages.js",
+    "extension/views/governance-ui.js",
+    "extension/state/workspace-state.js",
+    "extension/interaction/stores.js",
+    "media/thinkio.svg",
+    "media/thinkio.css",
+    "media/task-kanban.js",
+    "media/artifact-mindmap.js",
+    "media/runtime-node-diagram.js",
+    "media/runtime-composer.js",
+    "media/proposal-review.js",
+    "docs/extension-host-smoke-checklist.md",
+    "docs/canonical-runtime-persistence-boundary.md",
+    "docs/vscode-plugin-runbook.md",
+    "docs/thinkio-vscode-plugin-guide.md"
+  ]
+}

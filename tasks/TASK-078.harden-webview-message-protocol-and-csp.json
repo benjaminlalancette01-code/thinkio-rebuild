@@ -1,0 +1,32 @@
+{
+  "id": "TASK-078",
+  "title": "Harden webview message protocol and CSP",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-066",
+    "TASK-067"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "extension/contracts.js",
+    "media/",
+    "kernel/plugin-view-contracts.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "webview-message-schema-added",
+    "webview-command-allowlist-enforced",
+    "webview-csp-asset-uris-hardened",
+    "webview-message-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

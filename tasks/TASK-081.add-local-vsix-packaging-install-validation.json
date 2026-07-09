@@ -1,0 +1,32 @@
+{
+  "id": "TASK-081",
+  "title": "Add local VSIX packaging and install validation",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-069",
+    "TASK-077"
+  ],
+  "allowedContext": [
+    "package.json",
+    "scripts/",
+    "docs/thinkio-vscode-plugin-guide.md",
+    "docs/vscode-plugin-runbook.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "local-vsix-build-path-added",
+    "local-install-validation-added",
+    "packaged-file-allowlist-added",
+    "vsix-validation-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-048",
+    "title":  "Add provider/app output ingest record and validation pipeline",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-037",
+                         "TASK-046",
+                         "TASK-047"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/validate-schemas.ts",
+                           "schemas/",
+                           "state/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "provider-output-record-model-defined",
+                             "ingest-validation-pipeline-added",
+                             "governance-disposition-routing-added",
+                             "provider-output-ingest-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

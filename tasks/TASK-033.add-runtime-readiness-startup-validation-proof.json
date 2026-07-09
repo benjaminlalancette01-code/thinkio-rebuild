@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-033",
+    "title":  "Add runtime readiness/startup validation proof",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030",
+                         "TASK-032"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/validate-schemas.ts",
+                           "runtime/update-views.ts",
+                           "state/",
+                           "views/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "runtime-readiness-proof-model-defined",
+                             "startup-validation-checks-added",
+                             "readiness-blocker-output-added",
+                             "readiness-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

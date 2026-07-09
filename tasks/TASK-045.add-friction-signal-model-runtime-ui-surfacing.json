@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-045",
+    "title":  "Add friction signal model and runtime/UI surfacing",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-035",
+                         "TASK-039",
+                         "TASK-044"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/view-projections.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "views/kanban.json",
+                           "views/mindmap.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "friction-signal-model-defined",
+                             "friction-status-lifecycle-added",
+                             "friction-view-projection-added",
+                             "friction-signal-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

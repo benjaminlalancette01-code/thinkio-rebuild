@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-037",
+    "title":  "Add provider adapter and model output classifier boundary",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-036"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/command-registry.ts",
+                           "schemas/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "provider-adapter-interface-added",
+                             "output-classifier-added",
+                             "provider-output-normalization-tested",
+                             "provider-boundary-documented"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

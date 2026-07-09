@@ -6,3 +6,4 @@ It is not an AI model and not merely a second brain. Its job is to control task 
 
 The core primitive is the governed task object.
 
+The current implementation target is a working VS Code plugin that makes the governed task/runtime layer usable inside local project work. A full standalone app with a native chatbox can come later, after the plugin proves the runtime boundary.

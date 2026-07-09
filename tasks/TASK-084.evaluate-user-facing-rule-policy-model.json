@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-084",
+    "title":  "Evaluate user-facing rule policy model",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-032",
+                         "TASK-047",
+                         "TASK-080"
+                     ],
+    "allowedContext":  [
+                           "docs/operating-rules.md",
+                           "kernel/mode-policy.ts",
+                           "kernel/work-package.ts",
+                           "kernel/plugin-view-contracts.ts",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "rule-policy-scope-reviewed",
+                             "locked-default-opt-in-custom-rule-tiers-evaluated",
+                             "plugin-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

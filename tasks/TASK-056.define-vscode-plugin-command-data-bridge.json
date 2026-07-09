@@ -1,0 +1,37 @@
+{
+  "id": "TASK-056",
+  "title": "Define VS Code plugin command and data bridge",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-052",
+    "TASK-047",
+    "TASK-048",
+    "TASK-050"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "docs/vscode-plugin-view-roadmap.md",
+    "kernel/work-package.ts",
+    "kernel/provider-output-ingest.ts",
+    "kernel/interaction-surface.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/command-registry.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "plugin-command-bridge-defined",
+    "plugin-view-data-provider-contract-added",
+    "runtime-command-routing-added",
+    "plugin-bridge-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

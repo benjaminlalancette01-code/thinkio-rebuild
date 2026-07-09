@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-046",
+    "title":  "Add external/model/third-party intake review pipeline",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-038",
+                         "TASK-044",
+                         "TASK-045"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "schemas/",
+                           "state/",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "intake-record-model-defined",
+                             "external-output-classification-added",
+                             "promotion-decision-flow-added",
+                             "intake-pipeline-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -55,6 +55,587 @@
       "kind": "task",
       "status": "done",
       "authority": "accepted"
+    },
+    {
+      "id": "TASK-009",
+      "label": "Refresh runtime-flow visual support",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-010",
+      "label": "Import governed decomposition model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-011",
+      "label": "Import reconstruction/replay validation model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-012",
+      "label": "Import governed mutation transaction model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-013",
+      "label": "Import approval-boundary runtime",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-014",
+      "label": "Add governor/orchestrator/model glossary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-015",
+      "label": "Evaluate geometry view projection metadata",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-016",
+      "label": "Add TypeScript typecheck dependency",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-017",
+      "label": "Reconcile command registry runtime entrypoints",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-018",
+      "label": "Wire approved mutation transaction planning",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-019",
+      "label": "Extend CUE validation to runtime state schemas",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-020",
+      "label": "Load approval state in runtime boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-021",
+      "label": "Preserve ledger artifact metadata",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-022",
+      "label": "Enforce artifact chain task scope",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-023",
+      "label": "Gate task runner with windows and approvals",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-024",
+      "label": "Refresh runtime flow after audit",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-025",
+      "label": "Formalize authority transition model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-026",
+      "label": "Add atomic mutation transaction applier",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-027",
+      "label": "Implement reserved runtime entrypoints",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-028",
+      "label": "Decide Kanban Markdown sync boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-029",
+      "label": "Define full product runtime boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-030",
+      "label": "Add native step/workboard model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-031",
+      "label": "Add parallel branch and return-anchor model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-032",
+      "label": "Add mode policy engine and review-before-lock gate",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-033",
+      "label": "Add runtime readiness/startup validation proof",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-034",
+      "label": "Add process ledger and active work slices",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-035",
+      "label": "Add typed context dependency and context card model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-036",
+      "label": "Add model input/output contract schemas",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-037",
+      "label": "Add provider adapter and model output classifier boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-038",
+      "label": "Add governance decision engine",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-039",
+      "label": "Add runtime validation loop stages",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-040",
+      "label": "Add general file action proposal model and writer boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-041",
+      "label": "Add closeout history/version validation model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-042",
+      "label": "Add package/history manifest and checksum validation",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-043",
+      "label": "Replace external Kanban dependency with native ThinkIO board projection",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-044",
+      "label": "Add derivation report model for runtime translation receipts",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-045",
+      "label": "Add friction signal model and runtime/UI surfacing",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-046",
+      "label": "Add external/model/third-party intake review pipeline",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-047",
+      "label": "Add work package export model for bounded model/app handoff",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-048",
+      "label": "Add provider/app output ingest record and validation pipeline",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-049",
+      "label": "Add native mind-map dependency projection",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-050",
+      "label": "Add user-to-ThinkIO-to-model interaction surface contract",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-051",
+      "label": "Define VS Code plugin runtime shell boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-052",
+      "label": "Define self-contained VS Code plugin view architecture",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-053",
+      "label": "Implement native task Kanban plugin view",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-054",
+      "label": "Implement artifact mind-map plugin view",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-055",
+      "label": "Implement interactive runtime node diagram plugin view",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-056",
+      "label": "Define VS Code plugin command and data bridge",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-057",
+      "label": "Define plugin cross-view selection and sync",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-058",
+      "label": "Validate plugin self-contained view bundle",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-059",
+      "label": "Add plugin interaction log boundary model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-060",
+      "label": "Add chat-to-task proposal pipeline",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-061",
+      "label": "Add plugin runtime composer result surface",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-062",
+      "label": "Evaluate trace mode transcript preservation policy",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-063",
+      "label": "Evaluate historical chat log import policy",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-064",
+      "label": "Scaffold VS Code extension manifest and activation boundary",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-065",
+      "label": "Implement VS Code command adapter and runtime bridge",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-066",
+      "label": "Implement native VS Code webview providers for core views",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-067",
+      "label": "Implement runtime composer and proposal review plugin panels",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-068",
+      "label": "Add plugin workspace state persistence",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-069",
+      "label": "Add VS Code extension packaging and smoke validation",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-070",
+      "label": "Evaluate marketplace publishing metadata policy",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-071",
+      "label": "Evaluate signed release and installer polish",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-072",
+      "label": "Evaluate remote model provider integration",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-073",
+      "label": "Evaluate full standalone app chatbox",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-074",
+      "label": "Evaluate transcript-grade audit capture implementation",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-075",
+      "label": "Evaluate cross-machine plugin state sync",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-076",
+      "label": "Evaluate canonical runtime persistence beyond plugin UI state",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-077",
+      "label": "Add extension host launch and manual smoke workflow",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-078",
+      "label": "Harden webview message protocol and CSP",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-079",
+      "label": "Add live projection refresh and file watchers",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-080",
+      "label": "Render governance results and blockers in plugin UI",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-081",
+      "label": "Add local VSIX packaging and install validation",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-082",
+      "label": "Add automated extension host smoke harness",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-083",
+      "label": "Repair project graph coverage and validation",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-084",
+      "label": "Evaluate user-facing rule policy model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-085",
+      "label": "Evaluate artifact disposition and quarantine model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-086",
+      "label": "Evaluate provider registry and capability model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-087",
+      "label": "Evaluate multi-project registry and profile model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-088",
+      "label": "Evaluate chat session and provider turn ingest model",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-089",
+      "label": "Evaluate project management and decision layer",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-090",
+      "label": "Evaluate runtime maturity ledger",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-091",
+      "label": "Add task intake priority reorder workflow",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     }
   ],
   "edges": [
@@ -91,6 +672,971 @@
     {
       "from": "TASK-008",
       "to": "TASK-007",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-009",
+      "to": "TASK-008",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-010",
+      "to": "TASK-008",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-011",
+      "to": "TASK-010",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-012",
+      "to": "TASK-011",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-013",
+      "to": "TASK-012",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-014",
+      "to": "TASK-024",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-015",
+      "to": "TASK-014",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-016",
+      "to": "TASK-013",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-017",
+      "to": "TASK-016",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-018",
+      "to": "TASK-017",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-019",
+      "to": "TASK-018",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-020",
+      "to": "TASK-019",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-021",
+      "to": "TASK-020",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-022",
+      "to": "TASK-021",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-023",
+      "to": "TASK-022",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-024",
+      "to": "TASK-023",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-025",
+      "to": "TASK-024",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-026",
+      "to": "TASK-025",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-027",
+      "to": "TASK-026",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-028",
+      "to": "TASK-027",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-029",
+      "to": "TASK-028",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-030",
+      "to": "TASK-028",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-031",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-032",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-033",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-033",
+      "to": "TASK-032",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-034",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-034",
+      "to": "TASK-033",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-035",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-035",
+      "to": "TASK-034",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-036",
+      "to": "TASK-032",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-036",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-037",
+      "to": "TASK-036",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-038",
+      "to": "TASK-032",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-038",
+      "to": "TASK-037",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-039",
+      "to": "TASK-033",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-039",
+      "to": "TASK-038",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-040",
+      "to": "TASK-038",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-040",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-041",
+      "to": "TASK-034",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-041",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-041",
+      "to": "TASK-040",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-042",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-043",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-043",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-043",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-044",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-044",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-045",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-045",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-045",
+      "to": "TASK-044",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-046",
+      "to": "TASK-038",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-046",
+      "to": "TASK-044",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-046",
+      "to": "TASK-045",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-047",
+      "to": "TASK-036",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-047",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-047",
+      "to": "TASK-046",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-048",
+      "to": "TASK-037",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-048",
+      "to": "TASK-046",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-048",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-049",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-049",
+      "to": "TASK-043",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-049",
+      "to": "TASK-045",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-049",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-050",
+      "to": "TASK-043",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-050",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-050",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-050",
+      "to": "TASK-049",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-051",
+      "to": "TASK-050",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-052",
+      "to": "TASK-051",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-053",
+      "to": "TASK-043",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-053",
+      "to": "TASK-052",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-054",
+      "to": "TASK-005",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-054",
+      "to": "TASK-035",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-054",
+      "to": "TASK-049",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-054",
+      "to": "TASK-052",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-055",
+      "to": "TASK-015",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-055",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-055",
+      "to": "TASK-044",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-055",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-055",
+      "to": "TASK-052",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-056",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-056",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-056",
+      "to": "TASK-050",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-056",
+      "to": "TASK-052",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-057",
+      "to": "TASK-053",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-057",
+      "to": "TASK-054",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-057",
+      "to": "TASK-055",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-057",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-058",
+      "to": "TASK-053",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-058",
+      "to": "TASK-054",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-058",
+      "to": "TASK-055",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-058",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-059",
+      "to": "TASK-034",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-059",
+      "to": "TASK-050",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-059",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-060",
+      "to": "TASK-046",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-060",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-060",
+      "to": "TASK-057",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-060",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-061",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-061",
+      "to": "TASK-050",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-061",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-061",
+      "to": "TASK-057",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-061",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-062",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-062",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-063",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-063",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-064",
+      "to": "TASK-051",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-064",
+      "to": "TASK-052",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-064",
+      "to": "TASK-058",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-065",
+      "to": "TASK-056",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-065",
+      "to": "TASK-057",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-065",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-066",
+      "to": "TASK-053",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-066",
+      "to": "TASK-054",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-066",
+      "to": "TASK-055",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-066",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-066",
+      "to": "TASK-065",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-067",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-067",
+      "to": "TASK-060",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-067",
+      "to": "TASK-061",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-067",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-067",
+      "to": "TASK-065",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-068",
+      "to": "TASK-057",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-068",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-068",
+      "to": "TASK-066",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-068",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-069",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-069",
+      "to": "TASK-065",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-069",
+      "to": "TASK-066",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-069",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-069",
+      "to": "TASK-068",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-070",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-070",
+      "to": "TASK-069",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-071",
+      "to": "TASK-069",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-071",
+      "to": "TASK-070",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-072",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-072",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-072",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-073",
+      "to": "TASK-029",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-073",
+      "to": "TASK-061",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-073",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-074",
+      "to": "TASK-062",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-074",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-075",
+      "to": "TASK-068",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-076",
+      "to": "TASK-012",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-076",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-076",
+      "to": "TASK-068",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-077",
+      "to": "TASK-064",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-077",
+      "to": "TASK-069",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-078",
+      "to": "TASK-066",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-078",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-079",
+      "to": "TASK-043",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-079",
+      "to": "TASK-049",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-079",
+      "to": "TASK-066",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-079",
+      "to": "TASK-068",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-080",
+      "to": "TASK-038",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-080",
+      "to": "TASK-039",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-080",
+      "to": "TASK-065",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-080",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-081",
+      "to": "TASK-069",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-081",
+      "to": "TASK-077",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-082",
+      "to": "TASK-077",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-082",
+      "to": "TASK-078",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-082",
+      "to": "TASK-080",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-083",
+      "to": "TASK-049",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-084",
+      "to": "TASK-032",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-084",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-084",
+      "to": "TASK-080",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-085",
+      "to": "TASK-005",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-085",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-085",
+      "to": "TASK-080",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-086",
+      "to": "TASK-037",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-086",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-086",
+      "to": "TASK-072",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-087",
+      "to": "TASK-029",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-087",
+      "to": "TASK-077",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-087",
+      "to": "TASK-083",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-088",
+      "to": "TASK-059",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-088",
+      "to": "TASK-060",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-088",
+      "to": "TASK-063",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-088",
+      "to": "TASK-067",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-089",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-089",
+      "to": "TASK-034",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-089",
+      "to": "TASK-083",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-090",
+      "to": "TASK-069",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-090",
+      "to": "TASK-082",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-091",
+      "to": "TASK-003",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-091",
+      "to": "TASK-030",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-091",
+      "to": "TASK-057",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-091",
+      "to": "TASK-083",
       "label": "depends-on"
     }
   ]

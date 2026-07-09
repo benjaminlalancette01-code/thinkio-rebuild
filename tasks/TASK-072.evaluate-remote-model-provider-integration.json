@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-072",
+    "title":  "Evaluate remote model provider integration",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-047",
+                         "TASK-048",
+                         "TASK-067"
+                     ],
+    "allowedContext":  [
+                           "kernel/work-package.ts",
+                           "kernel/provider-output-ingest.ts",
+                           "docs/thinkio-full-spec-sheet.md",
+                           "docs/vscode-plugin-runbook.md",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "remote-provider-boundary-reviewed",
+                             "provider-secret-policy-defined",
+                             "remote-model-non-mvp-scope-recorded"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

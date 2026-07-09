@@ -1,0 +1,30 @@
+{
+    "id":  "TASK-029",
+    "title":  "Define full product runtime boundary",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-028"
+                     ],
+    "allowedContext":  [
+                           "audit/current-state-report-2026-06-30.md",
+                           "docs/architecture.md",
+                           "docs/vision.md",
+                           "docs/operating-rules.md",
+                           "views/thinkio-runtime-flow.json"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "missing-work-task-created",
+                             "product-runtime-boundary-defined",
+                             "runtime-roadmap-note-added"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

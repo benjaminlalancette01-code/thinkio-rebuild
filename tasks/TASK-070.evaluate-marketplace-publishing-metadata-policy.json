@@ -1,0 +1,30 @@
+{
+    "id":  "TASK-070",
+    "title":  "Evaluate marketplace publishing metadata policy",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-064",
+                         "TASK-069"
+                     ],
+    "allowedContext":  [
+                           "package.json",
+                           "docs/vscode-plugin-runbook.md",
+                           "audit/vscode-plugin-maturity-audit-2026-07-04.md",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "marketplace-metadata-policy-reviewed",
+                             "publishing-readiness-boundary-defined",
+                             "marketplace-non-mvp-scope-recorded"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

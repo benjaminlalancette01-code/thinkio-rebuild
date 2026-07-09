@@ -1,0 +1,30 @@
+{
+    "id":  "TASK-074",
+    "title":  "Evaluate transcript-grade audit capture implementation",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-062",
+                         "TASK-067"
+                     ],
+    "allowedContext":  [
+                           "docs/trace-transcript-policy.md",
+                           "kernel/plugin-view-contracts.ts",
+                           "extension/interaction/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "transcript-grade-capture-implementation-reviewed",
+                             "audit-capture-storage-boundary-defined",
+                             "transcript-capture-non-default-rule-preserved"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

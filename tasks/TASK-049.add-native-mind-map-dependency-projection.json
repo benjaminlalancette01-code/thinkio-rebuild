@@ -1,0 +1,36 @@
+{
+    "id":  "TASK-049",
+    "title":  "Add native mind-map dependency projection",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-035",
+                         "TASK-043",
+                         "TASK-045",
+                         "TASK-048"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/view-projections.ts",
+                           "runtime/update-views.ts",
+                           "state/project.graph.json",
+                           "views/mindmap.json",
+                           "views/kanban.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "mindmap-node-vocabulary-defined",
+                             "mindmap-edge-vocabulary-defined",
+                             "runtime-state-projection-added",
+                             "mindmap-projection-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

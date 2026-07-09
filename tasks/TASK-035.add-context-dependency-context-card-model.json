@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-035",
+    "title":  "Add typed context dependency and context card model",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030",
+                         "TASK-034"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/context-router.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "state/project.graph.json",
+                           "views/mindmap.json",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "context-dependency-model-defined",
+                             "context-card-model-defined",
+                             "context-card-promotion-rules-added",
+                             "context-card-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

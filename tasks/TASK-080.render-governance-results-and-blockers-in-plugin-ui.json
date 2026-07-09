@@ -1,0 +1,35 @@
+{
+  "id": "TASK-080",
+  "title": "Render governance results and blockers in plugin UI",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-038",
+    "TASK-039",
+    "TASK-065",
+    "TASK-067"
+  ],
+  "allowedContext": [
+    "extension/commands.js",
+    "extension/views/",
+    "media/",
+    "kernel/governance-decision.ts",
+    "kernel/validation-loop.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "governance-result-ui-model-added",
+    "blocker-rendering-added",
+    "proposal-review-result-rendering-added",
+    "governance-ui-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-085",
+    "title":  "Evaluate artifact disposition and quarantine model",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-005",
+                         "TASK-048",
+                         "TASK-080"
+                     ],
+    "allowedContext":  [
+                           "kernel/artifact-chain.ts",
+                           "kernel/provider-output-ingest.ts",
+                           "schemas/artifact.schema.cue",
+                           "state/artifact-chains.json",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "artifact-disposition-gap-reviewed",
+                             "quarantine-supersession-stale-states-evaluated",
+                             "plugin-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

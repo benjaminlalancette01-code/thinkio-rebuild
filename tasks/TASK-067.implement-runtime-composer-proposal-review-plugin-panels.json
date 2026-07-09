@@ -1,0 +1,37 @@
+{
+  "id": "TASK-067",
+  "title": "Implement runtime composer and proposal review plugin panels",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-059",
+    "TASK-060",
+    "TASK-061",
+    "TASK-064",
+    "TASK-065"
+  ],
+  "allowedContext": [
+    "src/views/",
+    "src/commands/",
+    "media/",
+    "kernel/plugin-view-contracts.ts",
+    "kernel/interaction-surface.ts",
+    "kernel/provider-output-ingest.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "runtime-composer-panel-added",
+    "proposal-review-panel-added",
+    "interaction-log-write-path-added",
+    "composer-panel-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

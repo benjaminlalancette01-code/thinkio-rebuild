@@ -1,0 +1,35 @@
+{
+  "id": "TASK-052",
+  "title": "Define self-contained VS Code plugin view architecture",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-051"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "docs/vscode-plugin-view-roadmap.md",
+    "docs/operating-rules.md",
+    "kernel/runtime-projections.ts",
+    "runtime/local-dev-runtime.ts",
+    "views/kanban.json",
+    "views/mindmap.json",
+    "views/thinkio-runtime-flow.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "plugin-view-architecture-defined",
+    "no-external-plugin-dependency-rule-added",
+    "shared-view-state-contract-defined",
+    "plugin-view-architecture-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

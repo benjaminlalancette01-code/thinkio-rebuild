@@ -1,0 +1,31 @@
+{
+    "id":  "TASK-073",
+    "title":  "Evaluate full standalone app chatbox",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-029",
+                         "TASK-061",
+                         "TASK-067"
+                     ],
+    "allowedContext":  [
+                           "docs/product-runtime-boundary.md",
+                           "docs/thinkio-full-spec-sheet.md",
+                           "docs/vscode-plugin-runtime-shell.md",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "standalone-chatbox-scope-reviewed",
+                             "full-app-chat-non-mvp-boundary-defined",
+                             "chatbox-runtime-authority-boundary-preserved"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

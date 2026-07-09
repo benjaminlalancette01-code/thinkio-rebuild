@@ -1,0 +1,34 @@
+{
+  "id": "TASK-053",
+  "title": "Implement native task Kanban plugin view",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-052",
+    "TASK-043"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-view-roadmap.md",
+    "docs/kanban-markdown-sync-boundary.md",
+    "kernel/runtime-projections.ts",
+    "kernel/workboard.ts",
+    "runtime/local-dev-runtime.ts",
+    "views/kanban.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "native-task-kanban-view-defined",
+    "kanban-lanes-map-runtime-state",
+    "kanban-actions-route-through-runtime",
+    "kanban-plugin-view-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

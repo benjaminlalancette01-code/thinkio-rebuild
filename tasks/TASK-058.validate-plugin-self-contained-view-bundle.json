@@ -1,0 +1,33 @@
+{
+  "id": "TASK-058",
+  "title": "Validate plugin self-contained view bundle",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-053",
+    "TASK-054",
+    "TASK-055",
+    "TASK-056"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-view-roadmap.md",
+    "package.json",
+    "runtime/command-registry.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "plugin-view-bundle-self-contained",
+    "external-plugin-dependency-check-added",
+    "view-assets-packaging-plan-added",
+    "self-contained-plugin-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

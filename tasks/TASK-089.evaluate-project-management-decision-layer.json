@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-089",
+    "title":  "Evaluate project management and decision layer",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-030",
+                         "TASK-034",
+                         "TASK-083"
+                     ],
+    "allowedContext":  [
+                           "kernel/workboard.ts",
+                           "kernel/process-ledger.ts",
+                           "state/project.graph.json",
+                           "views/dashboard.json",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-management-gap-reviewed",
+                             "decision-milestone-risk-records-evaluated",
+                             "dashboard-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

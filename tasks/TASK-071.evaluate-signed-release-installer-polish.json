@@ -1,0 +1,30 @@
+{
+    "id":  "TASK-071",
+    "title":  "Evaluate signed release and installer polish",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-069",
+                         "TASK-070"
+                     ],
+    "allowedContext":  [
+                           "docs/vscode-plugin-runbook.md",
+                           "scripts/",
+                           "package.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "signed-release-policy-reviewed",
+                             "installer-polish-scope-recorded",
+                             "release-hardening-non-mvp-boundary-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

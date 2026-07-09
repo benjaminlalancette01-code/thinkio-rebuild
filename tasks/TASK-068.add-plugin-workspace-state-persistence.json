@@ -1,0 +1,34 @@
+{
+  "id": "TASK-068",
+  "title": "Add plugin workspace state persistence",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-057",
+    "TASK-064",
+    "TASK-066",
+    "TASK-067"
+  ],
+  "allowedContext": [
+    "src/state/",
+    "src/views/",
+    "kernel/plugin-view-contracts.ts",
+    "state/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "workspace-state-store-added",
+    "selected-record-persistence-added",
+    "layout-state-authority-boundary-preserved",
+    "workspace-state-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

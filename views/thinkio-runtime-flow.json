@@ -71,11 +71,15 @@
       "stateMachine": {
         "file": "kernel/state-machine.ts",
         "status": "implemented",
-        "responsibility": "Defines allowed task status transitions.",
+        "responsibility": "Defines allowed task status transitions, authority transitions, and authority/status compatibility.",
         "exports": [
           "isTransitionAllowed",
           "assertTransitionAllowed",
-          "allowedNextStatuses"
+          "allowedNextStatuses",
+          "isAuthorityTransitionAllowed",
+          "assertAuthorityTransitionAllowed",
+          "allowedNextAuthorities",
+          "isAuthorityCompatibleWithStatus"
         ],
         "flow": [
           "idea -> candidate",
@@ -87,8 +91,19 @@
           "done -> archived",
           "rejected -> archived"
         ],
+        "authorityFlow": [
+          "idea -> candidate",
+          "candidate -> accepted",
+          "candidate -> rejected",
+          "accepted -> frozen",
+          "frozen -> executable",
+          "executable -> final",
+          "final -> archived",
+          "rejected -> archived"
+        ],
         "coveredByTasks": [
-          "TASK-001"
+          "TASK-001",
+          "TASK-025"
         ]
       },
       "gate": {
@@ -167,7 +182,7 @@
       "ledger": {
         "file": "kernel/ledger.ts",
         "status": "implemented",
-        "responsibility": "Creates and stores artifact records.",
+        "responsibility": "Creates and stores artifact records, preserving optional hash and dependency metadata.",
         "schema": "schemas/artifact.schema.cue",
         "stateFile": "state/ledger.json",
         "exports": [
@@ -176,13 +191,14 @@
           "findArtifactById"
         ],
         "coveredByTasks": [
-          "TASK-005"
+          "TASK-005",
+          "TASK-021"
         ]
       },
       "artifactChain": {
         "file": "kernel/artifact-chain.ts",
         "status": "implemented",
-        "responsibility": "Builds artifact chain manifests, checks dependency references, and surfaces stale artifact hashes.",
+        "responsibility": "Builds artifact chain manifests, checks dependency references, enforces task scope, and surfaces stale artifact hashes.",
         "schema": "schemas/artifact.schema.cue#ArtifactChainManifest",
         "stateFile": "state/artifact-chains.json",
         "exports": [
@@ -191,7 +207,8 @@
           "validateArtifactChain"
         ],
         "coveredByTasks": [
-          "TASK-005"
+          "TASK-005",
+          "TASK-022"
         ]
       },
       "checkpoint": {
@@ -209,6 +226,50 @@
         "coveredByTasks": [
           "TASK-007"
         ]
+      },
+      "decomposition": {
+        "file": "kernel/decomposition.ts",
+        "status": "implemented",
+        "responsibility": "Preserves parent dependencies, required evidence, checkpoints, and reconstruction paths across governed child tasks.",
+        "schema": "schemas/decomposition.schema.cue",
+        "exports": [
+          "createDecompositionRecord",
+          "validateDecompositionRecord",
+          "explainDecompositionBlockers"
+        ],
+        "coveredByTasks": [
+          "TASK-010"
+        ]
+      },
+      "replayValidation": {
+        "file": "kernel/replay-validation.ts",
+        "status": "implemented",
+        "responsibility": "Checks whether reconstruction can be replayed from required state files, checkpoints, artifacts, artifact chains, and graph nodes.",
+        "schema": "schemas/replay-validation.schema.cue",
+        "exports": [
+          "createReplayValidationManifest",
+          "validateReplayReadiness",
+          "explainReplayReadinessBlockers"
+        ],
+        "coveredByTasks": [
+          "TASK-011"
+        ]
+      },
+      "mutationTransaction": {
+        "file": "kernel/mutation-transaction.ts",
+        "status": "implemented",
+        "responsibility": "Plans evidence-gated status and authority changes with ledger, checkpoint, rollback effects, and explicit authority transition validation.",
+        "schema": "schemas/mutation-transaction.schema.cue",
+        "exports": [
+          "createMutationTransactionRecord",
+          "explainMutationTransactionBlockers",
+          "validateMutationTransaction"
+        ],
+        "coveredByTasks": [
+          "TASK-012",
+          "TASK-018",
+          "TASK-025"
+        ]
       }
     },
     "runtime": {
@@ -220,11 +281,25 @@
           "validate-json-task-files",
           "validate-cue-schemas",
           "validate-transitions",
+          "apply-mutation-transaction",
+          "plan-mutation-transaction",
           "update-views",
           "build-context-packet",
           "run-tests",
           "write-checkpoint"
         ],
+        "implementedActions": [
+          "validate-json-task-files",
+          "validate-cue-schemas",
+          "validate-transitions",
+          "apply-mutation-transaction",
+          "plan-mutation-transaction",
+          "update-views",
+          "build-context-packet",
+          "run-tests",
+          "write-checkpoint"
+        ],
+        "reservedActions": [],
         "blockedActions": [
           "destructive-shell-commands",
           "external-api-calls",
@@ -236,40 +311,89 @@
       "cueValidator": {
         "file": "runtime/cue-validator.ts",
         "status": "implemented",
-        "responsibility": "Discovers task JSON files and validates them with CUE.",
+        "responsibility": "Discovers governed task JSON and canonical state JSON files, then validates them with CUE.",
         "entryPoints": [
           "discoverTaskCueValidationTargets",
+          "discoverWorkspaceCueValidationTargets",
           "validateCueTargets",
           "validateDiscoveredTaskSchemas",
+          "validateWorkspaceCueSchemas",
           "summarizeCueValidationResults"
         ],
-        "externalCommand": "cue vet <task.json> schemas/task.schema.cue -d #GovernedTask",
+        "externalCommand": "cue vet <json> <schema.cue> -d <definition>",
         "modes": [
           "strict",
           "soft"
         ],
         "coveredByTasks": [
-          "TASK-002"
+          "TASK-002",
+          "TASK-019"
         ]
       },
       "localDevRuntime": {
         "file": "runtime/local-dev-runtime.ts",
-        "status": "implemented-basic",
-        "responsibility": "Gates local runtime actions before building previews or validating schemas.",
+        "status": "implemented",
+        "responsibility": "Gates local runtime actions, applies approval boundaries, loads approval state, validates schemas, updates views, plans mutation transactions, applies approved mutation transactions, validates JSON task files, validates transition state, and runs local tests.",
         "flows": [
           "buildTaskRuntimePreview -> assert build-context-packet -> assert write-checkpoint -> buildContextPacket + createCheckpoint",
-          "validateWorkspaceSchemas -> assert validate-cue-schemas -> discover or validate CUE targets"
+          "buildTaskRuntimePreviewFromState -> read state/approvals.json -> buildTaskRuntimePreview",
+          "planMutationTransaction -> assert plan-mutation-transaction -> approval boundary -> kernel mutation transaction validation",
+          "planMutationTransactionFromState -> read state/approvals.json -> planMutationTransaction",
+          "applyMutationTransaction -> assert apply-mutation-transaction -> approval boundary -> mutation applier guarded writes",
+          "validateJsonTaskFiles -> parse governed task JSON files before schema validation",
+          "validateTaskTransitionStates -> check status/authority compatibility",
+          "runLocalTests -> run or inject npm test command execution",
+          "validateWorkspaceSchemas -> assert validate-cue-schemas -> discover or validate task and state CUE targets",
+          "updateWorkspaceViews -> assert update-views -> regenerate visual projections"
+        ],
+        "approvalRequiredActions": [
+          "apply-mutation-transaction",
+          "plan-mutation-transaction",
+          "write-checkpoint"
+        ],
+        "coveredByTasks": [
+          "TASK-013",
+          "TASK-018",
+          "TASK-020",
+          "TASK-026",
+          "TASK-027"
+        ]
+      },
+      "mutationApplier": {
+        "file": "runtime/mutation-applier.ts",
+        "status": "implemented-guarded",
+        "responsibility": "Applies validated mutation transactions to task, ledger, checkpoint, and rollback files through guarded temp-file writes.",
+        "entryPoints": [
+          "applyMutationTransactionToWorkspace"
+        ],
+        "writes": [
+          "task JSON status and authority",
+          "state/ledger.json artifact effects",
+          "state/checkpoints.json checkpoint effects",
+          "state/mutation-rollbacks.json rollback metadata"
+        ],
+        "coveredByTasks": [
+          "TASK-026"
         ]
       },
       "taskRunner": {
         "file": "runtime/task-runner.ts",
-        "status": "implemented-basic",
-        "responsibility": "Prepares a task run by checking execution permission and building a context packet.",
+        "status": "implemented-guarded",
+        "responsibility": "Prepares a task run by checking executable status, optional execution windows, optional approval boundaries, and context packet construction.",
         "outputs": [
           "taskId",
           "canExecute",
           "blockedReasons",
           "contextPacket"
+        ],
+        "optionalInputs": [
+          "ExecutionWindow",
+          "ApprovalRecord[]",
+          "ApprovalRequiredLocalDevAction",
+          "Date"
+        ],
+        "coveredByTasks": [
+          "TASK-023"
         ]
       },
       "fileWatcher": {
@@ -294,13 +418,37 @@
           "validate:cue:soft",
           "check"
         ]
+      },
+      "updateViewsCli": {
+        "file": "runtime/update-views.ts",
+        "status": "implemented",
+        "responsibility": "Regenerates visual projection files from governed task JSON, project graph data, and deferred state.",
+        "entryPoints": [
+          "updateViewFiles"
+        ],
+        "flows": [
+          "tasks/*.json + state/project.graph.json + state/deferred.json -> buildKanbanView + buildMindmapView + buildDashboardView",
+          "buildKanbanView -> views/kanban.json",
+          "buildMindmapView -> views/mindmap.json",
+          "buildDashboardView -> views/dashboard.json"
+        ],
+        "npmScripts": [
+          "update:views"
+        ],
+        "coveredByTasks": [
+          "TASK-008"
+        ]
       }
     },
     "state": {
       "approvals": {
         "file": "state/approvals.json",
         "schema": "schemas/approval.schema.cue",
-        "status": "placeholder-or-seed"
+        "status": "seeded-runtime-input",
+        "coveredByTasks": [
+          "TASK-013",
+          "TASK-020"
+        ]
       },
       "checkpoints": {
         "file": "state/checkpoints.json",
@@ -346,6 +494,7 @@
       },
       "projectGraph": {
         "file": "state/project.graph.json",
+        "schema": "schemas/project-graph.schema.cue",
         "status": "implemented-data",
         "responsibility": "Task dependency graph data."
       }
@@ -354,7 +503,7 @@
       "kanbanData": {
         "file": "views/kanban.json",
         "status": "existing-data",
-        "note": "This file is task-board data, separate from the VS Code Kanban Markdown visual cards."
+        "note": "This generated task-board data is canonical only as a projection from tasks/*.json."
       },
       "mindmapData": {
         "file": "views/mindmap.json",
@@ -365,6 +514,11 @@
         "file": "views/thinkio-runtime-flow.json",
         "status": "visual-support",
         "note": "This file is shaped for JSON Flow."
+      },
+      "kanbanMarkdownCards": {
+        "file": ".devtool/features/*.md",
+        "status": "visual-mirror",
+        "note": "Kanban Markdown cards are documented as read-only visual mirrors in docs/kanban-markdown-sync-boundary.md."
       }
     }
   },
@@ -390,14 +544,33 @@
       "GovernedTask",
       "runtime/local-dev-runtime.ts",
       "runtime/command-registry.ts",
+      "state/approvals.json",
       "kernel/context-router.ts",
       "kernel/checkpoint.ts",
       "ContextPacket + CheckpointRecord"
+    ],
+    "mutationPlanning": [
+      "GovernedTask",
+      "runtime/local-dev-runtime.ts",
+      "ApprovalRecord[] or state/approvals.json",
+      "kernel/mutation-transaction.ts",
+      "ArtifactRecord[] + CheckpointRecord[]",
+      "MutationTransactionRecord + blockers"
+    ],
+    "mutationApplication": [
+      "MutationTransactionRecord",
+      "runtime/local-dev-runtime.ts approval boundary",
+      "runtime/mutation-applier.ts",
+      "current task JSON + ledger + checkpoints",
+      "temp-file writes",
+      "updated task + ledger + checkpoint + rollback metadata"
     ],
     "taskRunPreparation": [
       "GovernedTask",
       "runtime/task-runner.ts",
       "kernel/gate.ts",
+      "kernel/execution-window.ts",
+      "runtime/local-dev-runtime.ts approval blockers",
       "kernel/context-router.ts",
       "canExecute + blockedReasons + contextPacket"
     ],
@@ -410,8 +583,11 @@
     ],
     "visualSupport": [
       "tasks/*.json",
+      "runtime/update-views.ts",
       "Kanban Markdown cards in .devtool/features",
+      "views/kanban.json",
       "views/mindmap.json",
+      "views/dashboard.json",
       "views/thinkio-runtime-flow.json",
       "VS Code Kanban Markdown + JSON Flow"
     ]
@@ -485,78 +661,224 @@
     },
     "TASK-008": {
       "title": "Generate kanban and mindmap from task graph",
-      "currentStatus": "candidate",
+      "currentStatus": "done",
       "areas": [
         "views",
         "project graph",
+        "update views runtime",
         "visual support"
+      ]
+    },
+    "TASK-009": {
+      "title": "Refresh runtime-flow visual support",
+      "currentStatus": "done",
+      "areas": [
+        "runtime flow visual map",
+        "view drift documentation"
+      ]
+    },
+    "TASK-010": {
+      "title": "Import governed decomposition model",
+      "currentStatus": "done",
+      "areas": [
+        "decomposition kernel",
+        "decomposition schema",
+        "decomposition tests"
+      ]
+    },
+    "TASK-011": {
+      "title": "Import reconstruction/replay validation model",
+      "currentStatus": "done",
+      "areas": [
+        "replay validation kernel",
+        "replay validation schema",
+        "reconstruction readiness tests"
+      ]
+    },
+    "TASK-012": {
+      "title": "Import governed mutation transaction model",
+      "currentStatus": "done",
+      "areas": [
+        "mutation transaction kernel",
+        "mutation transaction schema",
+        "rollback-aware planning"
+      ]
+    },
+    "TASK-013": {
+      "title": "Import approval-boundary runtime",
+      "currentStatus": "done",
+      "areas": [
+        "approval schema",
+        "runtime approval boundary",
+        "approval tests"
+      ]
+    },
+    "TASK-014": {
+      "title": "Add governor/orchestrator/model glossary",
+      "currentStatus": "done",
+      "areas": [
+        "governor glossary",
+        "orchestrator glossary",
+        "model boundary vocabulary"
+      ]
+    },
+    "TASK-015": {
+      "title": "Evaluate geometry view projection metadata",
+      "currentStatus": "done",
+      "areas": [
+        "geometry projection boundary",
+        "view metadata only",
+        "authority/status non-interference"
+      ]
+    },
+    "TASK-016": {
+      "title": "Add TypeScript typecheck dependency",
+      "currentStatus": "done",
+      "areas": [
+        "typescript dependency",
+        "npm typecheck",
+        "standard check script"
+      ]
+    },
+    "TASK-017": {
+      "title": "Reconcile command registry runtime entrypoints",
+      "currentStatus": "done",
+      "areas": [
+        "command registry implemented actions",
+        "command registry reserved actions"
+      ]
+    },
+    "TASK-018": {
+      "title": "Wire approved mutation transaction planning",
+      "currentStatus": "done",
+      "areas": [
+        "local runtime mutation planning",
+        "approval-gated transaction validation"
+      ]
+    },
+    "TASK-019": {
+      "title": "Extend CUE validation to runtime state schemas",
+      "currentStatus": "done",
+      "areas": [
+        "workspace schema discovery",
+        "state file CUE validation"
+      ]
+    },
+    "TASK-020": {
+      "title": "Load approval state in runtime boundary",
+      "currentStatus": "done",
+      "areas": [
+        "approval state reader",
+        "state-backed approval boundary helpers"
+      ]
+    },
+    "TASK-021": {
+      "title": "Preserve ledger artifact metadata",
+      "currentStatus": "done",
+      "areas": [
+        "ledger metadata preservation",
+        "defensive dependency copying"
+      ]
+    },
+    "TASK-022": {
+      "title": "Enforce artifact chain task scope",
+      "currentStatus": "done",
+      "areas": [
+        "artifact chain task scope",
+        "manifest dependency scope"
+      ]
+    },
+    "TASK-023": {
+      "title": "Gate task runner with windows and approvals",
+      "currentStatus": "done",
+      "areas": [
+        "execution window task-run gating",
+        "approval blocker task-run gating"
+      ]
+    },
+    "TASK-024": {
+      "title": "Refresh runtime flow after audit",
+      "currentStatus": "done",
+      "areas": [
+        "runtime flow audit refresh",
+        "current-state visual support"
+      ]
+    },
+    "TASK-025": {
+      "title": "Formalize authority transition model",
+      "currentStatus": "done",
+      "areas": [
+        "authority transition state machine",
+        "authority/status compatibility",
+        "mutation transaction authority validation"
+      ]
+    },
+    "TASK-026": {
+      "title": "Add atomic mutation transaction applier",
+      "currentStatus": "done",
+      "areas": [
+        "approved mutation application",
+        "guarded temp-file writes",
+        "rollback metadata"
+      ]
+    },
+    "TASK-027": {
+      "title": "Implement reserved runtime entrypoints",
+      "currentStatus": "done",
+      "areas": [
+        "JSON task validation entrypoint",
+        "transition state validation entrypoint",
+        "test runner entrypoint"
+      ]
+    },
+    "TASK-028": {
+      "title": "Decide Kanban Markdown sync boundary",
+      "currentStatus": "done",
+      "areas": [
+        "Kanban Markdown visual mirror decision",
+        "sync boundary documentation"
+      ]
+    },
+    "TASK-029": {
+      "title": "Define full product runtime boundary",
+      "currentStatus": "done",
+      "areas": [
+        "plugin-first product boundary",
+        "full app chatbox deferred",
+        "runtime roadmap"
+      ]
+    },
+    "TASK-051": {
+      "title": "Define VS Code plugin runtime shell boundary",
+      "currentStatus": "done",
+      "areas": [
+        "VS Code plugin target",
+        "plugin MVP surfaces",
+        "model handoff boundary",
+        "non-canonical chat attachment"
       ]
     }
   },
   "missingOrNeedsValidation": {
-    "governance": [
-      {
-        "item": "Status and authority coupling",
-        "currentState": "Status transitions exist; authority transitions are not independently modeled.",
-        "relatedFiles": [
-          "kernel/state-machine.ts",
-          "kernel/gate.ts",
-          "kernel/types.ts"
-        ]
-      },
-      {
-        "item": "Promotion operation",
-        "currentState": "Promotion checks exist, but no single runtime command applies a transition, evidence check, authority update, checkpoint, and ledger record atomically.",
-        "relatedFiles": [
-          "kernel/gate.ts",
-          "kernel/state-machine.ts",
-          "runtime/local-dev-runtime.ts"
-        ]
-      },
-      {
-        "item": "Approval flow",
-        "currentState": "Approval type and schema exist, but no approval runtime module is wired.",
-        "relatedFiles": [
-          "kernel/types.ts",
-          "schemas/approval.schema.cue",
-          "state/approvals.json"
-        ]
-      }
-    ],
-    "runtime": [
-      {
-        "item": "View update action",
-        "currentState": "update-views is allow-listed, but no active view-generation runtime is currently wired.",
-        "relatedFiles": [
-          "runtime/command-registry.ts",
-          "views/kanban.json",
-          "views/mindmap.json"
-        ]
-      }
-    ],
-    "schemas": [
-      {
-        "item": "Project graph schema",
-        "currentState": "state/project.graph.json exists; no dedicated graph schema file is visible.",
-        "relatedTasks": [
-          "TASK-008"
-        ]
-      }
-    ],
+    "governance": [],
+    "runtime": [],
+    "schemas": [],
     "views": [
       {
         "item": "Kanban data freshness",
-        "currentState": "views/kanban.json is intentionally stale until TASK-008 defines the view-generation approach; the VS Code Kanban Markdown mirror reflects TASK-001 through TASK-007 as done.",
+        "currentState": "views/kanban.json is generated by runtime/update-views.ts and reflects the current governed task JSON statuses.",
         "relatedFiles": [
           "views/kanban.json",
+          "runtime/update-views.ts",
           ".devtool/features"
         ]
       },
       {
         "item": "Visual board sync",
-        "currentState": "Kanban Markdown cards are visual mirrors; dragging cards does not update governed task JSON.",
+        "currentState": "Kanban Markdown cards are intentionally documented as visual mirrors. A future two-way sync would need a guarded runtime command.",
         "relatedFiles": [
-          ".devtool/features"
+          ".devtool/features",
+          "docs/kanban-markdown-sync-boundary.md"
         ]
       }
     ]

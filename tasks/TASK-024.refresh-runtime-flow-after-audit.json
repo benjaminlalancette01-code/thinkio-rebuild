@@ -1,0 +1,32 @@
+{
+  "id": "TASK-024",
+  "title": "Refresh runtime flow after audit",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-023"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "views/thinkio-runtime-flow.json",
+    "kernel/decomposition.ts",
+    "kernel/replay-validation.ts",
+    "kernel/mutation-transaction.ts",
+    "runtime/local-dev-runtime.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "runtime-flow-audit-refresh-added",
+    "runtime-flow-audit-refresh-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

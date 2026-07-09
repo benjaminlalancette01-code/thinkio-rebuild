@@ -1,0 +1,40 @@
+{
+  "id": "TASK-057",
+  "title": "Define plugin cross-view selection and sync",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-053",
+    "TASK-054",
+    "TASK-055",
+    "TASK-056"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-view-roadmap.md",
+    "kernel/runtime-projections.ts",
+    "kernel/context-card.ts",
+    "kernel/workboard.ts",
+    "kernel/mode-policy.ts",
+    "kernel/governance-decision.ts",
+    "kernel/mutation-transaction.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/command-registry.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "cross-view-selection-model-defined",
+    "cross-view-command-contract-added",
+    "view-sync-boundary-added",
+    "canonical-state-protection-added",
+    "cross-view-sync-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

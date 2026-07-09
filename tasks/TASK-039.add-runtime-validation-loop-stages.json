@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-039",
+    "title":  "Add runtime validation loop stages",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-033",
+                         "TASK-038"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "runtime/validate-schemas.ts",
+                           "runtime/update-views.ts",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "validation-stage-model-defined",
+                             "pre-export-validation-added",
+                             "post-provider-validation-added",
+                             "post-ingest-validation-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

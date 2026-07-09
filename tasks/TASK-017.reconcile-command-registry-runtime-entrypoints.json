@@ -1,0 +1,30 @@
+{
+  "id": "TASK-017",
+  "title": "Reconcile command registry runtime entrypoints",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-016"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "runtime/command-registry.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/task-runner.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "command-registry-runtime-map-added",
+    "command-registry-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

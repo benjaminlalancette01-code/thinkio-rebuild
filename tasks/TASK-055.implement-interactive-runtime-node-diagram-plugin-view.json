@@ -1,0 +1,38 @@
+{
+  "id": "TASK-055",
+  "title": "Implement interactive runtime node diagram plugin view",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-052",
+    "TASK-039",
+    "TASK-044",
+    "TASK-048",
+    "TASK-015"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-view-roadmap.md",
+    "docs/geometry-projection-boundary.md",
+    "kernel/runtime-projections.ts",
+    "kernel/validation-loop.ts",
+    "kernel/derivation.ts",
+    "kernel/provider-output-ingest.ts",
+    "views/thinkio-runtime-flow.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "interactive-node-diagram-view-defined",
+    "runtime-flow-node-edge-contract-added",
+    "diagram-interactions-route-through-runtime",
+    "node-diagram-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

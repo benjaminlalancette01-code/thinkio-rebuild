@@ -1,0 +1,32 @@
+{
+  "id": "TASK-027",
+  "title": "Implement reserved runtime entrypoints",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-026"
+  ],
+  "allowedContext": [
+    "audit/current-state-report-2026-06-30.md",
+    "runtime/command-registry.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/validate-schemas.ts",
+    "kernel/state-machine.ts",
+    "tasks/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "missing-work-task-created",
+    "reserved-runtime-entrypoints-implemented",
+    "reserved-runtime-entrypoint-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

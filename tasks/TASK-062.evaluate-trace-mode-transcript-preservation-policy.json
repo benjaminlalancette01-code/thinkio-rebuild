@@ -1,0 +1,30 @@
+{
+  "id": "TASK-062",
+  "title": "Evaluate trace mode transcript preservation policy",
+  "mode": "review",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-041",
+    "TASK-059"
+  ],
+  "allowedContext": [
+    "docs/operating-rules.md",
+    "docs/vscode-plugin-runtime-shell.md",
+    "audit/v1.1.1-plugin-interaction-emulation-gap-report-2026-07-03.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "trace-mode-transcript-policy-reviewed",
+    "audit-mode-candidate-scope-decided",
+    "transcript-grade-preservation-trigger-defined"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": false
+}

@@ -46,6 +46,57 @@ export const defaultCueValidationTargets: CueValidationTarget[] = [
   }
 ];
 
+export const defaultStateCueValidationTargets: CueValidationTarget[] = [
+  {
+    id: "state/approvals",
+    schemaPath: "schemas/approval.schema.cue",
+    dataPath: "state/approvals.json",
+    definition: "#ApprovalFile"
+  },
+  {
+    id: "state/artifact-chains",
+    schemaPath: "schemas/artifact.schema.cue",
+    dataPath: "state/artifact-chains.json",
+    definition: "#ArtifactChainFile"
+  },
+  {
+    id: "state/checkpoints",
+    schemaPath: "schemas/checkpoint.schema.cue",
+    dataPath: "state/checkpoints.json",
+    definition: "#CheckpointFile"
+  },
+  {
+    id: "state/deferred",
+    schemaPath: "schemas/deferred.schema.cue",
+    dataPath: "state/deferred.json",
+    definition: "#DeferredFile"
+  },
+  {
+    id: "state/execution-windows",
+    schemaPath: "schemas/execution-window.schema.cue",
+    dataPath: "state/execution-windows.json",
+    definition: "#ExecutionWindowFile"
+  },
+  {
+    id: "state/handoffs",
+    schemaPath: "schemas/checkpoint.schema.cue",
+    dataPath: "state/handoffs.json",
+    definition: "#HandoffFile"
+  },
+  {
+    id: "state/ledger",
+    schemaPath: "schemas/artifact.schema.cue",
+    dataPath: "state/ledger.json",
+    definition: "#ArtifactLedgerFile"
+  },
+  {
+    id: "state/project-graph",
+    schemaPath: "schemas/project-graph.schema.cue",
+    dataPath: "state/project.graph.json",
+    definition: "#ProjectGraph"
+  }
+];
+
 export async function discoverTaskCueValidationTargets(tasksDir = "tasks"): Promise<CueValidationTarget[]> {
   const entries = await readdir(tasksDir, { withFileTypes: true });
 
@@ -62,6 +113,13 @@ export async function discoverTaskCueValidationTargets(tasksDir = "tasks"): Prom
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));
+}
+
+export async function discoverWorkspaceCueValidationTargets(tasksDir = "tasks"): Promise<CueValidationTarget[]> {
+  return [
+    ...(await discoverTaskCueValidationTargets(tasksDir)),
+    ...defaultStateCueValidationTargets
+  ];
 }
 
 export function buildCueVetArgs(target: CueValidationTarget): string[] {
@@ -109,6 +167,14 @@ export async function validateDiscoveredTaskSchemas(
   runner: CueCommandRunner = runCueCommand
 ): Promise<CueValidationResult[]> {
   const targets = await discoverTaskCueValidationTargets(tasksDir);
+  return validateCueTargets(targets, runner);
+}
+
+export async function validateWorkspaceCueSchemas(
+  tasksDir = "tasks",
+  runner: CueCommandRunner = runCueCommand
+): Promise<CueValidationResult[]> {
+  const targets = await discoverWorkspaceCueValidationTargets(tasksDir);
   return validateCueTargets(targets, runner);
 }
 

@@ -1,0 +1,29 @@
+{
+    "id":  "TASK-014",
+    "title":  "Add governor/orchestrator/model glossary",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-024"
+                     ],
+    "allowedContext":  [
+                           "imports/candidates/TASK-014.governor-orchestrator-model-glossary.md",
+                           "docs/glossary.md",
+                           "docs/vision.md",
+                           "docs/architecture.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "candidate-note-created",
+                             "glossary-entry-added",
+                             "docs-check-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

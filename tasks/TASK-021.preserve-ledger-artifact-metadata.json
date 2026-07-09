@@ -1,0 +1,30 @@
+{
+  "id": "TASK-021",
+  "title": "Preserve ledger artifact metadata",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-020"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "kernel/ledger.ts",
+    "kernel/types.ts",
+    "schemas/artifact.schema.cue",
+    "tests/ledger.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "ledger-metadata-preserved",
+    "ledger-metadata-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

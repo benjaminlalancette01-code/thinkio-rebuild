@@ -8,3 +8,6 @@ package schemas
 	approvedAt: string
 }
 
+#ApprovalFile: {
+	approvals: [...#ApprovalRecord]
+}

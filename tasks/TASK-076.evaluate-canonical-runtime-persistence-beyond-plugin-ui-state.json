@@ -1,0 +1,32 @@
+{
+  "id": "TASK-076",
+  "title": "Evaluate canonical runtime persistence beyond plugin UI state",
+  "mode": "review",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-012",
+    "TASK-041",
+    "TASK-068"
+  ],
+  "allowedContext": [
+    "kernel/mutation-transaction.ts",
+    "kernel/closeout-history.ts",
+    "extension/state/",
+    "state/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "canonical-runtime-persistence-reviewed",
+    "ui-state-vs-runtime-state-boundary-defined",
+    "runtime-persistence-plugin-readiness-impact-recorded"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": false
+}

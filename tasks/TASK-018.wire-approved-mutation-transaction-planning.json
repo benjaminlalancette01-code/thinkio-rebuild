@@ -1,0 +1,31 @@
+{
+  "id": "TASK-018",
+  "title": "Wire approved mutation transaction planning",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-017"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "kernel/mutation-transaction.ts",
+    "runtime/command-registry.ts",
+    "runtime/local-dev-runtime.ts",
+    "state/approvals.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "approved-mutation-planner-wired",
+    "approved-mutation-planner-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

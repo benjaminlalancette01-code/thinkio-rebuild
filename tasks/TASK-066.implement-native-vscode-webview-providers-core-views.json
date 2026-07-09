@@ -1,0 +1,36 @@
+{
+  "id": "TASK-066",
+  "title": "Implement native VS Code webview providers for core views",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-053",
+    "TASK-054",
+    "TASK-055",
+    "TASK-064",
+    "TASK-065"
+  ],
+  "allowedContext": [
+    "src/views/",
+    "media/",
+    "kernel/plugin-view-contracts.ts",
+    "kernel/runtime-projections.ts",
+    "views/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "task-kanban-webview-provider-added",
+    "artifact-mindmap-webview-provider-added",
+    "runtime-node-diagram-webview-provider-added",
+    "core-view-provider-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

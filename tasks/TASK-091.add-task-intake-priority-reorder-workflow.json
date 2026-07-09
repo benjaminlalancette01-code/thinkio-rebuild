@@ -1,0 +1,41 @@
+{
+  "id": "TASK-091",
+  "title": "Add task intake priority reorder workflow",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-003",
+    "TASK-030",
+    "TASK-057",
+    "TASK-083"
+  ],
+  "allowedContext": [
+    "tasks/",
+    ".devtool/features/",
+    "state/deferred.json",
+    "state/project.graph.json",
+    "views/kanban.json",
+    "views/dashboard.json",
+    "docs/open-task-priority-review-2026-07-08.md",
+    "docs/task-intake-priority-reorder-workflow.md",
+    "docs/operating-rules.md",
+    "runtime/update-views.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "task-intake-reorder-rule-documented",
+    "open-work-input-sources-defined",
+    "promotion-demotion-criteria-defined",
+    "candidate-idea-deferred-ordering-protocol-defined",
+    "view-card-order-refresh-path-defined"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

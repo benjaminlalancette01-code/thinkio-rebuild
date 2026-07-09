@@ -1,0 +1,29 @@
+{
+    "id":  "TASK-075",
+    "title":  "Evaluate cross-machine plugin state sync",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-068"
+                     ],
+    "allowedContext":  [
+                           "extension/state/",
+                           "docs/vscode-plugin-runbook.md",
+                           "kernel/plugin-view-contracts.ts",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "cross-machine-state-sync-reviewed",
+                             "plugin-state-sync-authority-boundary-defined",
+                             "sync-non-mvp-scope-recorded"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

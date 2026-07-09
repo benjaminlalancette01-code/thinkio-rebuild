@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-030",
+    "title":  "Add native step/workboard model",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-028"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "audit/v1.1.1-reentry-emulation-runtime-gap-audit-2026-07-01.md",
+                           "kernel/types.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "views/kanban.json",
+                           "views/dashboard.json",
+                           "tasks/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "workboard-model-defined",
+                             "one-current-step-invariant-defined",
+                             "workboard-validation-added",
+                             "workboard-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

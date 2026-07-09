@@ -1,0 +1,32 @@
+{
+  "id": "TASK-012",
+  "title": "Import governed mutation transaction model",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-011"
+  ],
+  "allowedContext": [
+    "imports/candidates/TASK-012.governed-mutation-transaction-model.md",
+    "kernel/gate.ts",
+    "kernel/state-machine.ts",
+    "kernel/ledger.ts",
+    "kernel/checkpoint.ts",
+    "runtime/local-dev-runtime.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "mutation-transaction-schema-added",
+    "mutation-transaction-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

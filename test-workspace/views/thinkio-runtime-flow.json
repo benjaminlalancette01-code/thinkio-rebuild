@@ -1,0 +1,23 @@
+{
+  "system": {
+    "runtime": {
+      "localDevRuntime": {
+        "status": "smoke-fixture",
+        "flows": []
+      },
+      "taskRunner": {
+        "status": "smoke-fixture"
+      }
+    }
+  },
+  "taskCoverage": {
+    "TASK-SMOKE-001": {
+      "currentStatus": "candidate"
+    }
+  },
+  "missingOrNeedsValidation": {
+    "governance": [],
+    "runtime": [],
+    "schemas": []
+  }
+}

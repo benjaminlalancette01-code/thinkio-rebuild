@@ -1,0 +1,32 @@
+{
+  "id": "TASK-010",
+  "title": "Import governed decomposition model",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-008"
+  ],
+  "allowedContext": [
+    "imports/candidates/TASK-010.governed-decomposition-model.md",
+    "tasks/",
+    "state/project.graph.json",
+    "kernel/context-router.ts",
+    "kernel/checkpoint.ts",
+    "schemas/task.schema.cue",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "decomposition-schema-added",
+    "decomposition-rule-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

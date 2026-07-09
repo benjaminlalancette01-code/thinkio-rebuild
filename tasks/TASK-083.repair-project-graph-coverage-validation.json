@@ -1,0 +1,35 @@
+{
+  "id": "TASK-083",
+  "title": "Repair project graph coverage and validation",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-049"
+  ],
+  "allowedContext": [
+    "state/project.graph.json",
+    "views/mindmap.json",
+    "views/thinkio-runtime-flow.json",
+    "runtime/update-views.ts",
+    "kernel/view-projections.ts",
+    "kernel/runtime-projections.ts",
+    "schemas/project-graph.schema.cue",
+    "tests/",
+    "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "project-graph-covers-current-task-range",
+    "project-graph-validation-detects-missing-task-nodes",
+    "dependency-edge-coverage-validated",
+    "graph-authority-boundary-documented"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -1,0 +1,35 @@
+{
+  "id": "TASK-026",
+  "title": "Add atomic mutation transaction applier",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-025"
+  ],
+  "allowedContext": [
+    "audit/current-state-report-2026-06-30.md",
+    "kernel/mutation-transaction.ts",
+    "kernel/state-machine.ts",
+    "kernel/ledger.ts",
+    "kernel/checkpoint.ts",
+    "runtime/local-dev-runtime.ts",
+    "runtime/command-registry.ts",
+    "state/",
+    "tasks/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "missing-work-task-created",
+    "atomic-mutation-applier-added",
+    "mutation-applier-rollback-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

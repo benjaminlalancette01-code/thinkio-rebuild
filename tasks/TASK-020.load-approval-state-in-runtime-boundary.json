@@ -1,0 +1,30 @@
+{
+  "id": "TASK-020",
+  "title": "Load approval state in runtime boundary",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-019"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "runtime/local-dev-runtime.ts",
+    "state/approvals.json",
+    "schemas/approval.schema.cue",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "approval-state-reader-added",
+    "approval-state-runtime-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

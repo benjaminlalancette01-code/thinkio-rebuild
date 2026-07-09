@@ -4,18 +4,144 @@
   "private": true,
   "type": "module",
   "description": "Minimal governed task kernel/runtime rebuild for ThinkIO.",
+  "displayName": "ThinkIO",
+  "publisher": "thinkio",
+  "license": "UNLICENSED",
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension/extension.js",
+  "activationEvents": [
+    "workspaceContains:thinkio.config.json",
+    "onCommand:thinkio.refreshView",
+    "onCommand:thinkio.selectRecord",
+    "onView:thinkio.taskKanban",
+    "onView:thinkio.artifactMindmap",
+    "onView:thinkio.runtimeNodeDiagram",
+    "onView:thinkio.contextPanel",
+    "onView:thinkio.proposalReview",
+    "onView:thinkio.runtimeComposer"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "thinkio.refreshView",
+        "title": "ThinkIO: Refresh View"
+      },
+      {
+        "command": "thinkio.selectRecord",
+        "title": "ThinkIO: Select Record"
+      },
+      {
+        "command": "thinkio.openRecord",
+        "title": "ThinkIO: Open Record"
+      },
+      {
+        "command": "thinkio.switchMode",
+        "title": "ThinkIO: Switch Mode"
+      },
+      {
+        "command": "thinkio.addTaskProposal",
+        "title": "ThinkIO: Add Task Proposal"
+      },
+      {
+        "command": "thinkio.saveTaskProposal",
+        "title": "ThinkIO: Save Task Proposal"
+      },
+      {
+        "command": "thinkio.createWorkPackage",
+        "title": "ThinkIO: Create Work Package"
+      },
+      {
+        "command": "thinkio.ingestProviderOutput",
+        "title": "ThinkIO: Ingest Provider Output"
+      },
+      {
+        "command": "thinkio.requestApproval",
+        "title": "ThinkIO: Request Approval"
+      },
+      {
+        "command": "thinkio.deferWork",
+        "title": "ThinkIO: Defer Work"
+      },
+      {
+        "command": "thinkio.rejectProposal",
+        "title": "ThinkIO: Reject Proposal"
+      },
+      {
+        "command": "thinkio.applyApprovedProposal",
+        "title": "ThinkIO: Apply Approved Proposal"
+      },
+      {
+        "command": "thinkio.openProposalReview",
+        "title": "ThinkIO: Open Proposal Review"
+      },
+      {
+        "command": "thinkio.recordInteraction",
+        "title": "ThinkIO: Record Interaction"
+      },
+      {
+        "command": "thinkio.submitRuntimeComposer",
+        "title": "ThinkIO: Submit Runtime Composer"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "thinkio",
+          "title": "ThinkIO",
+          "icon": "media/thinkio.svg"
+        }
+      ]
+    },
+    "views": {
+      "thinkio": [
+        {
+          "id": "thinkio.taskKanban",
+          "name": "Task Kanban"
+        },
+        {
+          "id": "thinkio.artifactMindmap",
+          "name": "Artifact Mind Map"
+        },
+        {
+          "id": "thinkio.runtimeNodeDiagram",
+          "name": "Runtime Node Diagram"
+        },
+        {
+          "id": "thinkio.contextPanel",
+          "name": "Context"
+        },
+        {
+          "id": "thinkio.proposalReview",
+          "name": "Proposal Review"
+        },
+        {
+          "id": "thinkio.runtimeComposer",
+          "name": "Runtime Composer"
+        }
+      ]
+    }
+  },
   "scripts": {
     "check:node": "node scripts/check-node-version.mjs",
+    "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "validate:cue": "node --experimental-strip-types runtime/validate-schemas.ts",
     "validate:cue:soft": "node --experimental-strip-types runtime/validate-schemas.ts --soft",
+    "validate:task-order": "node --experimental-strip-types scripts/validate-task-intake-order.ts",
     "update:views": "node --experimental-strip-types runtime/update-views.ts",
-    "check": "npm run check:node && npm run validate:cue && npm test"
+    "validate:extension": "node scripts/validate-vscode-extension-package.mjs",
+    "validate:vsix": "node scripts/validate-local-vsix-package.mjs",
+    "smoke:extension-host": "node --experimental-strip-types --test tests/extension-host-smoke-harness.test.ts",
+    "package:extension": "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs",
+    "check": "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:extension && npm test"
   },
   "engines": {
     "node": ">=22.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.19.19"
+    "@types/node": "^22.19.19",
+    "typescript": "^6.0.3"
   }
 }

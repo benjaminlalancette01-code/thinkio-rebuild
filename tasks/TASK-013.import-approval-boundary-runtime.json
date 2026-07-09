@@ -1,0 +1,31 @@
+{
+  "id": "TASK-013",
+  "title": "Import approval-boundary runtime",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-012"
+  ],
+  "allowedContext": [
+    "imports/candidates/TASK-013.approval-boundary-runtime.md",
+    "kernel/types.ts",
+    "schemas/approval.schema.cue",
+    "state/approvals.json",
+    "runtime/local-dev-runtime.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "approval-boundary-rule-added",
+    "approval-boundary-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

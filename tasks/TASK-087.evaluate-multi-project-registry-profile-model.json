@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-087",
+    "title":  "Evaluate multi-project registry and profile model",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-029",
+                         "TASK-077",
+                         "TASK-083"
+                     ],
+    "allowedContext":  [
+                           "thinkio.config.json",
+                           "examples/",
+                           "docs/product-runtime-boundary.md",
+                           "docs/thinkio-vscode-plugin-guide.md",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "workspace-first-boundary-reviewed",
+                             "project-profile-fields-evaluated",
+                             "multi-project-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

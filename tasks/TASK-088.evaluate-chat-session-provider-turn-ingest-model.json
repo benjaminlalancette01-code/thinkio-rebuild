@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-088",
+    "title":  "Evaluate chat session and provider turn ingest model",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-059",
+                         "TASK-060",
+                         "TASK-063",
+                         "TASK-067"
+                     ],
+    "allowedContext":  [
+                           "kernel/plugin-view-contracts.ts",
+                           "kernel/interaction-surface.ts",
+                           "docs/historical-chat-log-import-policy.md",
+                           "docs/trace-transcript-policy.md",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "chat-session-turn-gap-reviewed",
+                             "provider-call-record-fields-evaluated",
+                             "composer-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

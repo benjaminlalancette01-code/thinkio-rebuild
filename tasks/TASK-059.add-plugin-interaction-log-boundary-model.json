@@ -1,0 +1,35 @@
+{
+  "id": "TASK-059",
+  "title": "Add plugin interaction log boundary model",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-034",
+    "TASK-050",
+    "TASK-056"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "kernel/interaction-surface.ts",
+    "kernel/process-ledger.ts",
+    "kernel/provider-output-ingest.ts",
+    "runtime/command-registry.ts",
+    "audit/v1.1.1-plugin-interaction-emulation-gap-report-2026-07-03.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "plugin-interaction-log-boundary-defined",
+    "canonical-event-log-separation-preserved",
+    "transcript-preservation-policy-added",
+    "interaction-log-validation-added"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

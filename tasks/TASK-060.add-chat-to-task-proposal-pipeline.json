@@ -1,0 +1,38 @@
+{
+  "id": "TASK-060",
+  "title": "Add chat-to-task proposal pipeline",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-046",
+    "TASK-056",
+    "TASK-057",
+    "TASK-059"
+  ],
+  "allowedContext": [
+    "docs/vscode-plugin-runtime-shell.md",
+    "docs/vscode-plugin-view-roadmap.md",
+    "kernel/intake-pipeline.ts",
+    "kernel/interaction-surface.ts",
+    "kernel/model-contracts.ts",
+    "kernel/provider-output-ingest.ts",
+    "runtime/command-registry.ts",
+    "tasks/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "chat-to-task-proposal-flow-defined",
+    "task-gathering-question-policy-added",
+    "new-task-save-review-gate-added",
+    "chat-task-proposal-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

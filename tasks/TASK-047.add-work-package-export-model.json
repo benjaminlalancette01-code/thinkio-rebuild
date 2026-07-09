@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-047",
+    "title":  "Add work package export model for bounded model/app handoff",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-036",
+                         "TASK-039",
+                         "TASK-046"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "kernel/context-router.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "schemas/",
+                           "state/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "work-package-model-defined",
+                             "bounded-export-validation-added",
+                             "source-inclusion-exclusion-tracking-added",
+                             "work-package-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-036",
+    "title":  "Add model input/output contract schemas",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-032",
+                         "TASK-035"
+                     ],
+    "allowedContext":  [
+                           "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+                           "kernel/types.ts",
+                           "schemas/",
+                           "runtime/cue-validator.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "model-input-contract-schema-added",
+                             "model-output-contract-schema-added",
+                             "output-class-vocabulary-defined",
+                             "model-contract-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -1,9 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import {
   buildCueVetArgs,
+  defaultStateCueValidationTargets,
   discoverTaskCueValidationTargets,
+  discoverWorkspaceCueValidationTargets,
   resolveCueCommand,
   summarizeCueValidationResults,
   validateCueTargets,
@@ -18,6 +20,15 @@ const target: CueValidationTarget = {
   dataPath: "tasks/TASK-001.bootstrap-kernel.json",
   definition: "#GovernedTask"
 };
+
+async function expectedTaskIds(): Promise<string[]> {
+  const entries = await readdir("tasks", { withFileTypes: true });
+
+  return entries
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
+    .map((entry) => entry.name.split(".")[0])
+    .sort((a, b) => a.localeCompare(b));
+}
 
 test("builds cue vet arguments for a governed task target", () => {
   assert.deepEqual(buildCueVetArgs(target), [
@@ -47,15 +58,24 @@ test("uses CUE_BIN when it is explicitly provided", () => {
 test("discovers all governed task JSON files as CUE validation targets", async () => {
   const targets = await discoverTaskCueValidationTargets();
 
-  assert.deepEqual(
-    targets.map((item) => item.id),
-    ["TASK-001", "TASK-002", "TASK-003", "TASK-004", "TASK-005", "TASK-006", "TASK-007", "TASK-008"]
-  );
+  assert.deepEqual(targets.map((item) => item.id), await expectedTaskIds());
   assert.equal(targets.every((item) => item.schemaPath === "schemas/task.schema.cue"), true);
   assert.equal(targets.every((item) => item.definition === "#GovernedTask"), true);
 });
 
-test("validates discovered task schemas with the real CUE command", async (t) => {
+test("discovers workspace CUE validation targets for tasks and state files", async () => {
+  const targets = await discoverWorkspaceCueValidationTargets();
+  const taskIds = await expectedTaskIds();
+
+  assert.deepEqual(targets.map((item) => item.id), [
+    ...taskIds,
+    ...defaultStateCueValidationTargets.map((item) => item.id)
+  ]);
+  assert.equal(targets.some((item) => item.definition === "#ProjectGraph"), true);
+  assert.equal(targets.some((item) => item.definition === "#ArtifactLedgerFile"), true);
+});
+
+test("validates discovered workspace schemas with the real CUE command", async (t) => {
   const results = await validateWorkspaceSchemas();
 
   if (results.some((result) => result.status === "skipped")) {
@@ -63,7 +83,7 @@ test("validates discovered task schemas with the real CUE command", async (t) =>
     return;
   }
 
-  assert.equal(results.length, 8);
+  assert.equal(results.length, (await expectedTaskIds()).length + defaultStateCueValidationTargets.length);
   assert.deepEqual([...new Set(results.map((result) => result.status))], ["passed"]);
 });
 
@@ -166,8 +186,13 @@ test("package scripts use Node 22 TypeScript stripping and deterministic validat
 
   assert.equal(pkg.scripts.test, "node --experimental-strip-types --test tests/*.test.ts");
   assert.equal(pkg.scripts["check:node"], "node scripts/check-node-version.mjs");
+  assert.equal(pkg.scripts.typecheck, "tsc --noEmit");
   assert.equal(pkg.scripts["validate:cue"], "node --experimental-strip-types runtime/validate-schemas.ts");
   assert.equal(pkg.scripts["validate:cue:soft"], "node --experimental-strip-types runtime/validate-schemas.ts --soft");
-  assert.equal(pkg.scripts.check, "npm run check:node && npm run validate:cue && npm test");
+  assert.equal(pkg.scripts["validate:task-order"], "node --experimental-strip-types scripts/validate-task-intake-order.ts");
+  assert.equal(pkg.scripts["validate:extension"], "node scripts/validate-vscode-extension-package.mjs");
+  assert.equal(pkg.scripts["validate:vsix"], "node scripts/validate-local-vsix-package.mjs");
+  assert.equal(pkg.scripts["package:extension"], "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs");
+  assert.equal(pkg.scripts.check, "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:extension && npm test");
   assert.equal(pkg.engines.node, ">=22.0.0");
 });

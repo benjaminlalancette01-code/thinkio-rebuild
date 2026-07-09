@@ -1,0 +1,32 @@
+{
+  "id": "TASK-025",
+  "title": "Formalize authority transition model",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-024"
+  ],
+  "allowedContext": [
+    "audit/current-state-report-2026-06-30.md",
+    "kernel/types.ts",
+    "kernel/state-machine.ts",
+    "kernel/mutation-transaction.ts",
+    "runtime/local-dev-runtime.ts",
+    "schemas/task.schema.cue",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "missing-work-task-created",
+    "authority-transition-rules-added",
+    "authority-transition-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

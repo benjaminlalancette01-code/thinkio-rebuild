@@ -1,0 +1,30 @@
+{
+  "id": "TASK-022",
+  "title": "Enforce artifact chain task scope",
+  "mode": "plan",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-021"
+  ],
+  "allowedContext": [
+    "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+    "kernel/artifact-chain.ts",
+    "kernel/types.ts",
+    "schemas/artifact.schema.cue",
+    "tests/artifact-chain.test.ts"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "candidate-note-created",
+    "artifact-chain-task-scope-enforced",
+    "artifact-chain-scope-test-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

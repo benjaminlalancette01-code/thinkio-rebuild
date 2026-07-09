@@ -1,0 +1,36 @@
+{
+    "id":  "TASK-051",
+    "title":  "Define VS Code plugin runtime shell boundary",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-050"
+                     ],
+    "allowedContext":  [
+                           "docs/architecture.md",
+                           "docs/vision.md",
+                           "docs/operating-rules.md",
+                           "kernel/interaction-surface.ts",
+                           "kernel/work-package.ts",
+                           "kernel/provider-output-ingest.ts",
+                           "runtime/local-dev-runtime.ts",
+                           "views/kanban.json",
+                           "views/mindmap.json",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "vscode-plugin-target-recorded",
+                             "full-app-chatbox-deferred",
+                             "plugin-runtime-shell-boundary-defined",
+                             "plugin-mvp-surface-plan-added"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

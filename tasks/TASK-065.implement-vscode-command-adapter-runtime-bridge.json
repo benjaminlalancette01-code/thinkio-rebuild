@@ -1,0 +1,35 @@
+{
+  "id": "TASK-065",
+  "title": "Implement VS Code command adapter and runtime bridge",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-056",
+    "TASK-057",
+    "TASK-064"
+  ],
+  "allowedContext": [
+    "src/extension.ts",
+    "src/commands/",
+    "extension/",
+    "kernel/plugin-view-contracts.ts",
+    "runtime/command-registry.ts",
+    "runtime/local-dev-runtime.ts",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "vscode-command-adapter-added",
+    "plugin-command-runtime-routing-implemented",
+    "direct-ui-mutation-blocked",
+    "command-adapter-tests-pass"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

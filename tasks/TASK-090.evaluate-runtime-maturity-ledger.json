@@ -1,0 +1,30 @@
+{
+    "id":  "TASK-090",
+    "title":  "Evaluate runtime maturity ledger",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-069",
+                         "TASK-082"
+                     ],
+    "allowedContext":  [
+                           "audit/vscode-plugin-maturity-audit-2026-07-04.md",
+                           "docs/current-project-state-report-2026-07-04.md",
+                           "docs/thinkio-vscode-plugin-guide.md",
+                           "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "maturity-ledger-need-reviewed",
+                             "maturity-stage-taxonomy-evaluated",
+                             "release-gate-promotion-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}
