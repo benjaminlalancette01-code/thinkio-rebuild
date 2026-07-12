@@ -589,6 +589,11 @@
       "id": "TASK-118",
       "type": "task",
       "label": "Evaluate BAML CLI generator boundary"
+    },
+    {
+      "id": "TASK-119",
+      "type": "task",
+      "label": "Review archive path migration before old workspace cleanup"
     }
   ],
   "edges": [
@@ -1965,6 +1970,21 @@
     {
       "from": "TASK-118",
       "to": "TASK-117",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-094",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-100",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-116",
       "label": "depends-on"
     }
   ]

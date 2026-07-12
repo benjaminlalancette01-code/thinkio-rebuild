@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:00:36.026Z",
+  "generatedAt": "2026-07-12T16:18:45.372Z",
   "records": [
     {
       "path": ".devtool/features/TASK-102-run-extension-host-lifecycle-stress-test.md",
@@ -138,6 +138,15 @@
     },
     {
       "path": ".devtool/features/TASK-118-evaluate-baml-cli-generator-boundary.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-119-review-archive-path-migration-before-old-workspace-cleanup.md",
       "folder": ".devtool",
       "disposition": "visual-mirror",
       "authority": "mirror",
@@ -2882,6 +2891,24 @@
       "rationale": "Task notes explain canonical task state."
     },
     {
+      "path": "tasks/TASK-119.review-archive-path-migration-before-old-workspace-cleanup.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-119.review-archive-path-migration-before-old-workspace-cleanup.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
       "path": "views/dashboard.json",
       "folder": "views",
       "disposition": "generated-state",
@@ -2919,31 +2946,31 @@
     }
   ],
   "summary": {
-    "total": 324,
+    "total": 327,
     "byDisposition": {
-      "canonical-source": 236,
+      "canonical-source": 238,
       "current-guidance": 40,
       "generated-state": 14,
       "historical-evidence": 6,
       "imported-evidence": 2,
-      "visual-mirror": 16,
+      "visual-mirror": 17,
       "runtime-support": 2,
       "stale-superseded": 2,
       "review-needed": 6,
       "rejected-reference": 0
     },
     "byAuthority": {
-      "canonical": 236,
+      "canonical": 238,
       "current": 40,
       "generated": 14,
       "historical": 8,
       "imported": 8,
-      "mirror": 16,
+      "mirror": 17,
       "support": 2
     },
-    "canonicalSourceCount": 236,
+    "canonicalSourceCount": 238,
     "generatedStateCount": 14,
     "historicalEvidenceCount": 8,
-    "reportInputCount": 306
+    "reportInputCount": 308
   }
 }

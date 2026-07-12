@@ -1,6 +1,6 @@
 # Project State Report
 
-Generated: 2026-07-12T15:00:36.026Z
+Generated: 2026-07-12T16:18:45.372Z
 
 ## Where The Project Started
 
@@ -9,9 +9,9 @@ Generated: 2026-07-12T15:00:36.026Z
 
 ## What Is Happening Now
 
-- 118 governed task files present.
+- 119 governed task files present.
 - 108 tasks done/accepted.
-- 10 active candidate tasks.
+- 11 active candidate tasks.
 - 0 active idea tasks.
 - The current active work follows the active candidate task queue.
 
@@ -27,10 +27,11 @@ Generated: 2026-07-12T15:00:36.026Z
 - TASK-115: Add webview UI stress and visual smoke validation
 - TASK-117: Expand model-facing BAML contract coverage
 - TASK-118: Evaluate BAML CLI generator boundary
+- TASK-119: Review archive path migration before old workspace cleanup
 
 ## Data Already Included Or Worked On
 
-- 236 canonical task/note files are included.
+- 238 canonical task/note files are included.
 - 14 generated state/view files are included.
 - 8 historical or superseded report files are included as evidence.
 - 2 accepted import files are included.
@@ -38,9 +39,9 @@ Generated: 2026-07-12T15:00:36.026Z
 
 ## Material Summary
 
-- Total classified files: 324
-- Report input files: 306
-- Canonical source files: 236
+- Total classified files: 327
+- Report input files: 308
+- Canonical source files: 238
 - Generated state/view files: 14
 - Historical evidence files: 8
 

@@ -1,0 +1,32 @@
+{
+  "id": "TASK-119",
+  "title": "Review archive path migration before old workspace cleanup",
+  "mode": "review",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-094",
+    "TASK-100",
+    "TASK-116"
+  ],
+  "allowedContext": [
+    "audit/v1.1.1-reentry-emulation-runtime-gap-audit-2026-07-01.md",
+    "../Thinkio-fullarchive/",
+    "../thinkio_new_session_workspace/"
+  ],
+  "blockedContext": [
+    "kernel/",
+    "runtime/",
+    "extension/",
+    "schemas/",
+    "contracts/"
+  ],
+  "requiredEvidence": [
+    "old-workspace-path-references-listed",
+    "canonical-archive-target-path-approved",
+    "compatibility-pointer-or-path-update-decision-recorded",
+    "old-workspace-delete-or-preserve-decision-approved"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

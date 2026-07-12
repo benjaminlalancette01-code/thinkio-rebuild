@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-10T00:00:00.000Z"
 modified: "2026-07-10T00:00:00.000Z"
 labels: ["thinkio", "vscode-plugin", "webview"]
-order: "c005"
+order: "c006"
 ---
 # TASK-110: Implement native Task Kanban webview presentation
 

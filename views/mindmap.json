@@ -825,6 +825,13 @@
       "kind": "task",
       "status": "candidate",
       "authority": "candidate"
+    },
+    {
+      "id": "TASK-119",
+      "label": "Review archive path migration before old workspace cleanup",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
     }
   ],
   "edges": [
@@ -2201,6 +2208,21 @@
     {
       "from": "TASK-118",
       "to": "TASK-117",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-094",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-100",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-119",
+      "to": "TASK-116",
       "label": "depends-on"
     }
   ]

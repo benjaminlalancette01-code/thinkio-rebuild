@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:00:36.026Z",
+  "generatedAt": "2026-07-12T16:18:45.372Z",
   "groups": [
     {
       "disposition": "canonical-source",
@@ -239,7 +239,9 @@
         "tasks/TASK-117.expand-model-facing-baml-contract-coverage.json",
         "tasks/TASK-117.expand-model-facing-baml-contract-coverage.md",
         "tasks/TASK-118.evaluate-baml-cli-generator-boundary.json",
-        "tasks/TASK-118.evaluate-baml-cli-generator-boundary.md"
+        "tasks/TASK-118.evaluate-baml-cli-generator-boundary.md",
+        "tasks/TASK-119.review-archive-path-migration-before-old-workspace-cleanup.json",
+        "tasks/TASK-119.review-archive-path-migration-before-old-workspace-cleanup.md"
       ]
     },
     {
@@ -342,7 +344,8 @@
         ".devtool/features/TASK-114-implement-runtime-composer-and-proposal-review-ui.md",
         ".devtool/features/TASK-115-add-webview-ui-stress-and-visual-smoke-validation.md",
         ".devtool/features/TASK-117-expand-model-facing-baml-contract-coverage.md",
-        ".devtool/features/TASK-118-evaluate-baml-cli-generator-boundary.md"
+        ".devtool/features/TASK-118-evaluate-baml-cli-generator-boundary.md",
+        ".devtool/features/TASK-119-review-archive-path-migration-before-old-workspace-cleanup.md"
       ]
     },
     {
