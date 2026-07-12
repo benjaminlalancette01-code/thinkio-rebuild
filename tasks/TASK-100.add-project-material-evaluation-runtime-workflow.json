@@ -1,0 +1,39 @@
+{
+    "id":  "TASK-100",
+    "title":  "Add project material evaluation runtime workflow",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-091",
+                         "TASK-092",
+                         "TASK-094"
+                     ],
+    "allowedContext":  [
+                           "kernel/",
+                           "runtime/",
+                           "scripts/",
+                           "tests/",
+                           "docs/",
+                           "audit/",
+                           "imports/",
+                           "tasks/",
+                           "state/",
+                           "views/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-material-evaluator-added",
+                             "material-disposition-rules-applied",
+                             "project-state-report-generated",
+                             "runtime-trigger-documented",
+                             "material-reorganization-validation-added"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

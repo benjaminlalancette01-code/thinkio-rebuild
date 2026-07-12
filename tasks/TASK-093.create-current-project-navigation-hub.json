@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-093",
+    "title":  "Create current project navigation hub",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-092"
+                     ],
+    "allowedContext":  [
+                           "docs/",
+                           "audit/",
+                           "imports/",
+                           "tasks/",
+                           "state/",
+                           "views/",
+                           "docs/current-project-state-report-2026-07-09.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "single-project-entrypoint-created",
+                             "current-state-links-grouped-by-purpose",
+                             "plugin-use-path-linked",
+                             "next-work-queue-linked",
+                             "project-state-report-entrypoint-linked"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

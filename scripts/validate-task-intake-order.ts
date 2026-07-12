@@ -23,8 +23,10 @@ export function validateTaskIntakeOrder(tasks: TaskIntakeTask[], cards: TaskInta
   const blockers: string[] = [];
   const taskById = new Map(tasks.map((task) => [task.id, task]));
   const cardById = new Map(cards.map((card) => [card.id, card]));
+  const openTaskIds = new Set(tasks.filter((task) => openStatuses.has(task.status)).map((task) => task.id));
+  const openCards = cards.filter((card) => openTaskIds.has(card.id));
 
-  for (const task of tasks.filter((candidate) => openStatuses.has(candidate.status))) {
+  for (const task of tasks.filter((candidate) => openTaskIds.has(candidate.id))) {
     const card = cardById.get(task.id);
     if (!card) {
       blockers.push(`Open task ${task.id} is missing a visual feature card.`);
@@ -35,7 +37,7 @@ export function validateTaskIntakeOrder(tasks: TaskIntakeTask[], cards: TaskInta
     }
   }
 
-  for (const card of cards) {
+  for (const card of openCards) {
     const task = taskById.get(card.id);
     if (!task) {
       blockers.push(`Feature card ${card.id} has no canonical task JSON.`);
@@ -49,8 +51,8 @@ export function validateTaskIntakeOrder(tasks: TaskIntakeTask[], cards: TaskInta
     }
   }
 
-  blockers.push(...validateOrderedGroup("candidate", "c", cards.filter((card) => card.status === "candidate")));
-  blockers.push(...validateOrderedGroup("idea", "i", cards.filter((card) => card.status === "idea")));
+  blockers.push(...validateOrderedGroup("candidate", "c", openCards.filter((card) => card.status === "candidate")));
+  blockers.push(...validateOrderedGroup("idea", "i", openCards.filter((card) => card.status === "idea")));
 
   return blockers;
 }

@@ -65,6 +65,14 @@ Keep full-product ideas as ideas until plugin work proves they are needed.
 
 The current workflow is documented in `docs/task-intake-priority-reorder-workflow.md`.
 
+## Project Material Evaluation
+
+ThinkIO must evaluate project material when docs, audits, imports, task state, generated state, or current-state reports change enough to affect project orientation.
+
+The evaluation classifies material as canonical source, current guidance, generated state, historical evidence, imported evidence, visual mirror, review-needed, stale/superseded, or rejected reference.
+
+Run `npm run update:project-materials` to refresh `state/project.materials.json`, `state/project.knowledge-index.json`, and `docs/project-state-report.md`.
+
 ## Runtime Boundary Policy
 
 - Workboard position is operational state, not task authority. A board can have only one current step.
@@ -72,6 +80,7 @@ The current workflow is documented in `docs/task-intake-priority-reorder-workflo
 - Mode policy decides which actions are legal before output can affect state.
 - Frozen or executable work requires review-before-lock evidence.
 - Provider/model output enters through model contracts, provider normalization, governance decision, and staged validation before any write is accepted.
+- Model-facing BAML contracts live under `contracts/baml/`; internal runtime truth still lives in JSON, CUE, and TypeScript.
 - Context cards may explain, warn, or propose; they are not canonical until reviewed and promoted.
 - General file changes use file action proposals and writer-boundary decisions; model output never writes directly.
 - Work packages bound context before export, and provider output must return through intake/ingest records before promotion.

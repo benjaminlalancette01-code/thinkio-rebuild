@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-096",
+    "title":  "Surface project navigation in plugin",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-093",
+                         "TASK-095",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "extension/views/",
+                           "media/",
+                           "docs/",
+                           "views/dashboard.json",
+                           "extension/runtime-bridge.js",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-navigation-view-model-added",
+                             "current-state-entrypoint-visible-in-plugin",
+                             "historical-material-clearly-labeled-in-plugin",
+                             "plugin-navigation-tests-pass"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

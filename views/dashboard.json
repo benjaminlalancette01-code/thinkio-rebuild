@@ -1,11 +1,11 @@
 {
-  "activeTaskCount": 0,
+  "activeTaskCount": 10,
   "blockedTaskCount": 0,
-  "candidateCount": 0,
+  "candidateCount": 10,
   "acceptedCount": 0,
   "frozenCount": 0,
   "executableCount": 0,
-  "doneCount": 91,
+  "doneCount": 108,
   "archivedCount": 0,
   "rejectedCount": 0
 }

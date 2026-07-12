@@ -10,7 +10,7 @@
   "allowedContext": [
     "kernel/context-router.ts",
     "schemas/context-packet.schema.cue",
-    "contracts/build-context-packet.baml",
+    "contracts/baml/build-context-packet.baml",
     "tests/context-router.test.ts"
   ],
   "blockedContext": [

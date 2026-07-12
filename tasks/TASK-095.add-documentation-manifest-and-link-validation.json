@@ -1,0 +1,35 @@
+{
+    "id":  "TASK-095",
+    "title":  "Add documentation manifest and link validation",
+    "mode":  "build",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-092",
+                         "TASK-093",
+                         "TASK-094",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "docs/",
+                           "audit/",
+                           "imports/",
+                           "scripts/",
+                           "tests/",
+                           "package.json"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "documentation-manifest-added",
+                             "current-vs-historical-docs-validated",
+                             "local-link-validation-added",
+                             "check-script-includes-doc-validation"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

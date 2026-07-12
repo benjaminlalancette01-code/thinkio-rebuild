@@ -1,0 +1,34 @@
+{
+  "id": "TASK-111",
+  "title": "Implement Project Navigation search UI",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109",
+    "TASK-099",
+    "TASK-104"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/project-navigation.js",
+    "media/thinkio.css",
+    "state/project.materials.json",
+    "state/project.knowledge-index.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "search-input-rendered",
+    "authority-and-disposition-filters-rendered",
+    "result-list-renders-material-records",
+    "open-or-copy-actions-route-through-governance"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

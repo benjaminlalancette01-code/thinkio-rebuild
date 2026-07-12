@@ -1,0 +1,31 @@
+{
+  "id": "TASK-116",
+  "title": "Repair BAML contract folder boundary",
+  "mode": "build",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-036",
+    "TASK-050"
+  ],
+  "allowedContext": [
+    "contracts/",
+    "docs/",
+    "tests/",
+    "scripts/vsix-file-allowlist.json"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "baml-contracts-nested-under-contracts-baml",
+    "references-updated",
+    "layout-validation-added",
+    "baml-boundary-audit-created"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

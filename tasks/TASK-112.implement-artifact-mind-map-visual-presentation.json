@@ -1,0 +1,32 @@
+{
+  "id": "TASK-112",
+  "title": "Implement Artifact Mind Map visual presentation",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109",
+    "TASK-054"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/artifact-mindmap.js",
+    "media/thinkio.css",
+    "views/mindmap.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "mind-map-nodes-rendered",
+    "artifact-clusters-rendered",
+    "selection-and-neighbor-expansion-defined",
+    "raw-json-no-longer-primary-mindmap-ui"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -15,12 +15,15 @@
     "workspaceContains:thinkio.config.json",
     "onCommand:thinkio.refreshView",
     "onCommand:thinkio.selectRecord",
+    "onCommand:thinkio.evaluateProjectMaterials",
+    "onCommand:thinkio.searchProjectMaterials",
     "onView:thinkio.taskKanban",
     "onView:thinkio.artifactMindmap",
     "onView:thinkio.runtimeNodeDiagram",
     "onView:thinkio.contextPanel",
     "onView:thinkio.proposalReview",
-    "onView:thinkio.runtimeComposer"
+    "onView:thinkio.runtimeComposer",
+    "onView:thinkio.projectNavigation"
   ],
   "contributes": {
     "commands": [
@@ -83,6 +86,14 @@
       {
         "command": "thinkio.submitRuntimeComposer",
         "title": "ThinkIO: Submit Runtime Composer"
+      },
+      {
+        "command": "thinkio.evaluateProjectMaterials",
+        "title": "ThinkIO: Evaluate Project Materials"
+      },
+      {
+        "command": "thinkio.searchProjectMaterials",
+        "title": "ThinkIO: Search Project Materials"
       }
     ],
     "viewsContainers": {
@@ -119,6 +130,10 @@
         {
           "id": "thinkio.runtimeComposer",
           "name": "Runtime Composer"
+        },
+        {
+          "id": "thinkio.projectNavigation",
+          "name": "Project Navigation"
         }
       ]
     }
@@ -130,15 +145,18 @@
     "validate:cue": "node --experimental-strip-types runtime/validate-schemas.ts",
     "validate:cue:soft": "node --experimental-strip-types runtime/validate-schemas.ts --soft",
     "validate:task-order": "node --experimental-strip-types scripts/validate-task-intake-order.ts",
+    "validate:docs": "node --experimental-strip-types scripts/validate-docs.ts",
     "update:views": "node --experimental-strip-types runtime/update-views.ts",
+    "update:project-materials": "node --experimental-strip-types runtime/update-project-materials.ts",
     "validate:extension": "node scripts/validate-vscode-extension-package.mjs",
     "validate:vsix": "node scripts/validate-local-vsix-package.mjs",
     "smoke:extension-host": "node --experimental-strip-types --test tests/extension-host-smoke-harness.test.ts",
     "package:extension": "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs",
-    "check": "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:extension && npm test"
+    "check": "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:docs && npm run validate:extension && npm test"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=22.0.0",
+    "vscode": "^1.90.0"
   },
   "devDependencies": {
     "@types/node": "^22.19.19",

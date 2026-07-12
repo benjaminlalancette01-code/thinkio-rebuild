@@ -1,7 +1,18 @@
 {
   "columns": {
     "idea": [],
-    "candidate": [],
+    "candidate": [
+      "TASK-108",
+      "TASK-109",
+      "TASK-110",
+      "TASK-111",
+      "TASK-112",
+      "TASK-113",
+      "TASK-114",
+      "TASK-115",
+      "TASK-117",
+      "TASK-118"
+    ],
     "accepted": [],
     "frozen": [],
     "executable": [],
@@ -96,7 +107,24 @@
       "TASK-088",
       "TASK-089",
       "TASK-090",
-      "TASK-091"
+      "TASK-091",
+      "TASK-092",
+      "TASK-093",
+      "TASK-094",
+      "TASK-095",
+      "TASK-096",
+      "TASK-097",
+      "TASK-098",
+      "TASK-099",
+      "TASK-100",
+      "TASK-101",
+      "TASK-102",
+      "TASK-103",
+      "TASK-104",
+      "TASK-105",
+      "TASK-106",
+      "TASK-107",
+      "TASK-116"
     ],
     "rejected": [],
     "archived": []

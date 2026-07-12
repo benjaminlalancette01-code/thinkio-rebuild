@@ -1,0 +1,32 @@
+{
+  "id": "TASK-118",
+  "title": "Evaluate BAML CLI generator boundary",
+  "mode": "review",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-116",
+    "TASK-117"
+  ],
+  "allowedContext": [
+    "contracts/baml/",
+    "package.json",
+    "scripts/",
+    "docs/baml-contract-boundary-audit-2026-07-12.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "baml-cli-layout-requirements-reviewed",
+    "baml-src-or-contracts-baml-decision-recorded",
+    "generated-client-boundary-defined",
+    "provider-integration-readiness-impact-recorded"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

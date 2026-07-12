@@ -1,0 +1,31 @@
+{
+    "id":  "TASK-099",
+    "title":  "Evaluate in-plugin project search and retrieval",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-096",
+                         "TASK-098"
+                     ],
+    "allowedContext":  [
+                           "extension/",
+                           "media/",
+                           "docs/",
+                           "state/project.graph.json",
+                           "views/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-search-need-reviewed",
+                             "retrieval-authority-boundary-defined",
+                             "search-index-non-mvp-scope-recorded"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  false
+}

@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-097",
+    "title":  "Define current-state report maintenance workflow",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-092",
+                         "TASK-093",
+                         "TASK-095",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "docs/current-project-state-report-2026-07-09.md",
+                           "docs/task-intake-priority-reorder-workflow.md",
+                           "docs/operating-rules.md",
+                           "scripts/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "state-report-update-trigger-defined",
+                             "report-supersession-rule-defined",
+                             "current-report-pointer-defined",
+                             "maintenance-workflow-linked-from-guide"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

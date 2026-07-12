@@ -1,0 +1,32 @@
+{
+  "id": "TASK-113",
+  "title": "Implement Runtime Node Diagram interactive presentation",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109",
+    "TASK-055"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/runtime-node-diagram.js",
+    "media/thinkio.css",
+    "views/thinkio-runtime-flow.json",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "runtime-nodes-rendered",
+    "runtime-edges-rendered",
+    "node-detail-panel-rendered",
+    "raw-json-no-longer-primary-runtime-diagram-ui"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -212,9 +212,19 @@ Persistence boundary:
 
 ## Current Next Tasks
 
-There are no active candidate or idea tasks after the July 9 product expansion boundary pass.
+The current active queue organizes project material and navigation for local plugin use.
 
-Before adding or promoting new work, run the task intake priority reorder workflow in `docs/task-intake-priority-reorder-workflow.md`.
+Open the project hub first:
+
+- `docs/current-project-hub.md`
+
+Refresh project material state with:
+
+```text
+npm run update:project-materials
+```
+
+Before adding or promoting unrelated work, run the task intake priority reorder workflow in `docs/task-intake-priority-reorder-workflow.md`.
 
 Completed product expansion boundary reviews:
 

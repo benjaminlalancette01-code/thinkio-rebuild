@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-098",
+    "title":  "Evaluate generated project knowledge index",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-092",
+                         "TASK-093",
+                         "TASK-094",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "docs/",
+                           "state/project.graph.json",
+                           "views/",
+                           "scripts/",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "generated-index-need-reviewed",
+                             "manual-vs-generated-boundary-defined",
+                             "index-refresh-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

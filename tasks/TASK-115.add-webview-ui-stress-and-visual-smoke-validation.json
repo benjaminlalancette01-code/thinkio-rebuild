@@ -1,0 +1,36 @@
+{
+  "id": "TASK-115",
+  "title": "Add webview UI stress and visual smoke validation",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109",
+    "TASK-110",
+    "TASK-111",
+    "TASK-112",
+    "TASK-113",
+    "TASK-114"
+  ],
+  "allowedContext": [
+    "tests/",
+    "scripts/",
+    "extension/views/",
+    "media/",
+    "docs/vscode-plugin-stress-findings-report-2026-07-10.md"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "webview-render-smoke-added",
+    "view-specific-ui-state-assertions-added",
+    "large-projection-render-check-added",
+    "visual-stress-report-workflow-defined"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

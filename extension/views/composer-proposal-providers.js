@@ -5,7 +5,8 @@ import { handleWebviewMessage } from "./webview-messages.js";
 const panelViews = [
   { id: viewIds.contextPanel, kind: "context-panel", title: "Context", script: "runtime-composer.js" },
   { id: viewIds.proposalReview, kind: "proposal-review", title: "Proposal Review", script: "proposal-review.js" },
-  { id: viewIds.runtimeComposer, kind: "runtime-composer", title: "Runtime Composer", script: "runtime-composer.js" }
+  { id: viewIds.runtimeComposer, kind: "runtime-composer", title: "Runtime Composer", script: "runtime-composer.js" },
+  { id: viewIds.projectNavigation, kind: "project-navigation", title: "Project Navigation", script: "project-navigation.js" }
 ];
 
 export function registerComposerAndProposalProviders(context, vscode, runtimeBridge, stores) {
@@ -35,7 +36,8 @@ export class ThinkIOPanelProvider {
       enableScripts: true,
       localResourceRoots: [this.mediaRoot()]
     };
-    webview.html = this.render(webview);
+    const projection = await this.runtimeBridge.readProjection(this.view.kind);
+    webview.html = this.render(webview, projection);
     webview.onDidReceiveMessage?.(async (message) => {
       await handleWebviewMessage({
         message,
@@ -67,14 +69,16 @@ export class ThinkIOPanelProvider {
     });
   }
 
-  render(webview) {
+  render(webview, projection = { ok: true, data: {} }) {
     return renderThinkIOWebviewHtml({
       title: this.view.title,
       viewKind: this.view.kind,
-      payload: {
-        resultState: this.view.kind === "runtime-composer" ? "empty" : "proposal",
-        usesGenericTranscript: false
-      },
+      payload: this.view.kind === "project-navigation"
+        ? projection
+        : {
+            resultState: this.view.kind === "runtime-composer" ? "empty" : "proposal",
+            usesGenericTranscript: false
+          },
       cspSource: webview.cspSource,
       scriptUri: this.assetUri(webview, this.view.script),
       styleUri: this.assetUri(webview, "thinkio.css")

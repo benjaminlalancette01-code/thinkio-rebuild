@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-103",
+    "title":  "Run projection refresh and file watcher stress test",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-079",
+                         "TASK-083",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "extension/projection-watchers.js",
+                           "runtime/update-views.ts",
+                           "runtime/update-project-materials.ts",
+                           "views/",
+                           "state/",
+                           "test-workspace/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "file-watcher-churn-stress-run",
+                             "projection-refresh-latency-recorded",
+                             "stale-projection-failures-recorded",
+                             "stress-report-created"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

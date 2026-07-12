@@ -1,0 +1,34 @@
+{
+    "id":  "TASK-101",
+    "title":  "Add approved project material reorganization actions",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-094",
+                         "TASK-095",
+                         "TASK-100"
+                     ],
+    "allowedContext":  [
+                           "kernel/project-materials.ts",
+                           "runtime/update-project-materials.ts",
+                           "docs/historical-material-disposition.md",
+                           "docs/project-material-evaluation-completion-report-2026-07-09.md",
+                           "docs/current-project-hub.md",
+                           "tests/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-material-action-types-defined",
+                             "move-remove-promote-archive-approval-boundary-defined",
+                             "dry-run-reorganization-plan-added",
+                             "destructive-material-actions-blocked-without-approval"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

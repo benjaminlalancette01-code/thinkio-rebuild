@@ -26,7 +26,8 @@ const requiredFiles = [
   "media/artifact-mindmap.js",
   "media/runtime-node-diagram.js",
   "media/runtime-composer.js",
-  "media/proposal-review.js"
+  "media/proposal-review.js",
+  "media/project-navigation.js"
 ];
 
 const requiredCommands = [
@@ -44,7 +45,9 @@ const requiredCommands = [
   "thinkio.applyApprovedProposal",
   "thinkio.openProposalReview",
   "thinkio.recordInteraction",
-  "thinkio.submitRuntimeComposer"
+  "thinkio.submitRuntimeComposer",
+  "thinkio.evaluateProjectMaterials",
+  "thinkio.searchProjectMaterials"
 ];
 
 const requiredViews = [
@@ -53,7 +56,8 @@ const requiredViews = [
   "thinkio.runtimeNodeDiagram",
   "thinkio.contextPanel",
   "thinkio.proposalReview",
-  "thinkio.runtimeComposer"
+  "thinkio.runtimeComposer",
+  "thinkio.projectNavigation"
 ];
 
 const blockers = [];

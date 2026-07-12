@@ -1,0 +1,32 @@
+{
+  "id": "TASK-108",
+  "title": "Add automated isolated VSIX install validation",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-106",
+    "TASK-107"
+  ],
+  "allowedContext": [
+    "package.json",
+    "scripts/",
+    "local-vsix/",
+    "docs/vscode-plugin-runbook.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "isolated-vscode-cli-install-script-added",
+    "install-uninstall-reinstall-covered",
+    "package-validation-script-wired",
+    "runbook-updated"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

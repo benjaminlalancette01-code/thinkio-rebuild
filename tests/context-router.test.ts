@@ -40,14 +40,14 @@ test("builds mode-aware context packets with source authorities", () => {
     ...task,
     id: "TASK-006",
     mode: "plan",
-    allowedContext: ["contracts/build-context-packet.baml", "tests/context-router.test.ts", "kernel/context-router.ts"]
+    allowedContext: ["contracts/baml/build-context-packet.baml", "tests/context-router.test.ts", "kernel/context-router.ts"]
   };
 
   const packet = buildModeAwareContextPacket(planTask, defaultSourceRulesForTask(planTask));
 
-  assert.deepEqual(packet.includedFiles, ["contracts/build-context-packet.baml", "kernel/context-router.ts"]);
+  assert.deepEqual(packet.includedFiles, ["contracts/baml/build-context-packet.baml", "kernel/context-router.ts"]);
   assert.equal(packet.sourceAuthorities?.["kernel/context-router.ts"], "accepted");
-  assert.equal(inferAuthorityForPath("contracts/build-context-packet.baml"), "candidate");
+  assert.equal(inferAuthorityForPath("contracts/baml/build-context-packet.baml"), "candidate");
 });
 
 test("TASK-001 JSON matches the minimal governed task shape", async () => {

@@ -13,7 +13,9 @@ export const internalCommandIds = [
   "plugin.apply-approved-proposal",
   "plugin.open-proposal-review",
   "plugin.record-interaction",
-  "plugin.submit-runtime-composer"
+  "plugin.submit-runtime-composer",
+  "plugin.evaluate-project-materials",
+  "plugin.search-project-materials"
 ];
 
 export const commandIdMap = {
@@ -31,7 +33,9 @@ export const commandIdMap = {
   "plugin.apply-approved-proposal": "thinkio.applyApprovedProposal",
   "plugin.open-proposal-review": "thinkio.openProposalReview",
   "plugin.record-interaction": "thinkio.recordInteraction",
-  "plugin.submit-runtime-composer": "thinkio.submitRuntimeComposer"
+  "plugin.submit-runtime-composer": "thinkio.submitRuntimeComposer",
+  "plugin.evaluate-project-materials": "thinkio.evaluateProjectMaterials",
+  "plugin.search-project-materials": "thinkio.searchProjectMaterials"
 };
 
 export const viewIds = {
@@ -40,7 +44,8 @@ export const viewIds = {
   runtimeNodeDiagram: "thinkio.runtimeNodeDiagram",
   contextPanel: "thinkio.contextPanel",
   proposalReview: "thinkio.proposalReview",
-  runtimeComposer: "thinkio.runtimeComposer"
+  runtimeComposer: "thinkio.runtimeComposer",
+  projectNavigation: "thinkio.projectNavigation"
 };
 
 export const bundledAssets = [
@@ -50,5 +55,6 @@ export const bundledAssets = [
   "media/artifact-mindmap.js",
   "media/runtime-node-diagram.js",
   "media/runtime-composer.js",
-  "media/proposal-review.js"
+  "media/proposal-review.js",
+  "media/project-navigation.js"
 ];

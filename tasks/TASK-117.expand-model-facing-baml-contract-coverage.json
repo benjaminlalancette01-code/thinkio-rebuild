@@ -1,0 +1,35 @@
+{
+  "id": "TASK-117",
+  "title": "Expand model-facing BAML contract coverage",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-036",
+    "TASK-050",
+    "TASK-060",
+    "TASK-116"
+  ],
+  "allowedContext": [
+    "contracts/baml/",
+    "kernel/model-contracts.ts",
+    "kernel/provider-output.ts",
+    "kernel/chat-to-task.ts",
+    "docs/baml-contract-boundary-audit-2026-07-12.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "missing-model-exchange-contracts-listed",
+    "new-baml-contracts-added-or-explicitly-deferred",
+    "model-output-governance-boundary-preserved",
+    "tests-or-validation-cover-contract-inventory"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

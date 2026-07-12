@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-102",
+    "title":  "Run Extension Host lifecycle stress test",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-082",
+                         "TASK-096",
+                         "TASK-099"
+                     ],
+    "allowedContext":  [
+                           ".vscode/launch.json",
+                           "test-workspace/",
+                           "extension/",
+                           "docs/vscode-plugin-stress-test-plan-2026-07-10.md",
+                           "tests/extension-host-smoke-harness.test.ts"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "extension-host-lifecycle-stress-run",
+                             "all-plugin-views-activated-repeatedly",
+                             "activation-errors-recorded",
+                             "stress-report-created"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

@@ -1,0 +1,2949 @@
+{
+  "generatedAt": "2026-07-12T15:00:36.026Z",
+  "records": [
+    {
+      "path": ".devtool/features/TASK-102-run-extension-host-lifecycle-stress-test.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-103-run-projection-refresh-file-watcher-stress-test.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-104-run-project-navigation-search-stress-test.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-105-run-command-governance-composer-stress-test.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-106-run-local-vsix-install-workspace-stress-test.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-107-compile-plugin-stress-findings-and-create-follow-up-tasks.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-108-add-automated-isolated-vsix-install-validation.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-109-define-thinkio-native-webview-presentation-architecture.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-110-implement-native-task-kanban-webview-presentation.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-111-implement-project-navigation-search-ui.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-112-implement-artifact-mind-map-visual-presentation.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-113-implement-runtime-node-diagram-interactive-presentation.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-114-implement-runtime-composer-and-proposal-review-ui.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-115-add-webview-ui-stress-and-visual-smoke-validation.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-117-expand-model-facing-baml-contract-coverage.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-118-evaluate-baml-cli-generator-boundary.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": "audit/current-state-report-2026-06-30.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "audit/runtime-kernel-dependency-audit-2026-06-28.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "audit/v1.1.1-plugin-interaction-emulation-gap-report-2026-07-03.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "audit/v1.1.1-reentry-emulation-runtime-gap-audit-2026-07-01.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "audit/vscode-plugin-maturity-audit-2026-07-04.md",
+      "folder": "audit",
+      "disposition": "historical-evidence",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Audit report is historical evidence, not current instructions."
+    },
+    {
+      "path": "docs/approved-project-material-reorganization-actions.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/architecture.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/baml-contract-boundary-audit-2026-07-12.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/canonical-runtime-persistence-boundary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/current-project-hub.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Current project orientation entrypoint."
+    },
+    {
+      "path": "docs/current-project-state-report-2026-07-04.md",
+      "folder": "docs",
+      "disposition": "stale-superseded",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Older current-state report retained as historical evidence."
+    },
+    {
+      "path": "docs/current-project-state-report-2026-07-09.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Latest accepted current-state report before generated project material evaluation."
+    },
+    {
+      "path": "docs/current-project-state-report-2026-07-10-post-stress.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/current-project-state-report-2026-07-10.md",
+      "folder": "docs",
+      "disposition": "stale-superseded",
+      "authority": "historical",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Older current-state report retained as historical evidence."
+    },
+    {
+      "path": "docs/current-state-report-maintenance-workflow.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/design-recovery-comparison-vscode-plugin-gap-report-2026-07-08.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/documentation-manifest.json",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/extension-host-smoke-checklist.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/geometry-projection-boundary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/glossary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/historical-chat-log-import-policy.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/historical-material-disposition.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/kanban-markdown-sync-boundary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/open-task-priority-review-2026-07-08.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/open-task-priority-review-2026-07-09.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/open-task-priority-review-2026-07-10.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/operating-rules.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/product-expansion-boundaries.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/product-runtime-boundary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/project-graph-boundary.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/project-information-architecture.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/project-material-evaluation-completion-report-2026-07-09.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/project-material-search-and-retrieval.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/project-state-report.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Current project orientation entrypoint."
+    },
+    {
+      "path": "docs/task-intake-priority-reorder-workflow.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/thinkio-full-spec-sheet.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/thinkio-plugin-view-ui-audit-2026-07-10.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/thinkio-rebuild-state-audit-report-2026-07-04-antigravity.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/thinkio-vscode-plugin-guide.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/trace-transcript-policy.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vision.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-implementation-plan-064-069.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-runbook.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-runtime-shell.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-stress-findings-report-2026-07-10.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-stress-test-plan-2026-07-10.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/vscode-plugin-view-roadmap.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "imports/accepted/TASK-002.wire-cue-validation.md",
+      "folder": "imports",
+      "disposition": "imported-evidence",
+      "authority": "imported",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Accepted import material already worked into the rebuild."
+    },
+    {
+      "path": "imports/accepted/TASK-008.generate-kanban-and-mindmap-from-task-graph.md",
+      "folder": "imports",
+      "disposition": "imported-evidence",
+      "authority": "imported",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Accepted import material already worked into the rebuild."
+    },
+    {
+      "path": "imports/candidates/TASK-010.governed-decomposition-model.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/candidates/TASK-011.reconstruction-replay-validation-model.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/candidates/TASK-012.governed-mutation-transaction-model.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/candidates/TASK-013.approval-boundary-runtime.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/candidates/TASK-014.governor-orchestrator-model-glossary.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/candidates/TASK-015.geometry-view-projection-metadata.md",
+      "folder": "imports",
+      "disposition": "review-needed",
+      "authority": "imported",
+      "current": false,
+      "reportInput": true,
+      "rationale": "Candidate import material needs explicit review before authority."
+    },
+    {
+      "path": "imports/README.md",
+      "folder": "imports",
+      "disposition": "runtime-support",
+      "authority": "support",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Runtime support material outside the project knowledge folders."
+    },
+    {
+      "path": "state/approvals.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/artifact-chains.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/checkpoints.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/deferred.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/execution-windows.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/handoffs.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/ledger.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/project.graph.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/project.knowledge-index.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "state/project.materials.json",
+      "folder": "state",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "tasks/README.md",
+      "folder": "tasks",
+      "disposition": "runtime-support",
+      "authority": "support",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Runtime support material outside the project knowledge folders."
+    },
+    {
+      "path": "tasks/TASK-001.bootstrap-kernel.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-001.bootstrap-kernel.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-002.wire-cue-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-002.wire-cue-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-003.import-deferred-item-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-003.import-deferred-item-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-004.import-execution-window-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-004.import-execution-window-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-005.import-artifact-chain-validation-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-005.import-artifact-chain-validation-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-006.import-context-mode-router-rules.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-006.import-context-mode-router-rules.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-007.import-checkpoint-handoff-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-007.import-checkpoint-handoff-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-008.generate-kanban-and-mindmap-from-task-graph.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-008.generate-kanban-and-mindmap-from-task-graph.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-009.refresh-runtime-flow-visual-support.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-009.refresh-runtime-flow-visual-support.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-010.import-governed-decomposition-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-010.import-governed-decomposition-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-011.import-reconstruction-replay-validation-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-011.import-reconstruction-replay-validation-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-012.import-governed-mutation-transaction-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-012.import-governed-mutation-transaction-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-013.import-approval-boundary-runtime.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-013.import-approval-boundary-runtime.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-014.add-governor-orchestrator-model-glossary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-014.add-governor-orchestrator-model-glossary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-015.evaluate-geometry-view-projection-metadata.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-015.evaluate-geometry-view-projection-metadata.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-016.add-typescript-typecheck-dependency.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-016.add-typescript-typecheck-dependency.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-017.reconcile-command-registry-runtime-entrypoints.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-017.reconcile-command-registry-runtime-entrypoints.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-018.wire-approved-mutation-transaction-planning.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-018.wire-approved-mutation-transaction-planning.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-019.extend-cue-validation-to-runtime-state-schemas.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-019.extend-cue-validation-to-runtime-state-schemas.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-020.load-approval-state-in-runtime-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-020.load-approval-state-in-runtime-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-021.preserve-ledger-artifact-metadata.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-021.preserve-ledger-artifact-metadata.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-022.enforce-artifact-chain-task-scope.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-022.enforce-artifact-chain-task-scope.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-023.gate-task-runner-with-windows-and-approvals.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-023.gate-task-runner-with-windows-and-approvals.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-024.refresh-runtime-flow-after-audit.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-024.refresh-runtime-flow-after-audit.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-025.formalize-authority-transition-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-025.formalize-authority-transition-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-026.add-atomic-mutation-transaction-applier.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-026.add-atomic-mutation-transaction-applier.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-027.implement-reserved-runtime-entrypoints.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-027.implement-reserved-runtime-entrypoints.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-028.decide-kanban-markdown-sync-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-028.decide-kanban-markdown-sync-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-029.define-full-product-runtime-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-029.define-full-product-runtime-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-030.add-native-step-workboard-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-030.add-native-step-workboard-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-031.add-parallel-branch-return-anchor-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-031.add-parallel-branch-return-anchor-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-032.add-mode-policy-engine-review-before-lock-gate.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-032.add-mode-policy-engine-review-before-lock-gate.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-033.add-runtime-readiness-startup-validation-proof.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-033.add-runtime-readiness-startup-validation-proof.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-034.add-process-ledger-active-work-slices.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-034.add-process-ledger-active-work-slices.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-035.add-context-dependency-context-card-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-035.add-context-dependency-context-card-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-036.add-model-input-output-contract-schemas.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-036.add-model-input-output-contract-schemas.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-037.add-provider-adapter-output-classifier-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-037.add-provider-adapter-output-classifier-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-038.add-governance-decision-engine.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-038.add-governance-decision-engine.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-039.add-runtime-validation-loop-stages.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-039.add-runtime-validation-loop-stages.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-040.add-general-file-action-proposal-writer-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-040.add-general-file-action-proposal-writer-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-041.add-closeout-history-version-validation-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-041.add-closeout-history-version-validation-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-042.add-package-history-manifest-checksum-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-042.add-package-history-manifest-checksum-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-043.replace-external-kanban-with-native-board-projection.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-043.replace-external-kanban-with-native-board-projection.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-044.add-derivation-report-model-runtime-translation-receipts.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-044.add-derivation-report-model-runtime-translation-receipts.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-045.add-friction-signal-model-runtime-ui-surfacing.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-045.add-friction-signal-model-runtime-ui-surfacing.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-046.add-external-model-third-party-intake-review-pipeline.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-046.add-external-model-third-party-intake-review-pipeline.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-047.add-work-package-export-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-047.add-work-package-export-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-048.add-provider-app-output-ingest-validation-pipeline.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-048.add-provider-app-output-ingest-validation-pipeline.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-049.add-native-mind-map-dependency-projection.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-049.add-native-mind-map-dependency-projection.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-050.add-user-thinkio-model-interaction-surface-contract.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-050.add-user-thinkio-model-interaction-surface-contract.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-051.define-vscode-plugin-runtime-shell-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-051.define-vscode-plugin-runtime-shell-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-052.define-self-contained-vscode-plugin-view-architecture.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-052.define-self-contained-vscode-plugin-view-architecture.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-053.implement-native-task-kanban-plugin-view.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-053.implement-native-task-kanban-plugin-view.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-054.implement-artifact-mind-map-plugin-view.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-054.implement-artifact-mind-map-plugin-view.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-055.implement-interactive-runtime-node-diagram-plugin-view.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-055.implement-interactive-runtime-node-diagram-plugin-view.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-056.define-vscode-plugin-command-data-bridge.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-056.define-vscode-plugin-command-data-bridge.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-057.define-plugin-cross-view-selection-sync.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-057.define-plugin-cross-view-selection-sync.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-058.validate-plugin-self-contained-view-bundle.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-058.validate-plugin-self-contained-view-bundle.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-059.add-plugin-interaction-log-boundary-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-059.add-plugin-interaction-log-boundary-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-060.add-chat-to-task-proposal-pipeline.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-060.add-chat-to-task-proposal-pipeline.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-061.add-plugin-runtime-composer-result-surface.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-061.add-plugin-runtime-composer-result-surface.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-062.evaluate-trace-mode-transcript-preservation-policy.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-062.evaluate-trace-mode-transcript-preservation-policy.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-063.evaluate-historical-chat-log-import-policy.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-063.evaluate-historical-chat-log-import-policy.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-064.scaffold-vscode-extension-manifest-activation-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-064.scaffold-vscode-extension-manifest-activation-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-065.implement-vscode-command-adapter-runtime-bridge.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-065.implement-vscode-command-adapter-runtime-bridge.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-066.implement-native-vscode-webview-providers-core-views.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-066.implement-native-vscode-webview-providers-core-views.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-067.implement-runtime-composer-proposal-review-plugin-panels.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-067.implement-runtime-composer-proposal-review-plugin-panels.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-068.add-plugin-workspace-state-persistence.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-068.add-plugin-workspace-state-persistence.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-069.add-vscode-extension-packaging-smoke-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-069.add-vscode-extension-packaging-smoke-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-070.evaluate-marketplace-publishing-metadata-policy.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-070.evaluate-marketplace-publishing-metadata-policy.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-071.evaluate-signed-release-installer-polish.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-071.evaluate-signed-release-installer-polish.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-072.evaluate-remote-model-provider-integration.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-072.evaluate-remote-model-provider-integration.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-073.evaluate-full-standalone-app-chatbox.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-073.evaluate-full-standalone-app-chatbox.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-074.evaluate-transcript-grade-audit-capture-implementation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-074.evaluate-transcript-grade-audit-capture-implementation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-075.evaluate-cross-machine-plugin-state-sync.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-075.evaluate-cross-machine-plugin-state-sync.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-076.evaluate-canonical-runtime-persistence-beyond-plugin-ui-state.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-076.evaluate-canonical-runtime-persistence-beyond-plugin-ui-state.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-077.add-extension-host-launch-manual-smoke-workflow.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-077.add-extension-host-launch-manual-smoke-workflow.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-078.harden-webview-message-protocol-and-csp.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-078.harden-webview-message-protocol-and-csp.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-079.add-live-projection-refresh-file-watchers.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-079.add-live-projection-refresh-file-watchers.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-080.render-governance-results-and-blockers-in-plugin-ui.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-080.render-governance-results-and-blockers-in-plugin-ui.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-081.add-local-vsix-packaging-install-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-081.add-local-vsix-packaging-install-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-082.add-automated-extension-host-smoke-harness.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-082.add-automated-extension-host-smoke-harness.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-083.repair-project-graph-coverage-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-083.repair-project-graph-coverage-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-084.evaluate-user-facing-rule-policy-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-084.evaluate-user-facing-rule-policy-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-085.evaluate-artifact-disposition-quarantine-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-085.evaluate-artifact-disposition-quarantine-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-086.evaluate-provider-registry-capability-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-086.evaluate-provider-registry-capability-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-087.evaluate-multi-project-registry-profile-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-087.evaluate-multi-project-registry-profile-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-088.evaluate-chat-session-provider-turn-ingest-model.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-088.evaluate-chat-session-provider-turn-ingest-model.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-089.evaluate-project-management-decision-layer.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-089.evaluate-project-management-decision-layer.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-090.evaluate-runtime-maturity-ledger.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-090.evaluate-runtime-maturity-ledger.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-091.add-task-intake-priority-reorder-workflow.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-091.add-task-intake-priority-reorder-workflow.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-092.define-project-information-architecture-source-map.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-092.define-project-information-architecture-source-map.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-093.create-current-project-navigation-hub.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-093.create-current-project-navigation-hub.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-094.classify-historical-import-and-audit-material.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-094.classify-historical-import-and-audit-material.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-095.add-documentation-manifest-and-link-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-095.add-documentation-manifest-and-link-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-096.surface-project-navigation-in-plugin.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-096.surface-project-navigation-in-plugin.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-097.define-current-state-report-maintenance-workflow.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-097.define-current-state-report-maintenance-workflow.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-098.evaluate-generated-project-knowledge-index.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-098.evaluate-generated-project-knowledge-index.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-099.evaluate-in-plugin-project-search-and-retrieval.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-099.evaluate-in-plugin-project-search-and-retrieval.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-100.add-project-material-evaluation-runtime-workflow.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-100.add-project-material-evaluation-runtime-workflow.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-101.add-approved-project-material-reorganization-actions.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-101.add-approved-project-material-reorganization-actions.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-102.run-extension-host-lifecycle-stress-test.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-102.run-extension-host-lifecycle-stress-test.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-103.run-projection-refresh-file-watcher-stress-test.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-103.run-projection-refresh-file-watcher-stress-test.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-104.run-project-navigation-search-stress-test.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-104.run-project-navigation-search-stress-test.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-105.run-command-governance-composer-stress-test.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-105.run-command-governance-composer-stress-test.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-106.run-local-vsix-install-workspace-stress-test.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-106.run-local-vsix-install-workspace-stress-test.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-107.compile-plugin-stress-findings-and-create-follow-up-tasks.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-107.compile-plugin-stress-findings-and-create-follow-up-tasks.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-108.add-automated-isolated-vsix-install-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-108.add-automated-isolated-vsix-install-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-109.define-thinkio-native-webview-presentation-architecture.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-109.define-thinkio-native-webview-presentation-architecture.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-110.implement-native-task-kanban-webview-presentation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-110.implement-native-task-kanban-webview-presentation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-111.implement-project-navigation-search-ui.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-111.implement-project-navigation-search-ui.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-112.implement-artifact-mind-map-visual-presentation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-112.implement-artifact-mind-map-visual-presentation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-113.implement-runtime-node-diagram-interactive-presentation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-113.implement-runtime-node-diagram-interactive-presentation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-114.implement-runtime-composer-and-proposal-review-ui.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-114.implement-runtime-composer-and-proposal-review-ui.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-115.add-webview-ui-stress-and-visual-smoke-validation.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-115.add-webview-ui-stress-and-visual-smoke-validation.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-116.repair-baml-contract-folder-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-116.repair-baml-contract-folder-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-117.expand-model-facing-baml-contract-coverage.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-117.expand-model-facing-baml-contract-coverage.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "tasks/TASK-118.evaluate-baml-cli-generator-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-118.evaluate-baml-cli-generator-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
+      "path": "views/dashboard.json",
+      "folder": "views",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "views/kanban.json",
+      "folder": "views",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "views/mindmap.json",
+      "folder": "views",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    },
+    {
+      "path": "views/thinkio-runtime-flow.json",
+      "folder": "views",
+      "disposition": "generated-state",
+      "authority": "generated",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Generated state/view projection derived from canonical files."
+    }
+  ],
+  "summary": {
+    "total": 324,
+    "byDisposition": {
+      "canonical-source": 236,
+      "current-guidance": 40,
+      "generated-state": 14,
+      "historical-evidence": 6,
+      "imported-evidence": 2,
+      "visual-mirror": 16,
+      "runtime-support": 2,
+      "stale-superseded": 2,
+      "review-needed": 6,
+      "rejected-reference": 0
+    },
+    "byAuthority": {
+      "canonical": 236,
+      "current": 40,
+      "generated": 14,
+      "historical": 8,
+      "imported": 8,
+      "mirror": 16,
+      "support": 2
+    },
+    "canonicalSourceCount": 236,
+    "generatedStateCount": 14,
+    "historicalEvidenceCount": 8,
+    "reportInputCount": 306
+  }
+}

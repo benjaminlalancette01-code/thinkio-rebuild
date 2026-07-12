@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-104",
+    "title":  "Run project navigation and search stress test",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-096",
+                         "TASK-098",
+                         "TASK-099"
+                     ],
+    "allowedContext":  [
+                           "extension/views/",
+                           "media/project-navigation.js",
+                           "state/project.materials.json",
+                           "state/project.knowledge-index.json",
+                           "docs/current-project-hub.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-navigation-stress-run",
+                             "search-result-authority-labels-reviewed",
+                             "large-material-set-behavior-recorded",
+                             "stress-report-created"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

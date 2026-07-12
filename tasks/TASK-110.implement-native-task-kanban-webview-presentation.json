@@ -1,0 +1,32 @@
+{
+  "id": "TASK-110",
+  "title": "Implement native Task Kanban webview presentation",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/task-kanban.js",
+    "media/thinkio.css",
+    "views/kanban.json",
+    "extension/runtime-bridge.js",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "kanban-lanes-rendered",
+    "task-cards-rendered-with-authority-and-status",
+    "task-actions-route-through-governance",
+    "raw-json-no-longer-primary-kanban-ui"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

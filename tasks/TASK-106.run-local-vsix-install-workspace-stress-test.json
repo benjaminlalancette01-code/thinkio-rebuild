@@ -1,0 +1,32 @@
+{
+    "id":  "TASK-106",
+    "title":  "Run local VSIX install and workspace stress test",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-081",
+                         "TASK-082"
+                     ],
+    "allowedContext":  [
+                           "local-vsix/",
+                           "scripts/package-local-vsix.mjs",
+                           "scripts/vsix-file-allowlist.json",
+                           "docs/vscode-plugin-runbook.md",
+                           "test-workspace/"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "local-vsix-install-stress-run",
+                             "clean-workspace-behavior-recorded",
+                             "reinstall-behavior-recorded",
+                             "stress-report-created"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

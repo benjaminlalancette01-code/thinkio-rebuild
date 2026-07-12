@@ -1,0 +1,31 @@
+{
+  "id": "TASK-109",
+  "title": "Define ThinkIO-native webview presentation architecture",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-107"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/",
+    "docs/thinkio-plugin-view-ui-audit-2026-07-10.md",
+    "docs/thinkio-vscode-plugin-guide.md",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "shared-webview-layout-contract-defined",
+    "view-specific-rendering-boundaries-defined",
+    "governance-ui-shared-helper-boundary-defined",
+    "empty-loading-error-states-defined"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

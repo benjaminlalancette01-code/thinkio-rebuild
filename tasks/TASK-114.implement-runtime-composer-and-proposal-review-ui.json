@@ -1,0 +1,34 @@
+{
+  "id": "TASK-114",
+  "title": "Implement Runtime Composer and Proposal Review UI",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": [
+    "TASK-109",
+    "TASK-105"
+  ],
+  "allowedContext": [
+    "extension/views/",
+    "media/runtime-composer.js",
+    "media/proposal-review.js",
+    "media/thinkio.css",
+    "extension/runtime-bridge.js",
+    "extension/interaction/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "thinkio-archive/",
+    "archive/",
+    "old-versions/",
+    "candidate-extraction-piles/"
+  ],
+  "requiredEvidence": [
+    "composer-structured-form-rendered",
+    "proposal-list-rendered",
+    "proposal-detail-and-blockers-rendered",
+    "approval-apply-reject-actions-route-through-governance"
+  ],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

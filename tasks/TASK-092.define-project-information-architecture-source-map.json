@@ -1,0 +1,38 @@
+{
+    "id":  "TASK-092",
+    "title":  "Define project information architecture and source map",
+    "mode":  "plan",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-083",
+                         "TASK-090",
+                         "TASK-091"
+                     ],
+    "allowedContext":  [
+                           "docs/",
+                           "audit/",
+                           "imports/",
+                           "tasks/",
+                           "state/",
+                           "views/",
+                           ".devtool/features/",
+                           "docs/current-project-state-report-2026-07-09.md",
+                           "docs/product-expansion-boundaries.md"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "project-information-sources-inventoried",
+                             "canonical-generated-historical-boundaries-defined",
+                             "folder-purpose-map-created",
+                             "current-state-source-of-truth-declared",
+                             "project-material-evaluation-trigger-defined"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

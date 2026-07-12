@@ -26,6 +26,10 @@ if (pkg.private !== true) {
   blockers.push("Local VSIX packaging expects package.json private=true until marketplace policy is promoted.");
 }
 
+if (typeof pkg.engines?.vscode !== "string" || pkg.engines.vscode.length === 0) {
+  blockers.push("VS Code extension package.json must declare engines.vscode.");
+}
+
 if (pkg.extensionDependencies?.length) {
   blockers.push("Local VSIX packaging must not depend on external VS Code view plugins.");
 }

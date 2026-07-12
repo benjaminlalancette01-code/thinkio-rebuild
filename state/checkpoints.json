@@ -1,743 +1,944 @@
 {
-    "checkpoints":  [
-                        {
-                            "id":  "CHK-TASK-001",
-                            "taskId":  "TASK-001",
-                            "status":  "done",
-                            "evidence":  [
-                                             "schema-valid",
-                                             "transition-test-pass",
-                                             "ledger-entry-created"
-                                         ],
-                            "notes":  "TASK-001 MVP checkpoint: task JSON, CUE schema, transition validation, ledger entry, context packet, and checkpoint behavior are present.",
-                            "createdAt":  "2026-05-27T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-002",
-                            "taskId":  "TASK-002",
-                            "status":  "done",
-                            "evidence":  [
-                                             "cue-validation-target-defined",
-                                             "cue-validation-runtime-rule",
-                                             "cue-validation-test-pass"
-                                         ],
-                            "notes":  "TASK-002 wires CUE validation into the local dev runtime through an injectable command runner. Real CUE CLI execution remains dependent on local cue availability.",
-                            "createdAt":  "2026-05-27T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-003",
-                            "taskId":  "TASK-003",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "deferred-model-rewritten",
-                                             "deferred-model-test-pass"
-                                         ],
-                            "notes":  "Deferred items now carry reason, actor, resume timing, required evidence, and resume validation.",
-                            "createdAt":  "2026-06-06T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-004",
-                            "taskId":  "TASK-004",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "execution-window-rule-added",
-                                             "execution-window-test-pass"
-                                         ],
-                            "notes":  "Execution windows now gate executable tasks by task id, authority, and open/close time.",
-                            "createdAt":  "2026-06-06T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-005",
-                            "taskId":  "TASK-005",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "artifact-chain-schema-added",
-                                             "artifact-chain-test-pass"
-                                         ],
-                            "notes":  "Artifact chain manifests now validate provenance, dependency references, and stale artifacts.",
-                            "createdAt":  "2026-06-06T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-006",
-                            "taskId":  "TASK-006",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "context-mode-rule-added",
-                                             "context-router-test-pass"
-                                         ],
-                            "notes":  "Context routing now includes mode filters and source authority inference while preserving archive exclusions.",
-                            "createdAt":  "2026-06-06T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-007",
-                            "taskId":  "TASK-007",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "checkpoint-handoff-rule-added",
-                                             "checkpoint-test-pass"
-                                         ],
-                            "notes":  "Checkpoint handoffs now bind accepted decisions, next valid step, and resume context to a checkpoint.",
-                            "createdAt":  "2026-06-06T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-008",
-                            "taskId":  "TASK-008",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "view-generation-rule-added",
-                                             "view-generation-test-pass"
-                                         ],
-                            "notes":  "Kanban, mindmap, and dashboard views are now generated projections from governed task records and the project graph.",
-                            "createdAt":  "2026-06-27T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-009",
-                            "taskId":  "TASK-009",
-                            "status":  "done",
-                            "evidence":  [
-                                             "runtime-flow-drift-identified",
-                                             "runtime-flow-view-refreshed",
-                                             "runtime-flow-test-pass"
-                                         ],
-                            "notes":  "Runtime-flow visual support now reflects TASK-008 as done and documents the active update-views projection flow.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-010",
-                            "taskId":  "TASK-010",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "decomposition-schema-added",
-                                             "decomposition-rule-test-pass"
-                                         ],
-                            "notes":  "Governed decomposition records now preserve parent dependencies, evidence requirements, checkpoint lineage, and reconstruction paths across child tasks.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-011",
-                            "taskId":  "TASK-011",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "replay-validation-schema-added",
-                                             "replay-validation-test-pass"
-                                         ],
-                            "notes":  "Replay validation manifests now check reconstruction readiness from state files, checkpoints, ledger artifacts, artifact chains, and project graph nodes without activating autonomous replay.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-012",
-                            "taskId":  "TASK-012",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "mutation-transaction-schema-added",
-                                             "mutation-transaction-test-pass"
-                                         ],
-                            "notes":  "Mutation transactions now plan evidence-gated status and authority changes with explicit ledger, checkpoint, and rollback effects.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-013",
-                            "taskId":  "TASK-013",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "approval-boundary-rule-added",
-                                             "approval-boundary-test-pass"
-                                         ],
-                            "notes":  "Local runtime approval boundaries now require explicit approval records for checkpoint writes and mutation transaction planning.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-016",
-                            "taskId":  "TASK-016",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "typescript-dependency-added",
-                                             "typecheck-script-pass"
-                                         ],
-                            "notes":  "TypeScript is now a project dev dependency, npm typecheck runs tsc --noEmit, and the standard check script includes typecheck.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-017",
-                            "taskId":  "TASK-017",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "command-registry-runtime-map-added",
-                                             "command-registry-test-pass"
-                                         ],
-                            "notes":  "The command registry now separates implemented local runtime actions from reserved local runtime actions and tests prove the split covers the allow-list.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-018",
-                            "taskId":  "TASK-018",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "approved-mutation-planner-wired",
-                                             "approved-mutation-planner-test-pass"
-                                         ],
-                            "notes":  "Local runtime mutation planning now checks the command registry, requires approval, and delegates transaction validation to the kernel mutation transaction model.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-019",
-                            "taskId":  "TASK-019",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "non-task-cue-targets-added",
-                                             "workspace-schema-validation-test-pass"
-                                         ],
-                            "notes":  "Workspace CUE validation now covers governed task records plus canonical runtime state files for approvals, artifacts, checkpoints, deferred work, execution windows, handoffs, ledger, and project graph.",
-                            "createdAt":  "2026-06-28T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-020",
-                            "taskId":  "TASK-020",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "approval-state-reader-added",
-                                             "approval-state-runtime-test-pass"
-                                         ],
-                            "notes":  "Local runtime approval boundaries can now read canonical approval state from state/approvals.json while retaining injectable approvals for tests.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-021",
-                            "taskId":  "TASK-021",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "ledger-metadata-preserved",
-                                             "ledger-metadata-test-pass"
-                                         ],
-                            "notes":  "Artifact ledger creation now preserves optional hash and dependency metadata with defensive array copying.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-022",
-                            "taskId":  "TASK-022",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "artifact-chain-task-scope-enforced",
-                                             "artifact-chain-scope-test-pass"
-                                         ],
-                            "notes":  "Artifact chain validation now requires manifest artifacts, root artifacts, and dependencies to stay inside the manifest task scope.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-023",
-                            "taskId":  "TASK-023",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "task-runner-boundary-gates-added",
-                                             "task-runner-boundary-test-pass"
-                                         ],
-                            "notes":  "Task-run preparation can now include execution-window blockers and approval-boundary blockers before reporting a run as executable.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-024",
-                            "taskId":  "TASK-024",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "runtime-flow-audit-refresh-added",
-                                             "runtime-flow-audit-refresh-test-pass"
-                                         ],
-                            "notes":  "Runtime-flow visual support has been refreshed after the dependency audit to describe the current kernel, runtime, validation, and remaining gaps.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-025",
-                            "taskId":  "TASK-025",
-                            "status":  "done",
-                            "evidence":  [
-                                             "missing-work-task-created",
-                                             "authority-transition-rules-added",
-                                             "authority-transition-test-pass"
-                                         ],
-                            "notes":  "Authority transitions are now modeled explicitly in the state machine and mutation transactions validate authority movement before writes can be planned or applied.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-026",
-                            "taskId":  "TASK-026",
-                            "status":  "done",
-                            "evidence":  [
-                                             "missing-work-task-created",
-                                             "atomic-mutation-applier-added",
-                                             "mutation-applier-rollback-test-pass"
-                                         ],
-                            "notes":  "The local runtime can now apply approved mutation transactions through guarded temp-file writes and records rollback metadata for the previous task state.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-027",
-                            "taskId":  "TASK-027",
-                            "status":  "done",
-                            "evidence":  [
-                                             "missing-work-task-created",
-                                             "reserved-runtime-entrypoints-implemented",
-                                             "reserved-runtime-entrypoint-test-pass"
-                                         ],
-                            "notes":  "The command registry no longer has reserved local actions; JSON task validation, transition-state validation, and test execution are exposed as runtime entrypoints.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-028",
-                            "taskId":  "TASK-028",
-                            "status":  "done",
-                            "evidence":  [
-                                             "missing-work-task-created",
-                                             "kanban-sync-boundary-decided",
-                                             "kanban-sync-boundary-test-or-note-added"
-                                         ],
-                            "notes":  "Kanban Markdown cards are documented as read-only visual mirrors; canonical task state remains in tasks/*.json unless a future guarded sync command is added.",
-                            "createdAt":  "2026-06-30T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-030",
-                            "taskId":  "TASK-030",
-                            "status":  "done",
-                            "evidence":  [
-                                             "workboard-model-defined",
-                                             "one-current-step-invariant-defined",
-                                             "workboard-validation-added",
-                                             "workboard-tests-pass"
-                                         ],
-                            "notes":  "Native workboard model now defines work steps, workflow positions, one-current-step validation, parent/order checks, and artifact link validation.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-031",
-                            "taskId":  "TASK-031",
-                            "status":  "done",
-                            "evidence":  [
-                                             "branch-anchor-model-defined",
-                                             "return-anchor-rules-added",
-                                             "parallel-branch-validation-added",
-                                             "branch-tests-pass"
-                                         ],
-                            "notes":  "Parallel branch records and return anchors now validate lifecycle, step links, success conditions, and resumable anchors.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-032",
-                            "taskId":  "TASK-032",
-                            "status":  "done",
-                            "evidence":  [
-                                             "mode-policy-model-defined",
-                                             "review-before-lock-gate-added",
-                                             "mode-action-policy-tests-pass",
-                                             "mode-policy-surface-documented"
-                                         ],
-                            "notes":  "Mode policy now defines mode-specific actions, validation strictness, ingestion behavior, review-before-lock, and exploratory routing.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-033",
-                            "taskId":  "TASK-033",
-                            "status":  "done",
-                            "evidence":  [
-                                             "runtime-readiness-proof-model-defined",
-                                             "startup-validation-checks-added",
-                                             "readiness-blocker-output-added",
-                                             "readiness-tests-pass"
-                                         ],
-                            "notes":  "Runtime readiness proof now checks required state files, schema health, workboard invariants, unfinished transactions, and open branches.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-034",
-                            "taskId":  "TASK-034",
-                            "status":  "done",
-                            "evidence":  [
-                                             "process-ledger-model-defined",
-                                             "active-work-slice-model-defined",
-                                             "ledger-validation-added",
-                                             "process-ledger-tests-pass"
-                                         ],
-                            "notes":  "Process ledger records and active work slices now capture runtime events, decisions, validation outcomes, and bounded active context.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-035",
-                            "taskId":  "TASK-035",
-                            "status":  "done",
-                            "evidence":  [
-                                             "context-dependency-model-defined",
-                                             "context-card-model-defined",
-                                             "context-card-promotion-rules-added",
-                                             "context-card-tests-pass"
-                                         ],
-                            "notes":  "Context dependencies and context cards now attach non-canonical rationale, friction, warnings, ideas, and references with review-gated promotion.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-036",
-                            "taskId":  "TASK-036",
-                            "status":  "done",
-                            "evidence":  [
-                                             "model-input-contract-schema-added",
-                                             "model-output-contract-schema-added",
-                                             "output-class-vocabulary-defined",
-                                             "model-contract-tests-pass"
-                                         ],
-                            "notes":  "Model input and output contracts now define intent, active target, context bundle, governance context, output classes, provider identity, warnings, and proposed actions.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-037",
-                            "taskId":  "TASK-037",
-                            "status":  "done",
-                            "evidence":  [
-                                             "provider-adapter-interface-added",
-                                             "output-classifier-added",
-                                             "provider-output-normalization-tested",
-                                             "provider-boundary-documented"
-                                         ],
-                            "notes":  "Provider boundary now normalizes provider requests/responses and classifies output into ThinkIO model output classes while preserving warnings.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-038",
-                            "taskId":  "TASK-038",
-                            "status":  "done",
-                            "evidence":  [
-                                             "governance-decision-record-defined",
-                                             "action-sensitivity-classifier-added",
-                                             "mode-authority-validation-integrated",
-                                             "governance-decision-tests-pass"
-                                         ],
-                            "notes":  "Governance decisions now combine mode, authority, validation, scope, output class, and sensitivity into allow/approval-required/block/defer outcomes.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-039",
-                            "taskId":  "TASK-039",
-                            "status":  "done",
-                            "evidence":  [
-                                             "validation-stage-model-defined",
-                                             "pre-export-validation-added",
-                                             "post-provider-validation-added",
-                                             "post-ingest-validation-tests-pass"
-                                         ],
-                            "notes":  "Runtime validation loop stages now model pre-export, post-export, post-provider, pre-ingest, and post-ingest results with blocker propagation.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-040",
-                            "taskId":  "TASK-040",
-                            "status":  "done",
-                            "evidence":  [
-                                             "file-action-proposal-model-defined",
-                                             "writer-boundary-integrated",
-                                             "file-action-risk-routing-added",
-                                             "file-action-tests-pass"
-                                         ],
-                            "notes":  "General file action proposals now classify file operation risk, require approval/checkpoint/rollback links for sensitive writes, and route through a writer-boundary decision.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-041",
-                            "taskId":  "TASK-041",
-                            "status":  "done",
-                            "evidence":  [
-                                             "closeout-record-model-defined",
-                                             "history-version-validation-added",
-                                             "rollback-anchor-linking-added",
-                                             "closeout-tests-pass"
-                                         ],
-                            "notes":  "Closeout records now bind scope, reason, active work, validations, changed artifacts, rollback anchors, checkpoints, and next valid action.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-042",
-                            "taskId":  "TASK-042",
-                            "status":  "done",
-                            "evidence":  [
-                                             "package-history-manifest-model-defined",
-                                             "checksum-validation-added",
-                                             "manifest-staleness-blockers-added",
-                                             "manifest-validation-tests-pass"
-                                         ],
-                            "notes":  "Package/history manifests now track artifact hashes and report missing or mismatched manifest entries for readiness and closeout integrity.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-043",
-                            "taskId":  "TASK-043",
-                            "status":  "done",
-                            "evidence":  [
-                                             "native-board-projection-model-defined",
-                                             "kanban-mirror-boundary-preserved",
-                                             "board-action-contract-added",
-                                             "board-projection-tests-pass"
-                                         ],
-                            "notes":  "Native board projection now derives lanes, blockers, dependencies, friction markers, and action contracts from runtime state while preserving Kanban Markdown as a visual mirror.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-044",
-                            "taskId":  "TASK-044",
-                            "status":  "done",
-                            "evidence":  [
-                                             "derivation-record-model-defined",
-                                             "derivation-classification-added",
-                                             "derivation-validation-added",
-                                             "derivation-tests-pass"
-                                         ],
-                            "notes":  "Derivation records now classify runtime translations as refinement, extension, contradiction, or uncertainty and validate source/target traceability.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-045",
-                            "taskId":  "TASK-045",
-                            "status":  "done",
-                            "evidence":  [
-                                             "friction-signal-model-defined",
-                                             "friction-status-lifecycle-added",
-                                             "friction-view-projection-added",
-                                             "friction-signal-tests-pass"
-                                         ],
-                            "notes":  "Friction signals now capture repeated workflow resistance with lifecycle states and projection links to board and mind-map surfaces.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-046",
-                            "taskId":  "TASK-046",
-                            "status":  "done",
-                            "evidence":  [
-                                             "intake-record-model-defined",
-                                             "external-output-classification-added",
-                                             "promotion-decision-flow-added",
-                                             "intake-pipeline-tests-pass"
-                                         ],
-                            "notes":  "External/model/third-party intake records now classify output and route promotion decisions without granting authority before review.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-047",
-                            "taskId":  "TASK-047",
-                            "status":  "done",
-                            "evidence":  [
-                                             "work-package-model-defined",
-                                             "bounded-export-validation-added",
-                                             "source-inclusion-exclusion-tracking-added",
-                                             "work-package-tests-pass"
-                                         ],
-                            "notes":  "Work packages now bound model/app export context with included/excluded sources, expected output classes, validation profile, and provider target.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-048",
-                            "taskId":  "TASK-048",
-                            "status":  "done",
-                            "evidence":  [
-                                             "provider-output-record-model-defined",
-                                             "ingest-validation-pipeline-added",
-                                             "governance-disposition-routing-added",
-                                             "provider-output-ingest-tests-pass"
-                                         ],
-                            "notes":  "Provider/app output ingest records now validate returned output against work package expectations and route final dispositions through governance paths.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-049",
-                            "taskId":  "TASK-049",
-                            "status":  "done",
-                            "evidence":  [
-                                             "mindmap-node-vocabulary-defined",
-                                             "mindmap-edge-vocabulary-defined",
-                                             "runtime-state-projection-added",
-                                             "mindmap-projection-tests-pass"
-                                         ],
-                            "notes":  "Native mind-map projection now deterministically projects tasks, steps, context, friction, work packages, provider output, derivations, and validation nodes/edges.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-050",
-                            "taskId":  "TASK-050",
-                            "status":  "done",
-                            "evidence":  [
-                                             "interaction-surface-contract-defined",
-                                             "chat-session-state-boundary-defined",
-                                             "model-action-visibility-rules-added",
-                                             "interaction-surface-validation-note-added"
-                                         ],
-                            "notes":  "Interaction surface contract now defines allowed user requests, visible output states, selected runtime context, and non-canonical chat attachment rules.",
-                            "createdAt":  "2026-07-02T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-014",
-                            "taskId":  "TASK-014",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "glossary-entry-added",
-                                             "docs-check-pass"
-                                         ],
-                            "notes":  "Glossary now defines governor, orchestrator, model, and Y-X-Z as documentation-only vocabulary without adding runtime fields.",
-                            "createdAt":  "2026-07-03T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-015",
-                            "taskId":  "TASK-015",
-                            "status":  "done",
-                            "evidence":  [
-                                             "candidate-note-created",
-                                             "geometry-projection-decision-recorded",
-                                             "geometry-projection-test-pass"
-                                         ],
-                            "notes":  "Geometry was evaluated and constrained to optional projection metadata only; tests prove it does not alter task status or authority.",
-                            "createdAt":  "2026-07-03T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-029",
-                            "taskId":  "TASK-029",
-                            "status":  "done",
-                            "evidence":  [
-                                             "missing-work-task-created",
-                                             "product-runtime-boundary-defined",
-                                             "runtime-roadmap-note-added"
-                                         ],
-                            "notes":  "Product runtime boundary now defines a VS Code plugin-first MVP and defers standalone full-app chat, daemon, and autonomous replay beyond the first product runtime.",
-                            "createdAt":  "2026-07-03T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-051",
-                            "taskId":  "TASK-051",
-                            "status":  "done",
-                            "evidence":  [
-                                             "vscode-plugin-target-recorded",
-                                             "full-app-chatbox-deferred",
-                                             "plugin-runtime-shell-boundary-defined",
-                                             "plugin-mvp-surface-plan-added"
-                                         ],
-                            "notes":  "VS Code plugin runtime shell boundary now defines the plugin as current product target, defers full-app chatbox, and records MVP surfaces and model handoff rules.",
-                            "createdAt":  "2026-07-03T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-083",
-                            "taskId":  "TASK-083",
-                            "status":  "done",
-                            "evidence":  [
-                                             "project-graph-covers-current-task-range",
-                                             "project-graph-validation-detects-missing-task-nodes",
-                                             "dependency-edge-coverage-validated",
-                                             "graph-authority-boundary-documented"
-                                         ],
-                            "notes":  "Project graph support state is now generated from canonical task JSON, includes all current task nodes and dependency edges, and has tests for stale graph coverage.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-091",
-                            "taskId":  "TASK-091",
-                            "status":  "done",
-                            "evidence":  [
-                                             "task-intake-reorder-rule-documented",
-                                             "open-work-input-sources-defined",
-                                             "promotion-demotion-criteria-defined",
-                                             "candidate-idea-deferred-ordering-protocol-defined",
-                                             "view-card-order-refresh-path-defined"
-                                         ],
-                            "notes":  "Task intake reorder is now a standing workflow with documented inputs, promotion criteria, candidate/idea ordering protocol, deferred item handling, and npm check validation for open card order.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-077",
-                            "taskId":  "TASK-077",
-                            "status":  "done",
-                            "evidence":  [
-                                             "extension-host-launch-config-added",
-                                             "manual-smoke-workflow-documented",
-                                             "test-workspace-fixture-added",
-                                             "extension-host-smoke-checklist-added"
-                                         ],
-                            "notes":  "Extension Host launch workflow now has a VS Code launch profile, update-views prelaunch task, test workspace fixture, smoke checklist, runbook docs, and validation coverage.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-078",
-                            "taskId":  "TASK-078",
-                            "status":  "done",
-                            "evidence":  [
-                                             "webview-message-schema-added",
-                                             "webview-command-allowlist-enforced",
-                                             "webview-csp-asset-uris-hardened",
-                                             "webview-message-tests-pass"
-                                         ],
-                            "notes":  "Webview messages now pass through a shared allowlisted protocol with structured acknowledgements, and webview providers use VS Code-safe asset URIs, local resource roots, and nonce-based CSP.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-079",
-                            "taskId":  "TASK-079",
-                            "status":  "done",
-                            "evidence":  [
-                                             "projection-file-watchers-added",
-                                             "webview-refresh-event-added",
-                                             "stale-projection-handling-added",
-                                             "live-refresh-tests-pass"
-                                         ],
-                            "notes":  "Extension activation now registers debounced projection file watchers and providers post projection refresh events with stale projection blockers to webviews.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-080",
-                            "taskId":  "TASK-080",
-                            "status":  "done",
-                            "evidence":  [
-                                             "governance-result-ui-model-added",
-                                             "blocker-rendering-added",
-                                             "proposal-review-result-rendering-added",
-                                             "governance-ui-tests-pass"
-                                         ],
-                            "notes":  "Plugin webviews now render structured governance results, blockers, proposal-created states, approval-required states, and stale projection blockers inline.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-081",
-                            "taskId":  "TASK-081",
-                            "status":  "done",
-                            "evidence":  [
-                                             "local-vsix-build-path-added",
-                                             "local-install-validation-added",
-                                             "packaged-file-allowlist-added",
-                                             "vsix-validation-tests-pass"
-                                         ],
-                            "notes":  "Local VSIX packaging now uses a tracked allowlist, package validator, no-network VSIX builder, runbook install/uninstall instructions, and script/test coverage.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        },
-                        {
-                            "id":  "CHK-TASK-082",
-                            "taskId":  "TASK-082",
-                            "status":  "done",
-                            "evidence":  [
-                                             "extension-host-test-harness-added",
-                                             "activation-smoke-automated",
-                                             "core-command-smoke-automated",
-                                             "extension-host-tests-pass"
-                                         ],
-                            "notes":  "Automated Extension Host smoke harness now validates activation, command registration, webview provider registration, watcher registration, webview rendering, and approval-required mutation blocking.",
-                            "createdAt":  "2026-07-08T00:00:00.000Z"
-                        }
-                    ]
+  "checkpoints": [
+    {
+      "id": "CHK-TASK-001",
+      "taskId": "TASK-001",
+      "status": "done",
+      "evidence": [
+        "schema-valid",
+        "transition-test-pass",
+        "ledger-entry-created"
+      ],
+      "notes": "TASK-001 MVP checkpoint: task JSON, CUE schema, transition validation, ledger entry, context packet, and checkpoint behavior are present.",
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-002",
+      "taskId": "TASK-002",
+      "status": "done",
+      "evidence": [
+        "cue-validation-target-defined",
+        "cue-validation-runtime-rule",
+        "cue-validation-test-pass"
+      ],
+      "notes": "TASK-002 wires CUE validation into the local dev runtime through an injectable command runner. Real CUE CLI execution remains dependent on local cue availability.",
+      "createdAt": "2026-05-27T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-003",
+      "taskId": "TASK-003",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "deferred-model-rewritten",
+        "deferred-model-test-pass"
+      ],
+      "notes": "Deferred items now carry reason, actor, resume timing, required evidence, and resume validation.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-004",
+      "taskId": "TASK-004",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "execution-window-rule-added",
+        "execution-window-test-pass"
+      ],
+      "notes": "Execution windows now gate executable tasks by task id, authority, and open/close time.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-005",
+      "taskId": "TASK-005",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "artifact-chain-schema-added",
+        "artifact-chain-test-pass"
+      ],
+      "notes": "Artifact chain manifests now validate provenance, dependency references, and stale artifacts.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-006",
+      "taskId": "TASK-006",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "context-mode-rule-added",
+        "context-router-test-pass"
+      ],
+      "notes": "Context routing now includes mode filters and source authority inference while preserving archive exclusions.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-007",
+      "taskId": "TASK-007",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "checkpoint-handoff-rule-added",
+        "checkpoint-test-pass"
+      ],
+      "notes": "Checkpoint handoffs now bind accepted decisions, next valid step, and resume context to a checkpoint.",
+      "createdAt": "2026-06-06T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-008",
+      "taskId": "TASK-008",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "view-generation-rule-added",
+        "view-generation-test-pass"
+      ],
+      "notes": "Kanban, mindmap, and dashboard views are now generated projections from governed task records and the project graph.",
+      "createdAt": "2026-06-27T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-009",
+      "taskId": "TASK-009",
+      "status": "done",
+      "evidence": [
+        "runtime-flow-drift-identified",
+        "runtime-flow-view-refreshed",
+        "runtime-flow-test-pass"
+      ],
+      "notes": "Runtime-flow visual support now reflects TASK-008 as done and documents the active update-views projection flow.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-010",
+      "taskId": "TASK-010",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "decomposition-schema-added",
+        "decomposition-rule-test-pass"
+      ],
+      "notes": "Governed decomposition records now preserve parent dependencies, evidence requirements, checkpoint lineage, and reconstruction paths across child tasks.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-011",
+      "taskId": "TASK-011",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "replay-validation-schema-added",
+        "replay-validation-test-pass"
+      ],
+      "notes": "Replay validation manifests now check reconstruction readiness from state files, checkpoints, ledger artifacts, artifact chains, and project graph nodes without activating autonomous replay.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-012",
+      "taskId": "TASK-012",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "mutation-transaction-schema-added",
+        "mutation-transaction-test-pass"
+      ],
+      "notes": "Mutation transactions now plan evidence-gated status and authority changes with explicit ledger, checkpoint, and rollback effects.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-013",
+      "taskId": "TASK-013",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "approval-boundary-rule-added",
+        "approval-boundary-test-pass"
+      ],
+      "notes": "Local runtime approval boundaries now require explicit approval records for checkpoint writes and mutation transaction planning.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-016",
+      "taskId": "TASK-016",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "typescript-dependency-added",
+        "typecheck-script-pass"
+      ],
+      "notes": "TypeScript is now a project dev dependency, npm typecheck runs tsc --noEmit, and the standard check script includes typecheck.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-017",
+      "taskId": "TASK-017",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "command-registry-runtime-map-added",
+        "command-registry-test-pass"
+      ],
+      "notes": "The command registry now separates implemented local runtime actions from reserved local runtime actions and tests prove the split covers the allow-list.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-018",
+      "taskId": "TASK-018",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "approved-mutation-planner-wired",
+        "approved-mutation-planner-test-pass"
+      ],
+      "notes": "Local runtime mutation planning now checks the command registry, requires approval, and delegates transaction validation to the kernel mutation transaction model.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-019",
+      "taskId": "TASK-019",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "non-task-cue-targets-added",
+        "workspace-schema-validation-test-pass"
+      ],
+      "notes": "Workspace CUE validation now covers governed task records plus canonical runtime state files for approvals, artifacts, checkpoints, deferred work, execution windows, handoffs, ledger, and project graph.",
+      "createdAt": "2026-06-28T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-020",
+      "taskId": "TASK-020",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "approval-state-reader-added",
+        "approval-state-runtime-test-pass"
+      ],
+      "notes": "Local runtime approval boundaries can now read canonical approval state from state/approvals.json while retaining injectable approvals for tests.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-021",
+      "taskId": "TASK-021",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "ledger-metadata-preserved",
+        "ledger-metadata-test-pass"
+      ],
+      "notes": "Artifact ledger creation now preserves optional hash and dependency metadata with defensive array copying.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-022",
+      "taskId": "TASK-022",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "artifact-chain-task-scope-enforced",
+        "artifact-chain-scope-test-pass"
+      ],
+      "notes": "Artifact chain validation now requires manifest artifacts, root artifacts, and dependencies to stay inside the manifest task scope.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-023",
+      "taskId": "TASK-023",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "task-runner-boundary-gates-added",
+        "task-runner-boundary-test-pass"
+      ],
+      "notes": "Task-run preparation can now include execution-window blockers and approval-boundary blockers before reporting a run as executable.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-024",
+      "taskId": "TASK-024",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "runtime-flow-audit-refresh-added",
+        "runtime-flow-audit-refresh-test-pass"
+      ],
+      "notes": "Runtime-flow visual support has been refreshed after the dependency audit to describe the current kernel, runtime, validation, and remaining gaps.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-025",
+      "taskId": "TASK-025",
+      "status": "done",
+      "evidence": [
+        "missing-work-task-created",
+        "authority-transition-rules-added",
+        "authority-transition-test-pass"
+      ],
+      "notes": "Authority transitions are now modeled explicitly in the state machine and mutation transactions validate authority movement before writes can be planned or applied.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-026",
+      "taskId": "TASK-026",
+      "status": "done",
+      "evidence": [
+        "missing-work-task-created",
+        "atomic-mutation-applier-added",
+        "mutation-applier-rollback-test-pass"
+      ],
+      "notes": "The local runtime can now apply approved mutation transactions through guarded temp-file writes and records rollback metadata for the previous task state.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-027",
+      "taskId": "TASK-027",
+      "status": "done",
+      "evidence": [
+        "missing-work-task-created",
+        "reserved-runtime-entrypoints-implemented",
+        "reserved-runtime-entrypoint-test-pass"
+      ],
+      "notes": "The command registry no longer has reserved local actions; JSON task validation, transition-state validation, and test execution are exposed as runtime entrypoints.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-028",
+      "taskId": "TASK-028",
+      "status": "done",
+      "evidence": [
+        "missing-work-task-created",
+        "kanban-sync-boundary-decided",
+        "kanban-sync-boundary-test-or-note-added"
+      ],
+      "notes": "Kanban Markdown cards are documented as read-only visual mirrors; canonical task state remains in tasks/*.json unless a future guarded sync command is added.",
+      "createdAt": "2026-06-30T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-030",
+      "taskId": "TASK-030",
+      "status": "done",
+      "evidence": [
+        "workboard-model-defined",
+        "one-current-step-invariant-defined",
+        "workboard-validation-added",
+        "workboard-tests-pass"
+      ],
+      "notes": "Native workboard model now defines work steps, workflow positions, one-current-step validation, parent/order checks, and artifact link validation.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-031",
+      "taskId": "TASK-031",
+      "status": "done",
+      "evidence": [
+        "branch-anchor-model-defined",
+        "return-anchor-rules-added",
+        "parallel-branch-validation-added",
+        "branch-tests-pass"
+      ],
+      "notes": "Parallel branch records and return anchors now validate lifecycle, step links, success conditions, and resumable anchors.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-032",
+      "taskId": "TASK-032",
+      "status": "done",
+      "evidence": [
+        "mode-policy-model-defined",
+        "review-before-lock-gate-added",
+        "mode-action-policy-tests-pass",
+        "mode-policy-surface-documented"
+      ],
+      "notes": "Mode policy now defines mode-specific actions, validation strictness, ingestion behavior, review-before-lock, and exploratory routing.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-033",
+      "taskId": "TASK-033",
+      "status": "done",
+      "evidence": [
+        "runtime-readiness-proof-model-defined",
+        "startup-validation-checks-added",
+        "readiness-blocker-output-added",
+        "readiness-tests-pass"
+      ],
+      "notes": "Runtime readiness proof now checks required state files, schema health, workboard invariants, unfinished transactions, and open branches.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-034",
+      "taskId": "TASK-034",
+      "status": "done",
+      "evidence": [
+        "process-ledger-model-defined",
+        "active-work-slice-model-defined",
+        "ledger-validation-added",
+        "process-ledger-tests-pass"
+      ],
+      "notes": "Process ledger records and active work slices now capture runtime events, decisions, validation outcomes, and bounded active context.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-035",
+      "taskId": "TASK-035",
+      "status": "done",
+      "evidence": [
+        "context-dependency-model-defined",
+        "context-card-model-defined",
+        "context-card-promotion-rules-added",
+        "context-card-tests-pass"
+      ],
+      "notes": "Context dependencies and context cards now attach non-canonical rationale, friction, warnings, ideas, and references with review-gated promotion.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-036",
+      "taskId": "TASK-036",
+      "status": "done",
+      "evidence": [
+        "model-input-contract-schema-added",
+        "model-output-contract-schema-added",
+        "output-class-vocabulary-defined",
+        "model-contract-tests-pass"
+      ],
+      "notes": "Model input and output contracts now define intent, active target, context bundle, governance context, output classes, provider identity, warnings, and proposed actions.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-037",
+      "taskId": "TASK-037",
+      "status": "done",
+      "evidence": [
+        "provider-adapter-interface-added",
+        "output-classifier-added",
+        "provider-output-normalization-tested",
+        "provider-boundary-documented"
+      ],
+      "notes": "Provider boundary now normalizes provider requests/responses and classifies output into ThinkIO model output classes while preserving warnings.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-038",
+      "taskId": "TASK-038",
+      "status": "done",
+      "evidence": [
+        "governance-decision-record-defined",
+        "action-sensitivity-classifier-added",
+        "mode-authority-validation-integrated",
+        "governance-decision-tests-pass"
+      ],
+      "notes": "Governance decisions now combine mode, authority, validation, scope, output class, and sensitivity into allow/approval-required/block/defer outcomes.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-039",
+      "taskId": "TASK-039",
+      "status": "done",
+      "evidence": [
+        "validation-stage-model-defined",
+        "pre-export-validation-added",
+        "post-provider-validation-added",
+        "post-ingest-validation-tests-pass"
+      ],
+      "notes": "Runtime validation loop stages now model pre-export, post-export, post-provider, pre-ingest, and post-ingest results with blocker propagation.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-040",
+      "taskId": "TASK-040",
+      "status": "done",
+      "evidence": [
+        "file-action-proposal-model-defined",
+        "writer-boundary-integrated",
+        "file-action-risk-routing-added",
+        "file-action-tests-pass"
+      ],
+      "notes": "General file action proposals now classify file operation risk, require approval/checkpoint/rollback links for sensitive writes, and route through a writer-boundary decision.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-041",
+      "taskId": "TASK-041",
+      "status": "done",
+      "evidence": [
+        "closeout-record-model-defined",
+        "history-version-validation-added",
+        "rollback-anchor-linking-added",
+        "closeout-tests-pass"
+      ],
+      "notes": "Closeout records now bind scope, reason, active work, validations, changed artifacts, rollback anchors, checkpoints, and next valid action.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-042",
+      "taskId": "TASK-042",
+      "status": "done",
+      "evidence": [
+        "package-history-manifest-model-defined",
+        "checksum-validation-added",
+        "manifest-staleness-blockers-added",
+        "manifest-validation-tests-pass"
+      ],
+      "notes": "Package/history manifests now track artifact hashes and report missing or mismatched manifest entries for readiness and closeout integrity.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-043",
+      "taskId": "TASK-043",
+      "status": "done",
+      "evidence": [
+        "native-board-projection-model-defined",
+        "kanban-mirror-boundary-preserved",
+        "board-action-contract-added",
+        "board-projection-tests-pass"
+      ],
+      "notes": "Native board projection now derives lanes, blockers, dependencies, friction markers, and action contracts from runtime state while preserving Kanban Markdown as a visual mirror.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-044",
+      "taskId": "TASK-044",
+      "status": "done",
+      "evidence": [
+        "derivation-record-model-defined",
+        "derivation-classification-added",
+        "derivation-validation-added",
+        "derivation-tests-pass"
+      ],
+      "notes": "Derivation records now classify runtime translations as refinement, extension, contradiction, or uncertainty and validate source/target traceability.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-045",
+      "taskId": "TASK-045",
+      "status": "done",
+      "evidence": [
+        "friction-signal-model-defined",
+        "friction-status-lifecycle-added",
+        "friction-view-projection-added",
+        "friction-signal-tests-pass"
+      ],
+      "notes": "Friction signals now capture repeated workflow resistance with lifecycle states and projection links to board and mind-map surfaces.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-046",
+      "taskId": "TASK-046",
+      "status": "done",
+      "evidence": [
+        "intake-record-model-defined",
+        "external-output-classification-added",
+        "promotion-decision-flow-added",
+        "intake-pipeline-tests-pass"
+      ],
+      "notes": "External/model/third-party intake records now classify output and route promotion decisions without granting authority before review.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-047",
+      "taskId": "TASK-047",
+      "status": "done",
+      "evidence": [
+        "work-package-model-defined",
+        "bounded-export-validation-added",
+        "source-inclusion-exclusion-tracking-added",
+        "work-package-tests-pass"
+      ],
+      "notes": "Work packages now bound model/app export context with included/excluded sources, expected output classes, validation profile, and provider target.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-048",
+      "taskId": "TASK-048",
+      "status": "done",
+      "evidence": [
+        "provider-output-record-model-defined",
+        "ingest-validation-pipeline-added",
+        "governance-disposition-routing-added",
+        "provider-output-ingest-tests-pass"
+      ],
+      "notes": "Provider/app output ingest records now validate returned output against work package expectations and route final dispositions through governance paths.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-049",
+      "taskId": "TASK-049",
+      "status": "done",
+      "evidence": [
+        "mindmap-node-vocabulary-defined",
+        "mindmap-edge-vocabulary-defined",
+        "runtime-state-projection-added",
+        "mindmap-projection-tests-pass"
+      ],
+      "notes": "Native mind-map projection now deterministically projects tasks, steps, context, friction, work packages, provider output, derivations, and validation nodes/edges.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-050",
+      "taskId": "TASK-050",
+      "status": "done",
+      "evidence": [
+        "interaction-surface-contract-defined",
+        "chat-session-state-boundary-defined",
+        "model-action-visibility-rules-added",
+        "interaction-surface-validation-note-added"
+      ],
+      "notes": "Interaction surface contract now defines allowed user requests, visible output states, selected runtime context, and non-canonical chat attachment rules.",
+      "createdAt": "2026-07-02T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-014",
+      "taskId": "TASK-014",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "glossary-entry-added",
+        "docs-check-pass"
+      ],
+      "notes": "Glossary now defines governor, orchestrator, model, and Y-X-Z as documentation-only vocabulary without adding runtime fields.",
+      "createdAt": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-015",
+      "taskId": "TASK-015",
+      "status": "done",
+      "evidence": [
+        "candidate-note-created",
+        "geometry-projection-decision-recorded",
+        "geometry-projection-test-pass"
+      ],
+      "notes": "Geometry was evaluated and constrained to optional projection metadata only; tests prove it does not alter task status or authority.",
+      "createdAt": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-029",
+      "taskId": "TASK-029",
+      "status": "done",
+      "evidence": [
+        "missing-work-task-created",
+        "product-runtime-boundary-defined",
+        "runtime-roadmap-note-added"
+      ],
+      "notes": "Product runtime boundary now defines a VS Code plugin-first MVP and defers standalone full-app chat, daemon, and autonomous replay beyond the first product runtime.",
+      "createdAt": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-051",
+      "taskId": "TASK-051",
+      "status": "done",
+      "evidence": [
+        "vscode-plugin-target-recorded",
+        "full-app-chatbox-deferred",
+        "plugin-runtime-shell-boundary-defined",
+        "plugin-mvp-surface-plan-added"
+      ],
+      "notes": "VS Code plugin runtime shell boundary now defines the plugin as current product target, defers full-app chatbox, and records MVP surfaces and model handoff rules.",
+      "createdAt": "2026-07-03T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-083",
+      "taskId": "TASK-083",
+      "status": "done",
+      "evidence": [
+        "project-graph-covers-current-task-range",
+        "project-graph-validation-detects-missing-task-nodes",
+        "dependency-edge-coverage-validated",
+        "graph-authority-boundary-documented"
+      ],
+      "notes": "Project graph support state is now generated from canonical task JSON, includes all current task nodes and dependency edges, and has tests for stale graph coverage.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-091",
+      "taskId": "TASK-091",
+      "status": "done",
+      "evidence": [
+        "task-intake-reorder-rule-documented",
+        "open-work-input-sources-defined",
+        "promotion-demotion-criteria-defined",
+        "candidate-idea-deferred-ordering-protocol-defined",
+        "view-card-order-refresh-path-defined"
+      ],
+      "notes": "Task intake reorder is now a standing workflow with documented inputs, promotion criteria, candidate/idea ordering protocol, deferred item handling, and npm check validation for open card order.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-077",
+      "taskId": "TASK-077",
+      "status": "done",
+      "evidence": [
+        "extension-host-launch-config-added",
+        "manual-smoke-workflow-documented",
+        "test-workspace-fixture-added",
+        "extension-host-smoke-checklist-added"
+      ],
+      "notes": "Extension Host launch workflow now has a VS Code launch profile, update-views prelaunch task, test workspace fixture, smoke checklist, runbook docs, and validation coverage.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-078",
+      "taskId": "TASK-078",
+      "status": "done",
+      "evidence": [
+        "webview-message-schema-added",
+        "webview-command-allowlist-enforced",
+        "webview-csp-asset-uris-hardened",
+        "webview-message-tests-pass"
+      ],
+      "notes": "Webview messages now pass through a shared allowlisted protocol with structured acknowledgements, and webview providers use VS Code-safe asset URIs, local resource roots, and nonce-based CSP.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-079",
+      "taskId": "TASK-079",
+      "status": "done",
+      "evidence": [
+        "projection-file-watchers-added",
+        "webview-refresh-event-added",
+        "stale-projection-handling-added",
+        "live-refresh-tests-pass"
+      ],
+      "notes": "Extension activation now registers debounced projection file watchers and providers post projection refresh events with stale projection blockers to webviews.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-080",
+      "taskId": "TASK-080",
+      "status": "done",
+      "evidence": [
+        "governance-result-ui-model-added",
+        "blocker-rendering-added",
+        "proposal-review-result-rendering-added",
+        "governance-ui-tests-pass"
+      ],
+      "notes": "Plugin webviews now render structured governance results, blockers, proposal-created states, approval-required states, and stale projection blockers inline.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-081",
+      "taskId": "TASK-081",
+      "status": "done",
+      "evidence": [
+        "local-vsix-build-path-added",
+        "local-install-validation-added",
+        "packaged-file-allowlist-added",
+        "vsix-validation-tests-pass"
+      ],
+      "notes": "Local VSIX packaging now uses a tracked allowlist, package validator, no-network VSIX builder, runbook install/uninstall instructions, and script/test coverage.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-082",
+      "taskId": "TASK-082",
+      "status": "done",
+      "evidence": [
+        "extension-host-test-harness-added",
+        "activation-smoke-automated",
+        "core-command-smoke-automated",
+        "extension-host-tests-pass"
+      ],
+      "notes": "Automated Extension Host smoke harness now validates activation, command registration, webview provider registration, watcher registration, webview rendering, and approval-required mutation blocking.",
+      "createdAt": "2026-07-08T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-092",
+      "taskId": "TASK-092",
+      "status": "done",
+      "evidence": [
+        "project-information-sources-inventoried",
+        "canonical-generated-historical-boundaries-defined",
+        "folder-purpose-map-created",
+        "current-state-source-of-truth-declared",
+        "project-material-evaluation-trigger-defined"
+      ],
+      "notes": "Project information architecture, folder authority, source-of-truth boundaries, and material evaluation trigger are documented.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-093",
+      "taskId": "TASK-093",
+      "status": "done",
+      "evidence": [
+        "single-project-entrypoint-created",
+        "current-state-links-grouped-by-purpose",
+        "plugin-use-path-linked",
+        "next-work-queue-linked",
+        "project-state-report-entrypoint-linked"
+      ],
+      "notes": "Current project hub now groups project state, material architecture, plugin use, generated views, and historical evidence.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-094",
+      "taskId": "TASK-094",
+      "status": "done",
+      "evidence": [
+        "historical-report-disposition-rules-defined",
+        "imports-folder-authority-defined",
+        "stale-report-warning-pattern-defined",
+        "historical-material-navigation-updated",
+        "material-reorganization-rules-defined",
+        "project-state-report-inputs-classified"
+      ],
+      "notes": "Historical, import, stale, generated, current, and canonical material disposition rules are defined and used by the evaluator.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-095",
+      "taskId": "TASK-095",
+      "status": "done",
+      "evidence": [
+        "documentation-manifest-added",
+        "current-vs-historical-docs-validated",
+        "local-link-validation-added",
+        "check-script-includes-doc-validation"
+      ],
+      "notes": "Documentation manifest and local link validation are wired into npm run check.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-096",
+      "taskId": "TASK-096",
+      "status": "done",
+      "evidence": [
+        "project-navigation-view-model-added",
+        "current-state-entrypoint-visible-in-plugin",
+        "historical-material-clearly-labeled-in-plugin",
+        "plugin-navigation-tests-pass"
+      ],
+      "notes": "VS Code extension now exposes a Project Navigation view backed by project material state.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-097",
+      "taskId": "TASK-097",
+      "status": "done",
+      "evidence": [
+        "state-report-update-trigger-defined",
+        "report-supersession-rule-defined",
+        "current-report-pointer-defined",
+        "maintenance-workflow-linked-from-guide"
+      ],
+      "notes": "Current-state report maintenance workflow defines update triggers, report pointer, and supersession rules.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-098",
+      "taskId": "TASK-098",
+      "status": "done",
+      "evidence": [
+        "generated-index-need-reviewed",
+        "manual-vs-generated-boundary-defined",
+        "index-refresh-trigger-defined"
+      ],
+      "notes": "Generated project knowledge index is produced from classified project material by the runtime evaluator.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-100",
+      "taskId": "TASK-100",
+      "status": "done",
+      "evidence": [
+        "project-material-evaluator-added",
+        "material-disposition-rules-applied",
+        "project-state-report-generated",
+        "runtime-trigger-documented",
+        "material-reorganization-validation-added"
+      ],
+      "notes": "Runtime project material evaluator writes material state, knowledge index, and project-state report.",
+      "createdAt": "2026-07-09T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-101",
+      "taskId": "TASK-101",
+      "status": "done",
+      "evidence": [
+        "project-material-action-types-defined",
+        "move-remove-promote-archive-approval-boundary-defined",
+        "dry-run-reorganization-plan-added",
+        "destructive-material-actions-blocked-without-approval"
+      ],
+      "notes": "Project material reorganization now has action types, dry-run planning, and approval blocking for sensitive/destructive actions.",
+      "createdAt": "2026-07-10T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-102",
+      "taskId": "TASK-102",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created"
+      ],
+      "notes": "Completed TASK-102 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-103",
+      "taskId": "TASK-103",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created"
+      ],
+      "notes": "Completed TASK-103 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-104",
+      "taskId": "TASK-104",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created"
+      ],
+      "notes": "Completed TASK-104 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-105",
+      "taskId": "TASK-105",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created"
+      ],
+      "notes": "Completed TASK-105 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-106",
+      "taskId": "TASK-106",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created"
+      ],
+      "notes": "Completed TASK-106 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-107",
+      "taskId": "TASK-107",
+      "status": "done",
+      "createdAt": "2026-07-10T22:15:00.000Z",
+      "evidence": [
+        "stress-run-completed",
+        "stress-report-created",
+        "follow-up-tasks-created"
+      ],
+      "notes": "Completed TASK-107 during the 2026-07-10 VS Code plugin stress phase. Evidence is recorded in docs/vscode-plugin-stress-findings-report-2026-07-10.md."
+    },
+    {
+      "id": "CHK-TASK-116",
+      "taskId": "TASK-116",
+      "status": "done",
+      "evidence": [
+        "baml-contracts-nested-under-contracts-baml",
+        "references-updated",
+        "layout-validation-added",
+        "baml-boundary-audit-created"
+      ],
+      "notes": "BAML contracts moved under contracts/baml, references and VSIX allowlist updated, and layout validation added.",
+      "createdAt": "2026-07-12T00:00:00.000Z"
+    }
+  ]
 }

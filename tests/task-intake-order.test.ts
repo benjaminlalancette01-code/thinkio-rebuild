@@ -43,3 +43,18 @@ test("blocks missing cards, status drift, and non-contiguous order", () => {
   assert.ok(blockers.some((blocker) => blocker.includes("unsupported priority urgent")));
   assert.ok(blockers.some((blocker) => blocker.includes("expected i001")));
 });
+
+test("ignores stale feature mirrors for completed tasks", () => {
+  const blockers = validateTaskIntakeOrder(
+    [
+      { ...taskBase, id: "TASK-100", title: "Done", status: "done", authority: "accepted" },
+      { ...taskBase, id: "TASK-101", title: "Candidate", status: "candidate", authority: "candidate" }
+    ],
+    [
+      { id: "TASK-100", status: "candidate", priority: "high", order: "c001", file: "TASK-100.md" },
+      { id: "TASK-101", status: "candidate", priority: "high", order: "c001", file: "TASK-101.md" }
+    ]
+  );
+
+  assert.deepEqual(blockers, []);
+});

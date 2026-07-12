@@ -1,0 +1,74 @@
+{
+  "currentEntrypoints": [
+    "docs/current-project-hub.md",
+    "docs/project-state-report.md",
+    "docs/current-project-state-report-2026-07-10.md",
+    "docs/current-project-state-report-2026-07-10-post-stress.md",
+    "docs/project-material-evaluation-completion-report-2026-07-09.md",
+    "docs/project-information-architecture.md",
+    "docs/historical-material-disposition.md",
+    "docs/approved-project-material-reorganization-actions.md",
+    "docs/project-material-search-and-retrieval.md",
+    "docs/baml-contract-boundary-audit-2026-07-12.md",
+    "docs/current-state-report-maintenance-workflow.md",
+    "docs/vscode-plugin-stress-test-plan-2026-07-10.md",
+    "docs/vscode-plugin-stress-findings-report-2026-07-10.md",
+    "docs/thinkio-plugin-view-ui-audit-2026-07-10.md",
+    "docs/open-task-priority-review-2026-07-10.md",
+    "docs/thinkio-vscode-plugin-guide.md"
+  ],
+  "generatedReports": [
+    "docs/project-state-report.md",
+    "state/project.materials.json",
+    "state/project.knowledge-index.json"
+  ],
+  "historicalEvidence": [
+    "docs/current-project-state-report-2026-07-04.md",
+    "docs/current-project-state-report-2026-07-09.md",
+    "audit/vscode-plugin-maturity-audit-2026-07-04.md",
+    "imports/accepted/TASK-002.wire-cue-validation.md",
+    "imports/accepted/TASK-008.generate-kanban-and-mindmap-from-task-graph.md"
+  ],
+  "requiredLocalLinks": [
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/project-state-report.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/project-information-architecture.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/historical-material-disposition.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/current-state-report-maintenance-workflow.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/baml-contract-boundary-audit-2026-07-12.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/current-project-state-report-2026-07-10.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/current-project-state-report-2026-07-10-post-stress.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/vscode-plugin-stress-test-plan-2026-07-10.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/vscode-plugin-stress-findings-report-2026-07-10.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/thinkio-plugin-view-ui-audit-2026-07-10.md"
+    }
+  ]
+}

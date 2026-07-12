@@ -8,7 +8,7 @@ ThinkIO is built from small, explicit layers:
 - `state/` stores current operational state.
 - `views/` stores simple JSON projections.
 - `runtime/` contains local development runtime entry points.
-- `contracts/` documents model-facing BAML boundaries.
+- `contracts/baml/` documents model-facing BAML boundaries.
 
 Archive material is reference-only. Concepts may be extracted into new files, but old runtime files are not authoritative.
 

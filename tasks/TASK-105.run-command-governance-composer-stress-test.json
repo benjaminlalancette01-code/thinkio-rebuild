@@ -1,0 +1,33 @@
+{
+    "id":  "TASK-105",
+    "title":  "Run command governance and composer stress test",
+    "mode":  "review",
+    "status":  "done",
+    "authority":  "accepted",
+    "dependencies":  [
+                         "TASK-057",
+                         "TASK-078",
+                         "TASK-080"
+                     ],
+    "allowedContext":  [
+                           "extension/commands.js",
+                           "extension/runtime-bridge.js",
+                           "extension/views/webview-messages.js",
+                           "media/runtime-composer.js",
+                           "media/proposal-review.js"
+                       ],
+    "blockedContext":  [
+                           "thinkio-archive/",
+                           "archive/",
+                           "old-versions/",
+                           "candidate-extraction-piles/"
+                       ],
+    "requiredEvidence":  [
+                             "command-stress-run",
+                             "blocked-command-governance-reviewed",
+                             "composer-repeated-use-recorded",
+                             "stress-report-created"
+                         ],
+    "promotionRule":  "all-required-evidence-present",
+    "checkpointRequired":  true
+}

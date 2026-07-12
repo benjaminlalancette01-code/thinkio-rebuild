@@ -4,6 +4,7 @@ import { readFile, access } from "node:fs/promises";
 import { createWebviewAcknowledgement, validateWebviewMessage } from "../extension/views/webview-messages.js";
 import { watchedProjectionPatterns } from "../extension/projection-watchers.js";
 import { buildGovernanceResultViewModel } from "../extension/views/governance-ui.js";
+import { createRuntimeBridge } from "../extension/runtime-bridge.js";
 
 const commandIds = [
   "thinkio.refreshView",
@@ -20,7 +21,9 @@ const commandIds = [
   "thinkio.applyApprovedProposal",
   "thinkio.openProposalReview",
   "thinkio.recordInteraction",
-  "thinkio.submitRuntimeComposer"
+  "thinkio.submitRuntimeComposer",
+  "thinkio.evaluateProjectMaterials",
+  "thinkio.searchProjectMaterials"
 ];
 
 const viewIds = [
@@ -29,7 +32,8 @@ const viewIds = [
   "thinkio.runtimeNodeDiagram",
   "thinkio.contextPanel",
   "thinkio.proposalReview",
-  "thinkio.runtimeComposer"
+  "thinkio.runtimeComposer",
+  "thinkio.projectNavigation"
 ];
 
 const requiredExtensionFiles = [
@@ -57,7 +61,8 @@ const requiredExtensionFiles = [
   "media/artifact-mindmap.js",
   "media/runtime-node-diagram.js",
   "media/runtime-composer.js",
-  "media/proposal-review.js"
+  "media/proposal-review.js",
+  "media/project-navigation.js"
 ];
 
 test("VS Code extension manifest declares ThinkIO commands and views", async () => {
@@ -101,12 +106,15 @@ test("VS Code extension shell keeps command routing and views local", async () =
   assert.match(contracts, /plugin\.save-task-proposal/);
   assert.match(commands, /registerCommand/);
   assert.match(bridge, /requires approval before canonical mutation/);
+  assert.match(bridge, /update-project-materials/);
+  assert.match(bridge, /search-project-materials/);
   assert.match(extension, /registerProjectionRefreshWatchers/);
   assert.match(coreViews, /registerWebviewViewProvider/);
   assert.match(coreViews, /localResourceRoots/);
   assert.match(coreViews, /asWebviewUri/);
   assert.match(panels, /plugin\.record-interaction/);
   assert.match(panels, /handleWebviewMessage/);
+  assert.match(panels, /project-navigation/);
 });
 
 test("projection refresh watchers cover views, tasks, and state files", () => {
@@ -208,6 +216,18 @@ test("webview acknowledgements are structured for command results", () => {
   assert.equal(acknowledgement.ok, true);
   assert.deepEqual(acknowledgement.blockers, []);
   assert.equal(acknowledgement.governance.title, "Validated");
+});
+
+test("runtime bridge creates distinct proposal ids under repeated commands", async () => {
+  const bridge = createRuntimeBridge(process.cwd());
+  const first = await bridge.execute("plugin.add-task-proposal", { title: "First" });
+  const second = await bridge.execute("plugin.submit-runtime-composer", { title: "Second" });
+  const firstProposal = first.proposal as { id?: string } | undefined;
+  const secondProposal = second.proposal as { id?: string } | undefined;
+
+  assert.equal(first.status, "proposal-created");
+  assert.equal(second.status, "proposal-created");
+  assert.notEqual(firstProposal?.id, secondProposal?.id);
 });
 
 test("governance result model exposes blockers, proposals, and approval states", () => {
