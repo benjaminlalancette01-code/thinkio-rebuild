@@ -753,8 +753,8 @@
       "id": "TASK-108",
       "label": "Add automated isolated VSIX install validation",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-109",
@@ -816,15 +816,15 @@
       "id": "TASK-117",
       "label": "Expand model-facing BAML contract coverage",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-118",
       "label": "Evaluate BAML CLI generator boundary",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-119",
@@ -837,57 +837,57 @@
       "id": "TASK-120",
       "label": "Implement native session grounding and next-action resolver",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-121",
       "label": "Define project identity, workspace topology, and load-mode registry",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-122",
       "label": "Add shared origin, provenance, impact, and explainable gate results",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-123",
       "label": "Add capability registry, maturity, and promotion lifecycle",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-124",
       "label": "Add cross-layer contradiction and concept-loss validation",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-125",
       "label": "Add worktree-task reconciliation and closeout readiness",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-126",
       "label": "Define historical translation registry and skill disposition workflow",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-127",
       "label": "Add semantic naming registry and linter",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-128",
@@ -900,8 +900,8 @@
       "id": "TASK-129",
       "label": "Define export readiness, storage reliability, and version profiles",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     },
     {
       "id": "TASK-130",
@@ -914,8 +914,8 @@
       "id": "TASK-131",
       "label": "Define reentry translation architecture boundary",
       "kind": "task",
-      "status": "candidate",
-      "authority": "candidate"
+      "status": "done",
+      "authority": "accepted"
     }
   ],
   "edges": [

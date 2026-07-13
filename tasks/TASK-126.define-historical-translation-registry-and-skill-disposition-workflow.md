@@ -1,10 +1,15 @@
-# TASK-126: Define Historical Translation Registry And Skill Disposition Workflow
+# TASK-126: Define historical translation registry and skill disposition workflow
 
-Track how historical ThinkIO concepts and deprecated skills map to current native behavior.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define a registry for archive concept, current native destination, disposition, evidence, and supersession.
-- Add skill disposition categories: active external, native replacement, superseded, deferred, rejected.
-- Connect this registry to project-material classification and capability registry.
-- Add tests and generated reporting.
+Added historical translation records and skill disposition validation with supersession rules.
+
+Evidence:
+
+- `historical-translation-record-defined`
+- `skill-disposition-workflow-defined`
+- `archive-source-mapping-preserved`
+- `supersession-rules-defined`
+- `tests-pass`

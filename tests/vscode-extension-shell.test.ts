@@ -10,6 +10,7 @@ const commandIds = [
   "thinkio.refreshView",
   "thinkio.selectRecord",
   "thinkio.openRecord",
+  "thinkio.startResume",
   "thinkio.switchMode",
   "thinkio.addTaskProposal",
   "thinkio.saveTaskProposal",
@@ -104,10 +105,12 @@ test("VS Code extension shell keeps command routing and views local", async () =
   const panels = await readFile("extension/views/composer-proposal-providers.js", "utf8");
 
   assert.match(contracts, /plugin\.save-task-proposal/);
+  assert.match(contracts, /plugin\.start-resume/);
   assert.match(commands, /registerCommand/);
   assert.match(bridge, /requires approval before canonical mutation/);
   assert.match(bridge, /update-project-materials/);
   assert.match(bridge, /search-project-materials/);
+  assert.match(bridge, /resolve-next-action/);
   assert.match(extension, /registerProjectionRefreshWatchers/);
   assert.match(coreViews, /registerWebviewViewProvider/);
   assert.match(coreViews, /localResourceRoots/);
@@ -139,8 +142,11 @@ test("extension validation script is wired into package scripts", async () => {
 
   assert.equal(pkg.scripts["validate:extension"], "node scripts/validate-vscode-extension-package.mjs");
   assert.equal(pkg.scripts["validate:vsix"], "node scripts/validate-local-vsix-package.mjs");
-  assert.equal(pkg.scripts["package:extension"], "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs");
+  assert.equal(pkg.scripts["validate:baml"], "node --experimental-strip-types scripts/validate-baml-contract-inventory.mjs");
+  assert.equal(pkg.scripts["validate:vsix:isolated"], "node scripts/validate-isolated-vsix-install.mjs");
+  assert.equal(pkg.scripts["package:extension"], "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs && npm run validate:vsix:isolated");
   assert.match(pkg.scripts.check, /validate:extension/);
+  assert.match(pkg.scripts.check, /validate:baml/);
 });
 
 test("local VSIX packaging has an allowlist and install runbook", async () => {
@@ -152,7 +158,9 @@ test("local VSIX packaging has an allowlist and install runbook", async () => {
   assert.ok(allowlist.files.includes("package.json"));
   assert.ok(allowlist.files.includes("extension/extension.js"));
   assert.ok(allowlist.files.includes("media/task-kanban.js"));
+  assert.ok(allowlist.files.includes("contracts/baml/translate-reentry-responsibility.baml"));
   assert.match(runbook, /npm run package:extension/);
+  assert.match(runbook, /npm run validate:vsix:isolated/);
   assert.match(runbook, /code --install-extension local-vsix/);
   assert.match(runbook, /code --uninstall-extension thinkio\.thinkio-rebuild/);
 });

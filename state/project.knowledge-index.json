@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T01:30:31.332Z",
+  "generatedAt": "2026-07-13T01:54:09.925Z",
   "groups": [
     {
       "disposition": "canonical-source",
@@ -363,7 +363,6 @@
     {
       "disposition": "visual-mirror",
       "paths": [
-        ".devtool/features/TASK-108-add-automated-isolated-vsix-install-validation.md",
         ".devtool/features/TASK-109-define-thinkio-native-webview-presentation-architecture.md",
         ".devtool/features/TASK-110-implement-native-task-kanban-webview-presentation.md",
         ".devtool/features/TASK-111-implement-project-navigation-search-ui.md",
@@ -371,19 +370,7 @@
         ".devtool/features/TASK-113-implement-runtime-node-diagram-interactive-presentation.md",
         ".devtool/features/TASK-114-implement-runtime-composer-and-proposal-review-ui.md",
         ".devtool/features/TASK-115-add-webview-ui-stress-and-visual-smoke-validation.md",
-        ".devtool/features/TASK-117-expand-model-facing-baml-contract-coverage.md",
-        ".devtool/features/TASK-118-evaluate-baml-cli-generator-boundary.md",
-        ".devtool/features/TASK-120-implement-native-session-grounding-and-next-action-resolver.md",
-        ".devtool/features/TASK-121-define-project-identity-workspace-topology-and-load-mode-registry.md",
-        ".devtool/features/TASK-122-add-shared-origin-provenance-impact-and-explainable-gate-results.md",
-        ".devtool/features/TASK-123-add-capability-registry-maturity-and-promotion-lifecycle.md",
-        ".devtool/features/TASK-124-add-cross-layer-contradiction-and-concept-loss-validation.md",
-        ".devtool/features/TASK-125-add-worktree-task-reconciliation-and-closeout-readiness.md",
-        ".devtool/features/TASK-126-define-historical-translation-registry-and-skill-disposition-workflow.md",
-        ".devtool/features/TASK-127-add-semantic-naming-registry-and-linter.md",
-        ".devtool/features/TASK-128-add-ui-requirement-traceability-and-project-control-surface.md",
-        ".devtool/features/TASK-129-define-export-readiness-storage-reliability-and-version-profiles.md",
-        ".devtool/features/TASK-131-define-reentry-translation-architecture-boundary.md"
+        ".devtool/features/TASK-128-add-ui-requirement-traceability-and-project-control-surface.md"
       ]
     },
     {

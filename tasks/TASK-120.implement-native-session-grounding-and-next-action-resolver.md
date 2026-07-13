@@ -1,10 +1,15 @@
-# TASK-120: Implement Native Session Grounding And Next-Action Resolver
+# TASK-120: Implement native session grounding and next-action resolver
 
-Create the native replacement for old session reentry and project-support routing.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define a session-grounding record that combines project identity, current task, checkpoint, approval, blockers, generated view freshness, worktree state, and mode.
-- Implement a deterministic next-action resolver.
-- Expose the result through a runtime command and VS Code command surface.
-- Add tests proving deferred or historical work cannot outrank active governed work without evidence.
+Added session-grounding records, deterministic next-action resolution, and a start/resume command surface.
+
+Evidence:
+
+- `session-grounding-record-defined`
+- `next-action-resolver-implemented`
+- `start-resume-command-defined`
+- `resolver-tests-pass`
+- `views-refresh-from-resolver-output`

@@ -2,8 +2,8 @@
   "id": "TASK-108",
   "title": "Add automated isolated VSIX install validation",
   "mode": "build",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-106",
     "TASK-107"

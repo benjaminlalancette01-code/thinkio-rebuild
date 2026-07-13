@@ -2,8 +2,8 @@
   "id": "TASK-118",
   "title": "Evaluate BAML CLI generator boundary",
   "mode": "review",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-116",
     "TASK-117"

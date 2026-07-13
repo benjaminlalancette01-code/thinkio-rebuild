@@ -2,12 +2,36 @@
   "id": "TASK-121",
   "title": "Define project identity, workspace topology, and load-mode registry",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
-  "dependencies": ["TASK-092", "TASK-093", "TASK-119", "TASK-120"],
-  "allowedContext": ["thinkio.config.json", "schemas/", "kernel/", "runtime/", "state/", "docs/", "tests/"],
-  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
-  "requiredEvidence": ["project-identity-record-defined", "workspace-topology-policy-defined", "load-mode-registry-defined", "identity-validation-tests-pass", "project-identity-projection-generated"],
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-092",
+    "TASK-093",
+    "TASK-119",
+    "TASK-120"
+  ],
+  "allowedContext": [
+    "thinkio.config.json",
+    "schemas/",
+    "kernel/",
+    "runtime/",
+    "state/",
+    "docs/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "../Thinkio-fullarchive/",
+    "archive-work/",
+    "node_modules/",
+    "local-vsix/"
+  ],
+  "requiredEvidence": [
+    "project-identity-record-defined",
+    "workspace-topology-policy-defined",
+    "load-mode-registry-defined",
+    "identity-validation-tests-pass",
+    "project-identity-projection-generated"
+  ],
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }

@@ -191,10 +191,12 @@ test("package scripts use Node 22 TypeScript stripping and deterministic validat
   assert.equal(pkg.scripts["validate:cue:soft"], "node --experimental-strip-types runtime/validate-schemas.ts --soft");
   assert.equal(pkg.scripts["validate:task-order"], "node --experimental-strip-types scripts/validate-task-intake-order.ts");
   assert.equal(pkg.scripts["validate:docs"], "node --experimental-strip-types scripts/validate-docs.ts");
+  assert.equal(pkg.scripts["validate:baml"], "node --experimental-strip-types scripts/validate-baml-contract-inventory.mjs");
   assert.equal(pkg.scripts["update:project-materials"], "node --experimental-strip-types runtime/update-project-materials.ts");
   assert.equal(pkg.scripts["validate:extension"], "node scripts/validate-vscode-extension-package.mjs");
   assert.equal(pkg.scripts["validate:vsix"], "node scripts/validate-local-vsix-package.mjs");
-  assert.equal(pkg.scripts["package:extension"], "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs");
-  assert.equal(pkg.scripts.check, "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:docs && npm run validate:extension && npm test");
+  assert.equal(pkg.scripts["validate:vsix:isolated"], "node scripts/validate-isolated-vsix-install.mjs");
+  assert.equal(pkg.scripts["package:extension"], "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs && npm run validate:vsix:isolated");
+  assert.equal(pkg.scripts.check, "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:docs && npm run validate:baml && npm run validate:extension && npm test");
   assert.equal(pkg.engines.node, ">=22.0.0");
 });

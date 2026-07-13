@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-10T00:00:00.000Z"
 modified: "2026-07-10T00:00:00.000Z"
 labels: ["thinkio", "vscode-plugin", "webview"]
-order: "c019"
+order: "c005"
 ---
 # TASK-113: Implement Runtime Node Diagram interactive presentation
 

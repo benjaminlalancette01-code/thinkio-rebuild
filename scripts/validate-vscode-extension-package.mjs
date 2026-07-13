@@ -34,6 +34,7 @@ const requiredCommands = [
   "thinkio.refreshView",
   "thinkio.selectRecord",
   "thinkio.openRecord",
+  "thinkio.startResume",
   "thinkio.switchMode",
   "thinkio.addTaskProposal",
   "thinkio.saveTaskProposal",

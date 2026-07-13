@@ -1,11 +1,14 @@
-# TASK-118: Evaluate BAML CLI Generator Boundary
+# TASK-118: Evaluate BAML CLI generator boundary
 
-Decide whether ThinkIO should keep BAML files as architectural contracts under `contracts/baml/` or adopt a BAML CLI-compatible `baml_src/` and generated TypeScript client path.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Review current BAML CLI layout expectations.
-- Decide whether `contracts/baml/` remains documentation-only or becomes mirrored into `baml_src/`.
-- Define whether generated BAML clients belong in source, generated output, package artifacts, or deferred provider-integration work.
-- Record how this affects remote model/provider integration.
+Recorded the BAML CLI/generated-client boundary: contracts/baml remains documentation authority until provider integration is approved.
 
+Evidence:
+
+- `baml-cli-layout-requirements-reviewed`
+- `baml-src-or-contracts-baml-decision-recorded`
+- `generated-client-boundary-defined`
+- `provider-integration-readiness-impact-recorded`

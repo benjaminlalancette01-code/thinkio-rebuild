@@ -1,9 +1,15 @@
-# TASK-127: Add Semantic Naming Registry And Linter
+# TASK-127: Add semantic naming registry and linter
 
-Move from glossary-only naming guidance to a native semantic naming registry.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define canonical terms, deprecated terms, replacements, and scope.
-- Add a linter for high-risk semantic drift in docs, tasks, schemas, commands, and generated views.
-- Keep external naming skills advisory only; native checks own project terminology.
+Added semantic naming/deprecated-term linting for current ThinkIO terminology.
+
+Evidence:
+
+- `semantic-naming-registry-defined`
+- `deprecated-term-map-defined`
+- `naming-linter-added`
+- `docs-and-task-names-checked`
+- `tests-pass`

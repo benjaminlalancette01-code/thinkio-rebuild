@@ -1,10 +1,15 @@
-# TASK-124: Add Cross-Layer Contradiction And Concept-Loss Validation
+# TASK-124: Add cross-layer contradiction and concept-loss validation
 
-Detect cases where docs, tasks, state, runtime, UI, Git, or historical translation records disagree.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define contradiction checks across task status, authority, implementation, docs, projections, and package state.
-- Add concept-loss validation so accepted historical responsibilities cannot disappear silently.
-- Wire the validator into `npm run check`.
-- Add fixtures for stale docs, done-without-implementation, and missing capability mapping.
+Added cross-layer contradiction and concept-loss validation across tasks, docs, capabilities, and translations.
+
+Evidence:
+
+- `cross-layer-validator-defined`
+- `contradiction-cases-covered`
+- `concept-loss-check-defined`
+- `validation-wired-into-check`
+- `tests-pass`

@@ -1,11 +1,16 @@
-# TASK-131: Define Reentry Translation Architecture Boundary
+# TASK-131: Define reentry translation architecture boundary
 
-Plan how historical ThinkIO reentry behavior translates into the current plugin-first native architecture.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Inventory the reentry responsibilities from v1.1.1 and newer recovery reports.
-- Map each responsibility to native owner: project material workflow, kernel, runtime, CUE, BAML, extension command/view, export profile, report, or external skill.
-- Define which parts are already covered by TASK-120, TASK-121, TASK-122, TASK-126, and TASK-129.
-- Define which model-facing parts require BAML contracts and which local validation parts require CUE/runtime logic.
-- Produce implementation adjustments or follow-up tasks only after the translation boundary is explicit.
+Defined the reentry translation boundary across project-materials, kernel, runtime, CUE, BAML, export/ingest, and plugin command surfaces.
+
+Evidence:
+
+- `reentry-responsibility-map-defined`
+- `native-owner-boundaries-defined`
+- `baml-vs-cue-vs-runtime-split-defined`
+- `export-ingest-flow-defined`
+- `downstream-task-adjustments-identified`
+- `tests-or-validation-plan-defined`

@@ -4,6 +4,7 @@ const routeByInternalCommand = {
   "plugin.refresh-view": { runtimeAction: "update-views", mutatesCanonicalState: false, requiresApproval: false, producesProposal: false },
   "plugin.select-record": { runtimeAction: "build-context-packet", mutatesCanonicalState: false, requiresApproval: false, producesProposal: false },
   "plugin.open-record": { runtimeAction: "build-context-packet", mutatesCanonicalState: false, requiresApproval: false, producesProposal: false },
+  "plugin.start-resume": { runtimeAction: "resolve-next-action", mutatesCanonicalState: false, requiresApproval: false, producesProposal: false },
   "plugin.switch-mode": { runtimeAction: "evaluate-governance-decision", mutatesCanonicalState: false, requiresApproval: false, producesProposal: true },
   "plugin.add-task-proposal": { runtimeAction: "evaluate-governance-decision", mutatesCanonicalState: false, requiresApproval: false, producesProposal: true },
   "plugin.save-task-proposal": { runtimeAction: "plan-mutation-transaction", mutatesCanonicalState: true, requiresApproval: true, producesProposal: false },

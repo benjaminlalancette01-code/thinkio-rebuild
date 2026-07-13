@@ -2,12 +2,37 @@
   "id": "TASK-125",
   "title": "Add worktree-task reconciliation and closeout readiness",
   "mode": "build",
-  "status": "candidate",
-  "authority": "candidate",
-  "dependencies": ["TASK-041", "TASK-077", "TASK-081", "TASK-120"],
-  "allowedContext": ["kernel/", "runtime/", "scripts/", "state/", "tasks/", "tests/", "docs/", ".gitignore"],
-  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
-  "requiredEvidence": ["worktree-summary-model-defined", "task-scope-reconciliation-implemented", "closeout-readiness-check-added", "git-state-tests-pass", "plugin-or-command-surface-defined"],
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-041",
+    "TASK-077",
+    "TASK-081",
+    "TASK-120"
+  ],
+  "allowedContext": [
+    "kernel/",
+    "runtime/",
+    "scripts/",
+    "state/",
+    "tasks/",
+    "tests/",
+    "docs/",
+    ".gitignore"
+  ],
+  "blockedContext": [
+    "../Thinkio-fullarchive/",
+    "archive-work/",
+    "node_modules/",
+    "local-vsix/"
+  ],
+  "requiredEvidence": [
+    "worktree-summary-model-defined",
+    "task-scope-reconciliation-implemented",
+    "closeout-readiness-check-added",
+    "git-state-tests-pass",
+    "plugin-or-command-surface-defined"
+  ],
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }

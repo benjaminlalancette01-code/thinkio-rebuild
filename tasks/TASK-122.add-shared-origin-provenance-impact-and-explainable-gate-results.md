@@ -1,10 +1,15 @@
-# TASK-122: Add Shared Origin, Provenance, Impact, And Explainable Gate Results
+# TASK-122: Add shared origin, provenance, impact, and explainable gate results
 
-Unify scattered origin, evidence, impact, and decision explanations across tasks, materials, provider outputs, decisions, and mutation proposals.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define shared origin/provenance and impact classifications.
-- Standardize allow/block/reroute/derive decision output.
-- Apply the shared shape to governance decisions and proposal review.
-- Add tests that every promoted proposal can explain source, evidence, impact, and gate result.
+Added origin/provenance, impact classification, and explainable gate result primitives.
+
+Evidence:
+
+- `origin-provenance-schema-defined`
+- `impact-classification-defined`
+- `gate-result-shape-standardized`
+- `existing-records-mapped`
+- `tests-cover-explainable-decisions`

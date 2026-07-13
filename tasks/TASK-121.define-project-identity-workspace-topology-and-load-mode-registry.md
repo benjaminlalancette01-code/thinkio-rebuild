@@ -1,10 +1,15 @@
-# TASK-121: Define Project Identity, Workspace Topology, And Load-Mode Registry
+# TASK-121: Define project identity, workspace topology, and load-mode registry
 
-Create one native project identity and load-mode surface so ThinkIO no longer depends on scattered historical meta files.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define project identity, workspace root, archive root, extension root, and generated-output boundaries.
-- Define load modes such as canonical, generated, historical, archive-evidence, external-report, and working-scratch.
-- Validate project identity and topology during startup/check.
-- Generate a projection usable by the plugin and current-state reports.
+Added project identity, workspace topology, load-mode registry, and projection validation.
+
+Evidence:
+
+- `project-identity-record-defined`
+- `workspace-topology-policy-defined`
+- `load-mode-registry-defined`
+- `identity-validation-tests-pass`
+- `project-identity-projection-generated`

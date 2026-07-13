@@ -27,10 +27,20 @@ import {
   type MutationTransactionApplyResult
 } from "./mutation-applier.ts";
 import { buildRuntimeReadinessProof, type RuntimeReadinessInput } from "../kernel/runtime-readiness.ts";
+import { resolveNextAction } from "../kernel/session-grounding.ts";
+import { buildProjectIdentityProjection } from "../kernel/project-identity.ts";
 import {
   evaluateGovernanceDecision,
   type GovernanceDecisionInput
 } from "../kernel/governance-decision.ts";
+import { buildExplainableGateResult } from "../kernel/provenance.ts";
+import { buildCapabilityProjection } from "../kernel/capability-registry.ts";
+import { validateCrossLayerConsistency } from "../kernel/cross-layer-validation.ts";
+import { reconcileWorktreeToTask } from "../kernel/worktree-reconciliation.ts";
+import { explainHistoricalTranslationBlockers } from "../kernel/historical-translation.ts";
+import { lintSemanticNames } from "../kernel/semantic-naming.ts";
+import { explainExportReadinessBlockers } from "../kernel/export-readiness.ts";
+import { validateBamlContractInventory } from "../kernel/baml-contract-inventory.ts";
 import { collectValidationBlockers } from "../kernel/validation-loop.ts";
 import { evaluateWriterBoundary } from "../kernel/file-action.ts";
 import { buildNativeBoardProjection, buildRuntimeMindmapProjection } from "../kernel/runtime-projections.ts";
@@ -215,9 +225,94 @@ export function buildRuntimeReadiness(input: RuntimeReadinessInput) {
   return buildRuntimeReadinessProof(input);
 }
 
+export function resolveRuntimeNextAction(
+  ...args: Parameters<typeof resolveNextAction>
+): ReturnType<typeof resolveNextAction> {
+  assertLocalDevActionAllowed("resolve-next-action");
+  return resolveNextAction(...args);
+}
+
+export function validateRuntimeProjectIdentity(
+  ...args: Parameters<typeof buildProjectIdentityProjection>
+): ReturnType<typeof buildProjectIdentityProjection> {
+  assertLocalDevActionAllowed("validate-project-identity");
+  return buildProjectIdentityProjection(...args);
+}
+
 export function evaluateRuntimeGovernanceDecision(input: GovernanceDecisionInput) {
   assertLocalDevActionAllowed("evaluate-governance-decision");
   return evaluateGovernanceDecision(input);
+}
+
+export function evaluateRuntimeExplainableGateResult(
+  ...args: Parameters<typeof buildExplainableGateResult>
+): ReturnType<typeof buildExplainableGateResult> {
+  assertLocalDevActionAllowed("evaluate-explainable-gate-result");
+  return buildExplainableGateResult(...args);
+}
+
+export function validateRuntimeCapabilityRegistry(
+  ...args: Parameters<typeof buildCapabilityProjection>
+): ReturnType<typeof buildCapabilityProjection> {
+  assertLocalDevActionAllowed("validate-capability-registry");
+  return buildCapabilityProjection(...args);
+}
+
+export function validateRuntimeCrossLayerConsistency(
+  ...args: Parameters<typeof validateCrossLayerConsistency>
+): ReturnType<typeof validateCrossLayerConsistency> {
+  assertLocalDevActionAllowed("validate-cross-layer-consistency");
+  return validateCrossLayerConsistency(...args);
+}
+
+export function reconcileRuntimeWorktreeToTask(
+  ...args: Parameters<typeof reconcileWorktreeToTask>
+): ReturnType<typeof reconcileWorktreeToTask> {
+  assertLocalDevActionAllowed("reconcile-worktree-to-task");
+  return reconcileWorktreeToTask(...args);
+}
+
+export function validateRuntimeHistoricalTranslation(
+  ...args: Parameters<typeof explainHistoricalTranslationBlockers>
+): ReturnType<typeof explainHistoricalTranslationBlockers> {
+  assertLocalDevActionAllowed("validate-historical-translation");
+  return explainHistoricalTranslationBlockers(...args);
+}
+
+export function lintRuntimeSemanticNames(
+  ...args: Parameters<typeof lintSemanticNames>
+): ReturnType<typeof lintSemanticNames> {
+  assertLocalDevActionAllowed("lint-semantic-names");
+  return lintSemanticNames(...args);
+}
+
+export function validateRuntimeExportReadiness(
+  ...args: Parameters<typeof explainExportReadinessBlockers>
+): ReturnType<typeof explainExportReadinessBlockers> {
+  assertLocalDevActionAllowed("validate-export-readiness");
+  return explainExportReadinessBlockers(...args);
+}
+
+export function validateRuntimeBamlContractInventory(
+  ...args: Parameters<typeof validateBamlContractInventory>
+): ReturnType<typeof validateBamlContractInventory> {
+  assertLocalDevActionAllowed("validate-baml-contract-inventory");
+  return validateBamlContractInventory(...args);
+}
+
+export function validateRuntimeIsolatedVsixInstall(input: { extensionId: string; vsixPath: string; packageExists: boolean }) {
+  assertLocalDevActionAllowed("validate-isolated-vsix-install");
+  const blockers = input.packageExists ? [] : [`VSIX package is missing: ${input.vsixPath}.`];
+  return {
+    ok: blockers.length === 0,
+    blockers,
+    plan: [
+      `code --uninstall-extension ${input.extensionId}`,
+      `code --install-extension ${input.vsixPath} --force`,
+      `code --uninstall-extension ${input.extensionId}`,
+      `code --install-extension ${input.vsixPath} --force`
+    ]
+  };
 }
 
 export function collectRuntimeValidationBlockers(results: ValidationStageResult[]): string[] {

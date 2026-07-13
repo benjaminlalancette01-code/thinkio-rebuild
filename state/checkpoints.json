@@ -966,6 +966,186 @@
       ],
       "notes": "Classified deprecated skill behavior and created six external ThinkIO skills under the local Codex skills directory.",
       "createdAt": "2026-07-12T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-108",
+      "taskId": "TASK-108",
+      "status": "done",
+      "evidence": [
+        "isolated-vscode-cli-install-script-added",
+        "install-uninstall-reinstall-covered",
+        "package-validation-script-wired",
+        "runbook-updated"
+      ],
+      "notes": "Added isolated VSIX install dry-run validation, wired package scripts, and updated the plugin runbook.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-117",
+      "taskId": "TASK-117",
+      "status": "done",
+      "evidence": [
+        "missing-model-exchange-contracts-listed",
+        "new-baml-contracts-added-or-explicitly-deferred",
+        "model-output-governance-boundary-preserved",
+        "tests-or-validation-cover-contract-inventory"
+      ],
+      "notes": "Expanded model-facing BAML contracts and inventory validation while preserving proposal-first governance.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-118",
+      "taskId": "TASK-118",
+      "status": "done",
+      "evidence": [
+        "baml-cli-layout-requirements-reviewed",
+        "baml-src-or-contracts-baml-decision-recorded",
+        "generated-client-boundary-defined",
+        "provider-integration-readiness-impact-recorded"
+      ],
+      "notes": "Recorded the BAML CLI/generated-client boundary: contracts/baml remains documentation authority until provider integration is approved.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-120",
+      "taskId": "TASK-120",
+      "status": "done",
+      "evidence": [
+        "session-grounding-record-defined",
+        "next-action-resolver-implemented",
+        "start-resume-command-defined",
+        "resolver-tests-pass",
+        "views-refresh-from-resolver-output"
+      ],
+      "notes": "Added session-grounding records, deterministic next-action resolution, and a start/resume command surface.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-121",
+      "taskId": "TASK-121",
+      "status": "done",
+      "evidence": [
+        "project-identity-record-defined",
+        "workspace-topology-policy-defined",
+        "load-mode-registry-defined",
+        "identity-validation-tests-pass",
+        "project-identity-projection-generated"
+      ],
+      "notes": "Added project identity, workspace topology, load-mode registry, and projection validation.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-122",
+      "taskId": "TASK-122",
+      "status": "done",
+      "evidence": [
+        "origin-provenance-schema-defined",
+        "impact-classification-defined",
+        "gate-result-shape-standardized",
+        "existing-records-mapped",
+        "tests-cover-explainable-decisions"
+      ],
+      "notes": "Added origin/provenance, impact classification, and explainable gate result primitives.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-123",
+      "taskId": "TASK-123",
+      "status": "done",
+      "evidence": [
+        "capability-registry-schema-defined",
+        "maturity-lifecycle-operationalized",
+        "stable-evolution-point-model-defined",
+        "promotion-blocker-records-defined",
+        "capability-projection-tests-pass"
+      ],
+      "notes": "Added capability registry, maturity lifecycle, promotion blockers, and capability projection support.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-124",
+      "taskId": "TASK-124",
+      "status": "done",
+      "evidence": [
+        "cross-layer-validator-defined",
+        "contradiction-cases-covered",
+        "concept-loss-check-defined",
+        "validation-wired-into-check",
+        "tests-pass"
+      ],
+      "notes": "Added cross-layer contradiction and concept-loss validation across tasks, docs, capabilities, and translations.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-125",
+      "taskId": "TASK-125",
+      "status": "done",
+      "evidence": [
+        "worktree-summary-model-defined",
+        "task-scope-reconciliation-implemented",
+        "closeout-readiness-check-added",
+        "git-state-tests-pass",
+        "plugin-or-command-surface-defined"
+      ],
+      "notes": "Added worktree summary reconciliation and closeout readiness checks.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-126",
+      "taskId": "TASK-126",
+      "status": "done",
+      "evidence": [
+        "historical-translation-record-defined",
+        "skill-disposition-workflow-defined",
+        "archive-source-mapping-preserved",
+        "supersession-rules-defined",
+        "tests-pass"
+      ],
+      "notes": "Added historical translation records and skill disposition validation with supersession rules.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-127",
+      "taskId": "TASK-127",
+      "status": "done",
+      "evidence": [
+        "semantic-naming-registry-defined",
+        "deprecated-term-map-defined",
+        "naming-linter-added",
+        "docs-and-task-names-checked",
+        "tests-pass"
+      ],
+      "notes": "Added semantic naming/deprecated-term linting for current ThinkIO terminology.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-129",
+      "taskId": "TASK-129",
+      "status": "done",
+      "evidence": [
+        "export-readiness-profile-defined",
+        "storage-reliability-review-defined",
+        "version-semantics-defined",
+        "profile-validation-tests-pass",
+        "export-runbook-updated"
+      ],
+      "notes": "Added export readiness, storage reliability, and version profile checks, and updated export runbook coverage.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-131",
+      "taskId": "TASK-131",
+      "status": "done",
+      "evidence": [
+        "reentry-responsibility-map-defined",
+        "native-owner-boundaries-defined",
+        "baml-vs-cue-vs-runtime-split-defined",
+        "export-ingest-flow-defined",
+        "downstream-task-adjustments-identified",
+        "tests-or-validation-plan-defined"
+      ],
+      "notes": "Defined the reentry translation boundary across project-materials, kernel, runtime, CUE, BAML, export/ingest, and plugin command surfaces.",
+      "createdAt": "2026-07-13T00:00:00.000Z"
     }
   ]
 }

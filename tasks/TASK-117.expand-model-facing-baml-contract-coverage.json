@@ -2,8 +2,8 @@
   "id": "TASK-117",
   "title": "Expand model-facing BAML contract coverage",
   "mode": "plan",
-  "status": "candidate",
-  "authority": "candidate",
+  "status": "done",
+  "authority": "accepted",
   "dependencies": [
     "TASK-036",
     "TASK-050",

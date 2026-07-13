@@ -44,7 +44,17 @@ Existing rebuild contracts:
 - `review-evidence`: useful for evidence satisfaction checks.
 - `detect-drift`: useful for comparing implementation/state drift.
 
-These are a good foundation, but they are not sufficient for the current plugin direction.
+Expanded current contracts:
+
+- `classify-project-material`: classify docs/imports/reports as canonical, generated, historical, review-needed, stale, or rejected.
+- `route-task-context`: model-facing context routing distinct from deterministic runtime context packet assembly.
+- `verify-proof-package`: check whether evidence, tests, reports, and changed files satisfy a governed task.
+- `summarize-human-review`: produce bounded review summaries without creating canonical state.
+- `propose-refactor-batch`: plan file/task changes as proposals, never direct writes.
+- `compose-task-proposal`: convert Runtime Composer input into a task proposal.
+- `classify-provider-output`: classify returned model/provider output before ingestion.
+- `review-governance-decision`: explain blockers, approval requirements, and next valid action.
+- `translate-reentry-responsibility`: translate old reentry/session-continuity language into current native owners.
 
 ## Recovered v1.4 Contract Signals
 
@@ -60,7 +70,7 @@ These suggest the older architecture expected BAML to cover project-material cla
 
 ## Missing Contracts For Current ThinkIO
 
-Recommended additions:
+Recommended additions now covered as contract files:
 
 - `classify-project-material`: classify docs/imports/reports as canonical, generated, historical, review-needed, stale, or rejected.
 - `route-task-context`: model-facing context routing distinct from deterministic runtime context packet assembly.
@@ -70,6 +80,7 @@ Recommended additions:
 - `compose-task-proposal`: convert Runtime Composer input into a task proposal.
 - `classify-provider-output`: classify returned model/provider output before ingestion.
 - `review-governance-decision`: explain blockers, approval requirements, and next valid action.
+- `translate-reentry-responsibility`: translate old reentry/session-continuity language without reviving reentry prompts as authority.
 
 ## Tooling Boundary
 
@@ -84,6 +95,14 @@ That is acceptable for documentation and planning today, but before real provide
 - generate a TypeScript client and validate it in CI;
 - keep generated clients out of canonical runtime until provider integration is approved.
 
+Current decision: `contracts/baml/` remains the canonical contract-documentation boundary. Generated BAML clients are not enabled yet, and provider integration is not considered ready until a future task explicitly approves `baml_src/` or an equivalent generator boundary.
+
+Validation command:
+
+```text
+npm run validate:baml
+```
+
 ## Recommendation
 
 Do both:
@@ -91,4 +110,3 @@ Do both:
 1. Keep the immediate `contracts/baml/` nesting fix.
 2. Add a candidate task to expand ThinkIO's model-facing BAML contract set.
 3. Add a candidate task to evaluate BAML CLI/generator compatibility before real model-provider integration.
-

@@ -2,12 +2,38 @@
   "id": "TASK-123",
   "title": "Add capability registry, maturity, and promotion lifecycle",
   "mode": "build",
-  "status": "candidate",
-  "authority": "candidate",
-  "dependencies": ["TASK-045", "TASK-090", "TASK-091", "TASK-117", "TASK-130"],
-  "allowedContext": ["schemas/", "kernel/", "runtime/", "state/", "tasks/", "views/", "tests/", "docs/deprecated-skill-translation-classification-2026-07-12.md"],
-  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
-  "requiredEvidence": ["capability-registry-schema-defined", "maturity-lifecycle-operationalized", "stable-evolution-point-model-defined", "promotion-blocker-records-defined", "capability-projection-tests-pass"],
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-045",
+    "TASK-090",
+    "TASK-091",
+    "TASK-117",
+    "TASK-130"
+  ],
+  "allowedContext": [
+    "schemas/",
+    "kernel/",
+    "runtime/",
+    "state/",
+    "tasks/",
+    "views/",
+    "tests/",
+    "docs/deprecated-skill-translation-classification-2026-07-12.md"
+  ],
+  "blockedContext": [
+    "../Thinkio-fullarchive/",
+    "archive-work/",
+    "node_modules/",
+    "local-vsix/"
+  ],
+  "requiredEvidence": [
+    "capability-registry-schema-defined",
+    "maturity-lifecycle-operationalized",
+    "stable-evolution-point-model-defined",
+    "promotion-blocker-records-defined",
+    "capability-projection-tests-pass"
+  ],
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }

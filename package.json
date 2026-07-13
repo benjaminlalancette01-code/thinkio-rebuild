@@ -15,6 +15,7 @@
     "workspaceContains:thinkio.config.json",
     "onCommand:thinkio.refreshView",
     "onCommand:thinkio.selectRecord",
+    "onCommand:thinkio.startResume",
     "onCommand:thinkio.evaluateProjectMaterials",
     "onCommand:thinkio.searchProjectMaterials",
     "onView:thinkio.taskKanban",
@@ -38,6 +39,10 @@
       {
         "command": "thinkio.openRecord",
         "title": "ThinkIO: Open Record"
+      },
+      {
+        "command": "thinkio.startResume",
+        "title": "ThinkIO: Start / Resume"
       },
       {
         "command": "thinkio.switchMode",
@@ -146,13 +151,15 @@
     "validate:cue:soft": "node --experimental-strip-types runtime/validate-schemas.ts --soft",
     "validate:task-order": "node --experimental-strip-types scripts/validate-task-intake-order.ts",
     "validate:docs": "node --experimental-strip-types scripts/validate-docs.ts",
+    "validate:baml": "node --experimental-strip-types scripts/validate-baml-contract-inventory.mjs",
     "update:views": "node --experimental-strip-types runtime/update-views.ts",
     "update:project-materials": "node --experimental-strip-types runtime/update-project-materials.ts",
     "validate:extension": "node scripts/validate-vscode-extension-package.mjs",
     "validate:vsix": "node scripts/validate-local-vsix-package.mjs",
+    "validate:vsix:isolated": "node scripts/validate-isolated-vsix-install.mjs",
     "smoke:extension-host": "node --experimental-strip-types --test tests/extension-host-smoke-harness.test.ts",
-    "package:extension": "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs",
-    "check": "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:docs && npm run validate:extension && npm test"
+    "package:extension": "npm run validate:extension && npm run validate:vsix && node scripts/package-local-vsix.mjs && npm run validate:vsix:isolated",
+    "check": "npm run check:node && npm run typecheck && npm run validate:cue && npm run validate:task-order && npm run validate:docs && npm run validate:baml && npm run validate:extension && npm test"
   },
   "engines": {
     "node": ">=22.0.0",

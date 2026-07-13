@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "ui", "control-surface"]
-order: "c010"
+order: "c008"
 ---
 # TASK-128 Add UI requirement traceability and project control surface
 

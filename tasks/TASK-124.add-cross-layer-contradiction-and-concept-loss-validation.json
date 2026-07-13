@@ -2,12 +2,38 @@
   "id": "TASK-124",
   "title": "Add cross-layer contradiction and concept-loss validation",
   "mode": "build",
-  "status": "candidate",
-  "authority": "candidate",
-  "dependencies": ["TASK-083", "TASK-095", "TASK-100", "TASK-122", "TASK-123"],
-  "allowedContext": ["scripts/", "runtime/", "kernel/", "schemas/", "state/", "tasks/", "docs/", "tests/"],
-  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
-  "requiredEvidence": ["cross-layer-validator-defined", "contradiction-cases-covered", "concept-loss-check-defined", "validation-wired-into-check", "tests-pass"],
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-083",
+    "TASK-095",
+    "TASK-100",
+    "TASK-122",
+    "TASK-123"
+  ],
+  "allowedContext": [
+    "scripts/",
+    "runtime/",
+    "kernel/",
+    "schemas/",
+    "state/",
+    "tasks/",
+    "docs/",
+    "tests/"
+  ],
+  "blockedContext": [
+    "../Thinkio-fullarchive/",
+    "archive-work/",
+    "node_modules/",
+    "local-vsix/"
+  ],
+  "requiredEvidence": [
+    "cross-layer-validator-defined",
+    "contradiction-cases-covered",
+    "concept-loss-check-defined",
+    "validation-wired-into-check",
+    "tests-pass"
+  ],
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }

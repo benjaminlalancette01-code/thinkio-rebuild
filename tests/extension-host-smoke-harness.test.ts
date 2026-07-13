@@ -83,13 +83,14 @@ test("automated Extension Host smoke harness activates commands, views, watchers
 
   const activated = activateThinkIO(context, vscode);
 
-  assert.equal(activated.commands.length, 17);
+  assert.equal(activated.commands.length, 18);
   assert.equal(activated.coreViews.length, 3);
   assert.equal(activated.panels.length, 4);
   assert.equal(activated.watchers.length, 3);
   assert.equal(registeredViews.has("thinkio.taskKanban"), true);
   assert.equal(registeredViews.has("thinkio.projectNavigation"), true);
   assert.equal(registeredCommands.has("thinkio.applyApprovedProposal"), true);
+  assert.equal(registeredCommands.has("thinkio.startResume"), true);
   assert.equal(registeredCommands.has("thinkio.searchProjectMaterials"), true);
 
   const blockedMutation = await registeredCommands.get("thinkio.applyApprovedProposal")?.({});

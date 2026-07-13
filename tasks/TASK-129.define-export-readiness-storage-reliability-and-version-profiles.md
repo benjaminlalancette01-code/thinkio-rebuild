@@ -1,9 +1,15 @@
-# TASK-129: Define Export Readiness, Storage Reliability, And Version Profiles
+# TASK-129: Define export readiness, storage reliability, and version profiles
 
-Replace generic historical handoff packaging with explicit readiness profiles.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Define export readiness profiles for model review, archive research, release, VSIX install, and handoff.
-- Define storage reliability checks for paths, generated artifacts, checksums, and portability.
-- Define version semantics for product, runtime, state, checkpoint, export, extension, and archive lineage.
+Added export readiness, storage reliability, and version profile checks, and updated export runbook coverage.
+
+Evidence:
+
+- `export-readiness-profile-defined`
+- `storage-reliability-review-defined`
+- `version-semantics-defined`
+- `profile-validation-tests-pass`
+- `export-runbook-updated`

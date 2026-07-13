@@ -39,6 +39,12 @@ Full project validation:
 npm run check
 ```
 
+BAML contract inventory validation:
+
+```text
+npm run validate:baml
+```
+
 Automated Extension Host smoke harness:
 
 ```text
@@ -111,7 +117,8 @@ This runs:
 
 - extension package validation;
 - local VSIX allowlist validation;
-- local no-network VSIX creation.
+- local no-network VSIX creation;
+- isolated VSIX install dry-run validation.
 
 The generated artifact is written to:
 
@@ -126,6 +133,14 @@ Local install:
 ```text
 code --install-extension local-vsix/thinkio-rebuild-0.2.1.vsix
 ```
+
+Isolated install dry-run:
+
+```text
+npm run validate:vsix:isolated
+```
+
+This validates the local VSIX artifact and prints the uninstall/install/reinstall plan without mutating the user's installed extensions.
 
 Local uninstall:
 

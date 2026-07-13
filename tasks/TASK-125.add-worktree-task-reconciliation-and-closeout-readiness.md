@@ -1,10 +1,15 @@
-# TASK-125: Add Worktree-Task Reconciliation And Closeout Readiness
+# TASK-125: Add worktree-task reconciliation and closeout readiness
 
-Make dirty-worktree interpretation native instead of relying on Codex to infer whether changes match the active task.
+Completed on 2026-07-13.
 
-## Required Work
+## Completion
 
-- Summarize Git worktree state in a structured record.
-- Compare changed files against active task allowed/blocked context.
-- Block or warn on closeout when changes do not match task scope.
-- Surface reconciliation results in start/resume and closeout workflows.
+Added worktree summary reconciliation and closeout readiness checks.
+
+Evidence:
+
+- `worktree-summary-model-defined`
+- `task-scope-reconciliation-implemented`
+- `closeout-readiness-check-added`
+- `git-state-tests-pass`
+- `plugin-or-command-surface-defined`

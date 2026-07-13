@@ -2,12 +2,38 @@
   "id": "TASK-120",
   "title": "Implement native session grounding and next-action resolver",
   "mode": "build",
-  "status": "candidate",
-  "authority": "candidate",
-  "dependencies": ["TASK-007", "TASK-033", "TASK-091", "TASK-100", "TASK-119"],
-  "allowedContext": ["kernel/", "runtime/", "schemas/", "state/", "tasks/", "extension/", "tests/", "docs/recovery-comparison-report-validity-review-2026-07-12.md"],
-  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
-  "requiredEvidence": ["session-grounding-record-defined", "next-action-resolver-implemented", "start-resume-command-defined", "resolver-tests-pass", "views-refresh-from-resolver-output"],
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": [
+    "TASK-007",
+    "TASK-033",
+    "TASK-091",
+    "TASK-100",
+    "TASK-119"
+  ],
+  "allowedContext": [
+    "kernel/",
+    "runtime/",
+    "schemas/",
+    "state/",
+    "tasks/",
+    "extension/",
+    "tests/",
+    "docs/recovery-comparison-report-validity-review-2026-07-12.md"
+  ],
+  "blockedContext": [
+    "../Thinkio-fullarchive/",
+    "archive-work/",
+    "node_modules/",
+    "local-vsix/"
+  ],
+  "requiredEvidence": [
+    "session-grounding-record-defined",
+    "next-action-resolver-implemented",
+    "start-resume-command-defined",
+    "resolver-tests-pass",
+    "views-refresh-from-resolver-output"
+  ],
   "promotionRule": "all-required-evidence-present",
   "checkpointRequired": true
 }
