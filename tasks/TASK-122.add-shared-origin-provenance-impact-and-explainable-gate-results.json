@@ -1,0 +1,13 @@
+{
+  "id": "TASK-122",
+  "title": "Add shared origin, provenance, impact, and explainable gate results",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": ["TASK-038", "TASK-044", "TASK-048", "TASK-117"],
+  "allowedContext": ["schemas/", "kernel/", "runtime/", "state/", "contracts/baml/", "tests/", "docs/"],
+  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
+  "requiredEvidence": ["origin-provenance-schema-defined", "impact-classification-defined", "gate-result-shape-standardized", "existing-records-mapped", "tests-cover-explainable-decisions"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

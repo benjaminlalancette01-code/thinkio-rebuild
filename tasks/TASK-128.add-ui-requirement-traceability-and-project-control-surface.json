@@ -1,0 +1,13 @@
+{
+  "id": "TASK-128",
+  "title": "Add UI requirement traceability and project control surface",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": ["TASK-109", "TASK-110", "TASK-111", "TASK-112", "TASK-113", "TASK-114", "TASK-115", "TASK-120", "TASK-121", "TASK-122", "TASK-123"],
+  "allowedContext": ["extension/", "media/", "views/", "kernel/", "runtime/", "state/", "tests/", "docs/thinkio-plugin-view-ui-audit-2026-07-10.md", "docs/recovery-comparison-report-validity-review-2026-07-12.md"],
+  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
+  "requiredEvidence": ["ui-requirement-traceability-model-defined", "view-actions-map-to-runtime-commands", "control-surface-projection-defined", "visual-smoke-coverage-updated", "tests-pass"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-10T00:00:00.000Z"
 modified: "2026-07-10T00:00:00.000Z"
 labels: ["thinkio", "vscode-plugin", "webview"]
-order: "c010"
+order: "c019"
 ---
 # TASK-114: Implement Runtime Composer and Proposal Review UI
 

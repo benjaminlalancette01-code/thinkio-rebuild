@@ -11,6 +11,10 @@
     "docs/project-material-search-and-retrieval.md",
     "docs/baml-contract-boundary-audit-2026-07-12.md",
     "docs/current-state-report-maintenance-workflow.md",
+    "docs/recovery-comparison-report-validity-review-2026-07-12.md",
+    "docs/deprecated-skill-translation-classification-2026-07-12.md",
+    "docs/external-thinkio-skill-set-2026-07-12.md",
+    "docs/recovery-comparison-reports/README.md",
     "docs/vscode-plugin-stress-test-plan-2026-07-10.md",
     "docs/vscode-plugin-stress-findings-report-2026-07-10.md",
     "docs/thinkio-plugin-view-ui-audit-2026-07-10.md",
@@ -27,7 +31,12 @@
     "docs/current-project-state-report-2026-07-09.md",
     "audit/vscode-plugin-maturity-audit-2026-07-04.md",
     "imports/accepted/TASK-002.wire-cue-validation.md",
-    "imports/accepted/TASK-008.generate-kanban-and-mindmap-from-task-graph.md"
+    "imports/accepted/TASK-008.generate-kanban-and-mindmap-from-task-graph.md",
+    "docs/recovery-comparison-reports/ThinkIO-v1.0.31R-Reconstruction-Session-Recovery-and-Current-Rebuild-Comparison-Audit-2026-07-12.md",
+    "docs/recovery-comparison-reports/ThinkIO-v1.0.16-Historical-Recovery-and-Current-Rebuild-Comparison-Audit-2026-07-12.md",
+    "docs/recovery-comparison-reports/ThinkIO-Deprecated-Version-Recovery-and-Current-Rebuild-Comparison-Audit-2026-07-12.md",
+    "docs/recovery-comparison-reports/ThinkIO-Skills-and-Agents-Architecture-Report-2026-07-12.md",
+    "docs/recovery-comparison-reports/ThinkIO-Native-Capability-Gap-and-Deprecated-Skill-Translation-Expanded-Report-2026-07-12.md"
   ],
   "requiredLocalLinks": [
     {
@@ -69,6 +78,22 @@
     {
       "from": "docs/current-project-hub.md",
       "to": "docs/thinkio-plugin-view-ui-audit-2026-07-10.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/recovery-comparison-report-validity-review-2026-07-12.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/deprecated-skill-translation-classification-2026-07-12.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/external-thinkio-skill-set-2026-07-12.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/recovery-comparison-reports/README.md"
     }
   ]
 }

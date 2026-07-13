@@ -1,0 +1,13 @@
+{
+  "id": "TASK-130",
+  "title": "Create external ThinkIO skill set from salvaged skills",
+  "mode": "review",
+  "status": "done",
+  "authority": "accepted",
+  "dependencies": ["TASK-119"],
+  "allowedContext": ["docs/deprecated-skill-translation-classification-2026-07-12.md", "docs/external-thinkio-skill-set-2026-07-12.md", "../Thinkio-fullarchive/Updated skillset/", "C:/Users/benja/.codex/skills/thinkio-workspace-operator/", "C:/Users/benja/.codex/skills/thinkio-legacy-recovery/", "C:/Users/benja/.codex/skills/thinkio-independent-audit/", "C:/Users/benja/.codex/skills/thinkio-export-assistant/", "C:/Users/benja/.codex/skills/thinkio-capability-proposal/", "C:/Users/benja/.codex/skills/thinkio-ui-review/"],
+  "blockedContext": ["kernel/", "runtime/", "schemas/", "extension/"],
+  "requiredEvidence": ["deprecated-skill-library-classified", "external-skill-boundary-defined", "new-skills-created", "skill-validator-passed"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

@@ -1,0 +1,13 @@
+{
+  "id": "TASK-127",
+  "title": "Add semantic naming registry and linter",
+  "mode": "build",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": ["TASK-014", "TASK-095", "TASK-126"],
+  "allowedContext": ["docs/glossary.md", "schemas/", "kernel/", "scripts/", "tasks/", "tests/", "docs/"],
+  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
+  "requiredEvidence": ["semantic-naming-registry-defined", "deprecated-term-map-defined", "naming-linter-added", "docs-and-task-names-checked", "tests-pass"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

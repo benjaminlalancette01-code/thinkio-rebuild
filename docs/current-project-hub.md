@@ -23,6 +23,10 @@ Open this file first when orienting inside the ThinkIO rebuild.
 - [BAML contract boundary audit](baml-contract-boundary-audit-2026-07-12.md)
 - [Current-state report maintenance workflow](current-state-report-maintenance-workflow.md)
 - [Task intake priority reorder workflow](task-intake-priority-reorder-workflow.md)
+- [Recovery comparison report validity review](recovery-comparison-report-validity-review-2026-07-12.md)
+- [Deprecated skill translation classification](deprecated-skill-translation-classification-2026-07-12.md)
+- [External ThinkIO skill set](external-thinkio-skill-set-2026-07-12.md)
+- [Recovery comparison reports index](recovery-comparison-reports/README.md)
 
 ## Local VS Code Plugin Use
 

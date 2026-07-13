@@ -1,6 +1,6 @@
 ---
 id: "TASK-119"
-status: "candidate"
+status: "done"
 priority: "high"
 assignee: null
 epic: "archive-governance"
@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "archive", "human-review"]
-order: "c001"
+order: "d119"
 ---
 # TASK-119 Review archive path migration before old workspace cleanup
 

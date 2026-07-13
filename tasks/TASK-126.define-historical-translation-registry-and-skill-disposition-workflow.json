@@ -1,0 +1,13 @@
+{
+  "id": "TASK-126",
+  "title": "Define historical translation registry and skill disposition workflow",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": ["TASK-094", "TASK-119", "TASK-123", "TASK-130"],
+  "allowedContext": ["schemas/", "kernel/", "runtime/", "state/", "docs/deprecated-skill-translation-classification-2026-07-12.md", "docs/recovery-comparison-reports/", "tests/"],
+  "blockedContext": ["../Thinkio-fullarchive/", "archive-work/", "node_modules/", "local-vsix/"],
+  "requiredEvidence": ["historical-translation-record-defined", "skill-disposition-workflow-defined", "archive-source-mapping-preserved", "supersession-rules-defined", "tests-pass"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

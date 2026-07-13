@@ -830,8 +830,85 @@
       "id": "TASK-119",
       "label": "Review archive path migration before old workspace cleanup",
       "kind": "task",
+      "status": "done",
+      "authority": "accepted"
+    },
+    {
+      "id": "TASK-120",
+      "label": "Implement native session grounding and next-action resolver",
+      "kind": "task",
       "status": "candidate",
       "authority": "candidate"
+    },
+    {
+      "id": "TASK-121",
+      "label": "Define project identity, workspace topology, and load-mode registry",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-122",
+      "label": "Add shared origin, provenance, impact, and explainable gate results",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-123",
+      "label": "Add capability registry, maturity, and promotion lifecycle",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-124",
+      "label": "Add cross-layer contradiction and concept-loss validation",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-125",
+      "label": "Add worktree-task reconciliation and closeout readiness",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-126",
+      "label": "Define historical translation registry and skill disposition workflow",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-127",
+      "label": "Add semantic naming registry and linter",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-128",
+      "label": "Add UI requirement traceability and project control surface",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-129",
+      "label": "Define export readiness, storage reliability, and version profiles",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
+    },
+    {
+      "id": "TASK-130",
+      "label": "Create external ThinkIO skill set from salvaged skills",
+      "kind": "task",
+      "status": "done",
+      "authority": "accepted"
     }
   ],
   "edges": [
@@ -2223,6 +2300,266 @@
     {
       "from": "TASK-119",
       "to": "TASK-116",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-120",
+      "to": "TASK-007",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-120",
+      "to": "TASK-033",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-120",
+      "to": "TASK-091",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-120",
+      "to": "TASK-100",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-120",
+      "to": "TASK-119",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-121",
+      "to": "TASK-092",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-121",
+      "to": "TASK-093",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-121",
+      "to": "TASK-119",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-121",
+      "to": "TASK-120",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-122",
+      "to": "TASK-038",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-122",
+      "to": "TASK-044",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-122",
+      "to": "TASK-048",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-122",
+      "to": "TASK-117",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-123",
+      "to": "TASK-045",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-123",
+      "to": "TASK-090",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-123",
+      "to": "TASK-091",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-123",
+      "to": "TASK-117",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-123",
+      "to": "TASK-130",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-124",
+      "to": "TASK-083",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-124",
+      "to": "TASK-095",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-124",
+      "to": "TASK-100",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-124",
+      "to": "TASK-122",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-124",
+      "to": "TASK-123",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-125",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-125",
+      "to": "TASK-077",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-125",
+      "to": "TASK-081",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-125",
+      "to": "TASK-120",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-126",
+      "to": "TASK-094",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-126",
+      "to": "TASK-119",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-126",
+      "to": "TASK-123",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-126",
+      "to": "TASK-130",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-127",
+      "to": "TASK-014",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-127",
+      "to": "TASK-095",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-127",
+      "to": "TASK-126",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-109",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-110",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-111",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-112",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-113",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-114",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-115",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-120",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-121",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-122",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-128",
+      "to": "TASK-123",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-042",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-081",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-121",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-129",
+      "to": "TASK-122",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-130",
+      "to": "TASK-119",
       "label": "depends-on"
     }
   ]

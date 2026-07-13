@@ -939,6 +939,33 @@
       ],
       "notes": "BAML contracts moved under contracts/baml, references and VSIX allowlist updated, and layout validation added.",
       "createdAt": "2026-07-12T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-119",
+      "taskId": "TASK-119",
+      "status": "done",
+      "evidence": [
+        "old-workspace-path-references-listed",
+        "canonical-archive-target-path-approved",
+        "compatibility-pointer-or-path-update-decision-recorded",
+        "old-workspace-delete-or-preserve-decision-approved",
+        "old-workspace-deleted-after-reference-validation"
+      ],
+      "notes": "Updated the v1.1.1 rebuild audit reference to Thinkio-fullarchive, preserved a full extracted v1.1.1 reference under the canonical archive, and deleted the old new-session workspace after validation.",
+      "createdAt": "2026-07-12T00:00:00.000Z"
+    },
+    {
+      "id": "CHK-TASK-130",
+      "taskId": "TASK-130",
+      "status": "done",
+      "evidence": [
+        "deprecated-skill-library-classified",
+        "external-skill-boundary-defined",
+        "new-skills-created",
+        "skill-validator-passed"
+      ],
+      "notes": "Classified deprecated skill behavior and created six external ThinkIO skills under the local Codex skills directory.",
+      "createdAt": "2026-07-12T00:00:00.000Z"
     }
   ]
 }
