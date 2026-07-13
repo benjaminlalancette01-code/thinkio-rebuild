@@ -909,6 +909,13 @@
       "kind": "task",
       "status": "done",
       "authority": "accepted"
+    },
+    {
+      "id": "TASK-131",
+      "label": "Define reentry translation architecture boundary",
+      "kind": "task",
+      "status": "candidate",
+      "authority": "candidate"
     }
   ],
   "edges": [
@@ -2560,6 +2567,66 @@
     {
       "from": "TASK-130",
       "to": "TASK-119",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-007",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-041",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-042",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-044",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-047",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-050",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-060",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-100",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-116",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-117",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-119",
+      "label": "depends-on"
+    },
+    {
+      "from": "TASK-131",
+      "to": "TASK-130",
       "label": "depends-on"
     }
   ]

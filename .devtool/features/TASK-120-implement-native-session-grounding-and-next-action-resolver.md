@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "session", "next-action"]
-order: "c001"
+order: "c002"
 ---
 # TASK-120 Implement native session grounding and next-action resolver
 

@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "git", "closeout"]
-order: "c006"
+order: "c007"
 ---
 # TASK-125 Add worktree-task reconciliation and closeout readiness
 

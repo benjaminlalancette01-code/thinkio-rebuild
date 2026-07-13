@@ -18,3 +18,7 @@ These skills are external adapters. They can orient, review, propose, package, o
 ## Validation
 
 The skills were initialized with `skill-creator` and validated with `quick_validate.py` after installing `pyyaml`.
+
+## Refresh Note - 2026-07-13
+
+The installed skills were refreshed to match the current plugin-first architecture. Reentry is now treated as historical continuity behavior that must be translated into file-backed project state, session grounding, export/ingest, BAML contracts, CUE/runtime validation, and plugin control surfaces. See `docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md`.

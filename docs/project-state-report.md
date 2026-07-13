@@ -1,6 +1,6 @@
 # Project State Report
 
-Generated: 2026-07-13T01:04:26.521Z
+Generated: 2026-07-13T01:30:31.332Z
 
 ## Where The Project Started
 
@@ -9,9 +9,9 @@ Generated: 2026-07-13T01:04:26.521Z
 
 ## What Is Happening Now
 
-- 130 governed task files present.
+- 131 governed task files present.
 - 110 tasks done/accepted.
-- 20 active candidate tasks.
+- 21 active candidate tasks.
 - 0 active idea tasks.
 - The current active work follows the active candidate task queue.
 
@@ -37,10 +37,11 @@ Generated: 2026-07-13T01:04:26.521Z
 - TASK-127: Add semantic naming registry and linter
 - TASK-128: Add UI requirement traceability and project control surface
 - TASK-129: Define export readiness, storage reliability, and version profiles
+- TASK-131: Define reentry translation architecture boundary
 
 ## Data Already Included Or Worked On
 
-- 260 canonical task/note files are included.
+- 262 canonical task/note files are included.
 - 14 generated state/view files are included.
 - 8 historical or superseded report files are included as evidence.
 - 2 accepted import files are included.
@@ -48,9 +49,9 @@ Generated: 2026-07-13T01:04:26.521Z
 
 ## Material Summary
 
-- Total classified files: 367
-- Report input files: 339
-- Canonical source files: 260
+- Total classified files: 365
+- Report input files: 342
+- Canonical source files: 262
 - Generated state/view files: 14
 - Historical evidence files: 8
 

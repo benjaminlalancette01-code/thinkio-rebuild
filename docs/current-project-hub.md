@@ -1,6 +1,6 @@
 # ThinkIO Current Project Hub
 
-Date: 2026-07-10
+Date: 2026-07-13
 
 Open this file first when orienting inside the ThinkIO rebuild.
 
@@ -26,6 +26,7 @@ Open this file first when orienting inside the ThinkIO rebuild.
 - [Recovery comparison report validity review](recovery-comparison-report-validity-review-2026-07-12.md)
 - [Deprecated skill translation classification](deprecated-skill-translation-classification-2026-07-12.md)
 - [External ThinkIO skill set](external-thinkio-skill-set-2026-07-12.md)
+- [Installed skill refresh and reentry translation plan](installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md)
 - [Recovery comparison reports index](recovery-comparison-reports/README.md)
 
 ## Local VS Code Plugin Use

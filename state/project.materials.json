@@ -1,60 +1,6 @@
 {
-  "generatedAt": "2026-07-13T01:04:26.521Z",
+  "generatedAt": "2026-07-13T01:30:31.332Z",
   "records": [
-    {
-      "path": ".devtool/features/TASK-102-run-extension-host-lifecycle-stress-test.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
-    {
-      "path": ".devtool/features/TASK-103-run-projection-refresh-file-watcher-stress-test.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
-    {
-      "path": ".devtool/features/TASK-104-run-project-navigation-search-stress-test.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
-    {
-      "path": ".devtool/features/TASK-105-run-command-governance-composer-stress-test.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
-    {
-      "path": ".devtool/features/TASK-106-run-local-vsix-install-workspace-stress-test.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
-    {
-      "path": ".devtool/features/TASK-107-compile-plugin-stress-findings-and-create-follow-up-tasks.md",
-      "folder": ".devtool",
-      "disposition": "visual-mirror",
-      "authority": "mirror",
-      "current": true,
-      "reportInput": false,
-      "rationale": "Feature cards mirror task state for visual workflow only."
-    },
     {
       "path": ".devtool/features/TASK-108-add-automated-isolated-vsix-install-validation.md",
       "folder": ".devtool",
@@ -228,6 +174,15 @@
     },
     {
       "path": ".devtool/features/TASK-129-define-export-readiness-storage-reliability-and-version-profiles.md",
+      "folder": ".devtool",
+      "disposition": "visual-mirror",
+      "authority": "mirror",
+      "current": true,
+      "reportInput": false,
+      "rationale": "Feature cards mirror task state for visual workflow only."
+    },
+    {
+      "path": ".devtool/features/TASK-131-define-reentry-translation-architecture-boundary.md",
       "folder": ".devtool",
       "disposition": "visual-mirror",
       "authority": "mirror",
@@ -453,6 +408,15 @@
     },
     {
       "path": "docs/historical-material-disposition.md",
+      "folder": "docs",
+      "disposition": "current-guidance",
+      "authority": "current",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Documentation guides current ThinkIO work unless superseded."
+    },
+    {
+      "path": "docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md",
       "folder": "docs",
       "disposition": "current-guidance",
       "authority": "current",
@@ -3269,6 +3233,24 @@
       "rationale": "Task notes explain canonical task state."
     },
     {
+      "path": "tasks/TASK-131.define-reentry-translation-architecture-boundary.json",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Governed task JSON is canonical task state."
+    },
+    {
+      "path": "tasks/TASK-131.define-reentry-translation-architecture-boundary.md",
+      "folder": "tasks",
+      "disposition": "canonical-source",
+      "authority": "canonical",
+      "current": true,
+      "reportInput": true,
+      "rationale": "Task notes explain canonical task state."
+    },
+    {
       "path": "views/dashboard.json",
       "folder": "views",
       "disposition": "generated-state",
@@ -3306,31 +3288,31 @@
     }
   ],
   "summary": {
-    "total": 367,
+    "total": 365,
     "byDisposition": {
-      "canonical-source": 260,
-      "current-guidance": 49,
+      "canonical-source": 262,
+      "current-guidance": 50,
       "generated-state": 14,
       "historical-evidence": 6,
       "imported-evidence": 2,
-      "visual-mirror": 26,
+      "visual-mirror": 21,
       "runtime-support": 2,
       "stale-superseded": 2,
       "review-needed": 6,
       "rejected-reference": 0
     },
     "byAuthority": {
-      "canonical": 260,
-      "current": 49,
+      "canonical": 262,
+      "current": 50,
       "generated": 14,
       "historical": 8,
       "imported": 8,
-      "mirror": 26,
+      "mirror": 21,
       "support": 2
     },
-    "canonicalSourceCount": 260,
+    "canonicalSourceCount": 262,
     "generatedStateCount": 14,
     "historicalEvidenceCount": 8,
-    "reportInputCount": 339
+    "reportInputCount": 342
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T01:04:26.521Z",
+  "generatedAt": "2026-07-13T01:30:31.332Z",
   "groups": [
     {
       "disposition": "canonical-source",
@@ -263,7 +263,9 @@
         "tasks/TASK-129.define-export-readiness-storage-reliability-and-version-profiles.json",
         "tasks/TASK-129.define-export-readiness-storage-reliability-and-version-profiles.md",
         "tasks/TASK-130.create-external-thinkio-skill-set-from-salvaged-skills.json",
-        "tasks/TASK-130.create-external-thinkio-skill-set-from-salvaged-skills.md"
+        "tasks/TASK-130.create-external-thinkio-skill-set-from-salvaged-skills.md",
+        "tasks/TASK-131.define-reentry-translation-architecture-boundary.json",
+        "tasks/TASK-131.define-reentry-translation-architecture-boundary.md"
       ]
     },
     {
@@ -286,6 +288,7 @@
         "docs/glossary.md",
         "docs/historical-chat-log-import-policy.md",
         "docs/historical-material-disposition.md",
+        "docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md",
         "docs/kanban-markdown-sync-boundary.md",
         "docs/open-task-priority-review-2026-07-08.md",
         "docs/open-task-priority-review-2026-07-09.md",
@@ -360,12 +363,6 @@
     {
       "disposition": "visual-mirror",
       "paths": [
-        ".devtool/features/TASK-102-run-extension-host-lifecycle-stress-test.md",
-        ".devtool/features/TASK-103-run-projection-refresh-file-watcher-stress-test.md",
-        ".devtool/features/TASK-104-run-project-navigation-search-stress-test.md",
-        ".devtool/features/TASK-105-run-command-governance-composer-stress-test.md",
-        ".devtool/features/TASK-106-run-local-vsix-install-workspace-stress-test.md",
-        ".devtool/features/TASK-107-compile-plugin-stress-findings-and-create-follow-up-tasks.md",
         ".devtool/features/TASK-108-add-automated-isolated-vsix-install-validation.md",
         ".devtool/features/TASK-109-define-thinkio-native-webview-presentation-architecture.md",
         ".devtool/features/TASK-110-implement-native-task-kanban-webview-presentation.md",
@@ -385,7 +382,8 @@
         ".devtool/features/TASK-126-define-historical-translation-registry-and-skill-disposition-workflow.md",
         ".devtool/features/TASK-127-add-semantic-naming-registry-and-linter.md",
         ".devtool/features/TASK-128-add-ui-requirement-traceability-and-project-control-surface.md",
-        ".devtool/features/TASK-129-define-export-readiness-storage-reliability-and-version-profiles.md"
+        ".devtool/features/TASK-129-define-export-readiness-storage-reliability-and-version-profiles.md",
+        ".devtool/features/TASK-131-define-reentry-translation-architecture-boundary.md"
       ]
     },
     {

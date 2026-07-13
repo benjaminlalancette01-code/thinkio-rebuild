@@ -1,0 +1,13 @@
+{
+  "id": "TASK-131",
+  "title": "Define reentry translation architecture boundary",
+  "mode": "plan",
+  "status": "candidate",
+  "authority": "candidate",
+  "dependencies": ["TASK-007", "TASK-041", "TASK-042", "TASK-044", "TASK-047", "TASK-050", "TASK-060", "TASK-100", "TASK-116", "TASK-117", "TASK-119", "TASK-130"],
+  "allowedContext": ["docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md", "audit/v1.1.1-reentry-emulation-runtime-gap-audit-2026-07-01.md", "audit/local-runtime-adjusted-v1.1.1-gap-report-2026-07-01.md", "docs/recovery-comparison-reports/", "tasks/", "schemas/", "contracts/baml/", "kernel/", "runtime/", "extension/", "tests/", "../Thinkio-fullarchive/_extracted-reference/source-readonly/ThinkIO-v1.1.1/"],
+  "blockedContext": ["archive-work/", "node_modules/", "local-vsix/"],
+  "requiredEvidence": ["reentry-responsibility-map-defined", "native-owner-boundaries-defined", "baml-vs-cue-vs-runtime-split-defined", "export-ingest-flow-defined", "downstream-task-adjustments-identified", "tests-or-validation-plan-defined"],
+  "promotionRule": "all-required-evidence-present",
+  "checkpointRequired": true
+}

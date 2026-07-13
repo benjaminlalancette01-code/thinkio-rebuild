@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "identity", "workspace"]
-order: "c002"
+order: "c003"
 ---
 # TASK-121 Define project identity workspace topology and load-mode registry
 

@@ -14,6 +14,7 @@
     "docs/recovery-comparison-report-validity-review-2026-07-12.md",
     "docs/deprecated-skill-translation-classification-2026-07-12.md",
     "docs/external-thinkio-skill-set-2026-07-12.md",
+    "docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md",
     "docs/recovery-comparison-reports/README.md",
     "docs/vscode-plugin-stress-test-plan-2026-07-10.md",
     "docs/vscode-plugin-stress-findings-report-2026-07-10.md",
@@ -90,6 +91,10 @@
     {
       "from": "docs/current-project-hub.md",
       "to": "docs/external-thinkio-skill-set-2026-07-12.md"
+    },
+    {
+      "from": "docs/current-project-hub.md",
+      "to": "docs/installed-skill-refresh-and-reentry-translation-plan-2026-07-13.md"
     },
     {
       "from": "docs/current-project-hub.md",

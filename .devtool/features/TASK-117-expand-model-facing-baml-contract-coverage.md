@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "baml", "model-contracts"]
-order: "c012"
+order: "c013"
 ---
 # TASK-117 Expand model-facing BAML contract coverage
 

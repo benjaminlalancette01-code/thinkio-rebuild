@@ -8,7 +8,7 @@ dueDate: null
 created: "2026-07-12T00:00:00.000Z"
 modified: "2026-07-12T00:00:00.000Z"
 labels: ["thinkio", "provenance", "governance"]
-order: "c003"
+order: "c004"
 ---
 # TASK-122 Add shared origin provenance impact and explainable gate results
 
